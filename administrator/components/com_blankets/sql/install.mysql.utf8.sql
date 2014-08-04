@@ -1,0 +1,75 @@
+CREATE TABLE IF NOT EXISTS `#__blankets` (
+`id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+
+`name` VARCHAR(200)  NOT NULL ,
+`ref` VARCHAR(200)  NOT NULL ,
+`ean13` BIGINT(13) ,
+`hs_code` BIGINT(8) ,
+
+`family` VARCHAR(200)  NOT NULL ,
+`length` FLOAT(7,1)  NOT NULL ,
+`width` FLOAT(7,1)  NOT NULL ,
+`thickness` FLOAT(7,1)  NOT NULL ,
+`weight` FLOAT(6,2)  NOT NULL ,
+`density` DECIMAL(6,3)  NOT NULL ,
+`recycle_coefficient` FLOAT(4,1)  NOT NULL ,
+
+`rw` FLOAT(5,2)  NOT NULL ,
+`rw_ctr` FLOAT(5,2)  NOT NULL ,
+`stc` FLOAT(5,2)  NOT NULL ,
+`dnfw` FLOAT(5,2)  NOT NULL ,
+
+`fire_class_en` VARCHAR(40)  NOT NULL ,
+`fire_class_din` VARCHAR(40)  NOT NULL ,
+`fire_class_nf_p` VARCHAR(40)  NOT NULL ,
+`fire_class_uni` VARCHAR(40)  NOT NULL ,
+`fire_class_bs` VARCHAR(40)  NOT NULL ,
+`humidity_resistance` FLOAT(4,1)  NOT NULL ,
+`thermal_conductivity` FLOAT(6,2)  NOT NULL ,
+
+`units_per_box` VARCHAR(50)  NOT NULL ,
+`box_length` FLOAT(7,1)  NOT NULL ,
+`box_width` FLOAT(7,1)  NOT NULL ,
+`box_height` FLOAT(7,1)  NOT NULL ,
+`box_diameter` FLOAT(7,1)  NOT NULL ,
+`box_weight` DECIMAL(5,1)  NOT NULL ,
+`box_volume` DECIMAL(5,3)  NOT NULL ,
+`box_msrp` FLOAT(5,1)  NOT NULL ,
+
+`units_per_pallet` VARCHAR(50)  NOT NULL ,
+`pallet_length` FLOAT(7,1)  NOT NULL ,
+`pallet_width` FLOAT(7,1)  NOT NULL ,
+`pallet_height` FLOAT(7,1)  NOT NULL ,
+`pallet_msrp` FLOAT(5,1)  NOT NULL ,
+
+`description1` TEXT NOT NULL ,
+`description2` TEXT NOT NULL ,
+
+`catalog_page` VARCHAR(255)  NOT NULL ,
+`installation_manual` VARCHAR(255)  NOT NULL ,
+`warranty` VARCHAR(255)  NOT NULL ,
+`drawings` VARCHAR(255)  NOT NULL ,
+`safety_data` VARCHAR(255)  NOT NULL ,
+
+`video` VARCHAR(255)  NOT NULL ,
+`photo_row_material` VARCHAR(255)  NOT NULL ,
+`photo_150px` VARCHAR(255)  NOT NULL ,
+`photo_300px` VARCHAR(255)  NOT NULL ,
+`photo_1024px` VARCHAR(255)  NOT NULL ,
+`photo_detail1` VARCHAR(255)  NOT NULL ,
+`photo_detail2` VARCHAR(255)  NOT NULL ,
+`photo_detail3` VARCHAR(255)  NOT NULL ,
+`photo_detail4` VARCHAR(255)  NOT NULL ,
+`photo_detail5` VARCHAR(255)  NOT NULL ,
+`portfolio_photo_id1` int(11) UNSIGNED NOT NULL,
+`portfolio_photo_id2` int(11) UNSIGNED NOT NULL,
+
+`music_broadcast` TINYINT(1)  NOT NULL DEFAULT '1',
+`hifi_home_cinema` TINYINT(1)  NOT NULL DEFAULT '1',
+`building_construction` TINYINT(1)  NOT NULL DEFAULT '1',
+
+`state` TINYINT(1)  NOT NULL DEFAULT '1',
+`state_featured` TINYINT(1)  NOT NULL ,
+`created_by` INT(11)  NOT NULL ,
+PRIMARY KEY (`id`)
+) DEFAULT COLLATE=utf8_general_ci;

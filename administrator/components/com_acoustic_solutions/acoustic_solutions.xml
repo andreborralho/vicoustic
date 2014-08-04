@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6.0" method="upgrade">
+    <name>com_acoustic_solutions</name>
+    <creationDate>2013-05-13</creationDate>
+    <copyright>Copyright (C) 2013. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <author>Andre</author>
+    <authorEmail>andrefilipe_one@hotmail.com</authorEmail>
+    <authorUrl>http://</authorUrl>
+    <version>1.0.0</version>
+    <description></description>
+    
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>acoustic_solutions.php</filename>
+        <filename>controller.php</filename>
+        <filename>router.php</filename>
+        <folder>views</folder>
+        <folder>models</folder>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+    </files>
+    
+    <administration>
+        <menu img="templates/bluestork/images/components/s_acoustics.png" alt="Acoustic Simulator">COM_ACOUSTIC_SOLUTIONS</menu>
+        <submenu>
+            <menu link="option=com_acoustic_solutions&amp;view=acoustics_mb" view="acoustics_mb" img="templates/bluestork/images/components/s_acoustics_mb.png" alt="Acoustic_solutions/Acoustics_mb">COM_ACOUSTIC_SOLUTIONS_TITLE_ACOUSTICS_MB</menu>
+
+            <menu link="option=com_acoustic_solutions&amp;view=acoustics_mb_options" view="acoustics_mb_options" img="templates/bluestork/images/components/s_acoustics_mb_options.png" alt="Acoustic_solutions/Acoustics_mb_options">COM_ACOUSTIC_SOLUTIONS_TITLE_ACOUSTICS_MB_OPTIONS</menu>
+
+			<menu link="option=com_acoustic_solutions&amp;view=acoustic_lines" view="acoustic_lines" img="templates/bluestork/images/components/s_acoustic_lines.png"  alt="Acoustic_solutions/Acoustic_lines">COM_ACOUSTIC_SOLUTIONS_TITLE_ACOUSTIC_LINES</menu>
+
+            <menu link="option=com_acoustic_solutions&amp;view=acoustics_bc" view="acoustics_bc" img="templates/bluestork/images/components/s_acoustics_bc.png" alt="Acoustic_solutions/Acoustics_bc">COM_ACOUSTIC_SOLUTIONS_TITLE_ACOUSTICS_BC</menu>
+
+            <menu link="option=com_acoustic_solutions&amp;view=acoustic_rooms" view="acoustic_rooms" img="templates/bluestork/images/components/s_acoustic_rooms.png"  alt="Acoustic_solutions/Acoustic_rooms">COM_ACOUSTIC_SOLUTIONS_TITLE_ACOUSTIC_ROOMS</menu>
+
+        </submenu>
+        <files folder="administrator">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>acoustic_solutions.php</filename>
+            <folder>controllers</folder>            
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+        <languages folder="administrator">
+            
+			<language tag="en-GB">language/en-GB.com_acoustic_solutions.ini</language>
+			<language tag="en-GB">language/en-GB.com_acoustic_solutions.sys.ini</language>
+        </languages>
+    </administration>
+</extension>

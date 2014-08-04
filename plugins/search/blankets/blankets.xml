@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="search">
+	<name>plg_search_blankets</name>
+	<author>Andre Borralho</author>
+	<creationDate>January 2013</creationDate>
+	<copyright>Copyright (C) 2013 - Vicoustic. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>andrefilipe_one@hotmail.com</authorEmail>	
+	<version>2.5.0</version>
+	<description>PLG_SEARCH_BLANKETS_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="blankets">blankets.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB.plg_search_blankets.ini</language>
+		<language tag="en-GB">language/en-GB.plg_search_blankets.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+
+			<fieldset name="basic">
+				<field name="search_limit" type="text"
+					default="50"
+					description="JFIELD_PLG_SEARCH_SEARCHLIMIT_DESC"
+					label="JFIELD_PLG_SEARCH_SEARCHLIMIT_LABEL"
+					size="5"
+				/>
+
+				<field name="search_content" type="radio"
+					default="0"
+					description="JFIELD_PLG_SEARCH_ALL_DESC"
+					label="JFIELD_PLG_SEARCH_ALL_LABEL"
+				>
+					<option value="0">JOFF</option>
+					<option value="1">JON</option>
+				</field>				
+			</fieldset>
+		</fields>
+	</config>
+</extension>

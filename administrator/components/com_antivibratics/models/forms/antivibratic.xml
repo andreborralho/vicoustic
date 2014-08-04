@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+       <field name="id" type="text" default="0" label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="name" type="text" size="40" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_NAME"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_NAME" 
+        
+        
+         required="true" 
+        filter="safehtml" /> 
+
+       <field name="ref" type="text" size="40" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_REF"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_REF" 
+        
+        
+         required="true" 
+        filter="safehtml" /> 
+
+       <field name="ean13" type="text" size="40" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_EAN13"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_EAN13" 
+        
+        
+         required="true" 
+        filter="safehtml" />                 
+
+       <field name="hs_code" type="text" size="40" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_HS_CODE"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_HS_CODE" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="family" type="text" size="40" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_FAMILY"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_FAMILY" 
+        
+        
+         required="true" 
+        filter="safehtml" /> 
+
+       <field name="mounting_width" type="text" size="40" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_MOUNTING_WIDTH"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_MOUNTING_WIDTH" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="rupture_point" type="text" size="40" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_RUPTURE_POINT"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_RUPTURE_POINT" 
+        
+        
+        
+        filter="safehtml" /> 
+        
+        <field name="load_weight_min" type="text" size="40" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_LOAD_WEIGHT_MIN"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_LOAD_WEIGHT_MIN" 
+        
+        
+        
+        filter="safehtml" /> 
+
+        <field name="load_weight_max" type="text" size="40" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_LOAD_WEIGHT_MAX"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_LOAD_WEIGHT_MAX" 
+        
+        
+        
+        filter="safehtml" /> 
+
+        <field name="recycle_coefficient" type="text" size="40" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_RECYCLE_COEFFICIENT"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_RECYCLE_COEFFICIENT" 
+        
+        
+        
+        filter="safehtml" />  
+
+		<field name="installation_wall" type="checkbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_INSTALLATION_WALL"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_INSTALLATION_WALL" 
+        
+        
+        
+        value="1"
+        filter="raw" /> 
+        
+        <field name="installation_ceiling" type="checkbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_INSTALLATION_CEILING"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_INSTALLATION_CEILING" 
+        
+        
+        
+        value="1"
+        filter="raw" /> 
+        
+        
+        <field name="installation_floor" type="checkbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_INSTALLATION_FLOOR"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_INSTALLATION_FLOOR" 
+        
+        
+        
+        value="1"
+        filter="raw" /> 
+        
+        <field name="installation_division_wall" type="checkbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_INSTALLATION_DIVISION_WALL"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_INSTALLATION_DIVISION_WALL" 
+        
+        
+        
+        value="1"
+        filter="raw" />                                             
+
+		<field name="fire_class_en" type="text" size="40" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_FIRE_CLASS_EN"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_FIRE_CLASS_EN" 
+        
+        
+        
+        filter="safehtml" />        
+
+       <field name="fire_class_din" type="text" size="40" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_FIRE_CLASS_DIN"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_FIRE_CLASS_DIN" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="fire_class_nf_p" type="text" size="40" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_FIRE_CLASS_NF_P"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_FIRE_CLASS_NF_P" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="fire_class_uni" type="text" size="40" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_FIRE_CLASS_UNI"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_FIRE_CLASS_UNI" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="fire_class_bs" type="text" size="40" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_FIRE_CLASS_BS"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_FIRE_CLASS_BS" 
+        
+        
+        
+        filter="safehtml" /> 
+
+        
+        <field name="steel" type="checkbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_STEEL"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_STEEL" 
+        
+        
+        
+        value="1"
+        filter="raw" /> 
+
+        <field name="rubber_color" type="text" size="40" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_RUBBER_COLOR"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_RUBBER_COLOR" 
+        
+        
+        
+        filter="safehtml" /> 
+
+        <field name="angle_adaptation" type="checkbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_ANGLE_ADAPTATION"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_ANGLE_ADAPTATION" 
+        
+        
+        
+        value="1"
+        filter="raw" /> 
+
+        <field name="hooking_system" type="checkbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_HOOKING_SYSTEM"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_HOOKING_SYSTEM" 
+        
+        
+        
+        value="1"
+        filter="raw" /> 
+        
+
+        <field name="security_devices" type="text" size="40" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_SECURITY_DEVICES"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_SECURITY_DEVICES" 
+        
+        
+        filter="safehtml" /> 
+
+        <field name="fire_security_devices" type="checkbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_FIRE_SECURITY_DEVICES"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_FIRE_SECURITY_DEVICES" 
+        
+        
+        
+        value="1"
+        filter="raw" /> 
+
+        <field name="plate_thickness" type="text" size="40" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_PLATE_THICKNESS"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_PLATE_THICKNESS" 
+        
+        
+        
+        filter="safehtml" /> 
+
+        <field name="plate_length" type="text" size="40" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_PLATE_LENGTH"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_PLATE_LENGTH" 
+        
+        
+        
+        filter="safehtml" /> 
+
+
+        <field name="msrp" type="text" size="40" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_MSRP"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_MSRP" 
+        
+        
+        
+        filter="safehtml" />       
+
+       <field name="units_per_box" type="text" size="40" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_UNITS_PER_BOX"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_UNITS_PER_BOX" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="box_length" type="text" size="40" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_BOX_LENGTH"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_BOX_LENGTH" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="box_width" type="text" size="40" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_BOX_WIDTH"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_BOX_WIDTH" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="box_height" type="text" size="40" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_BOX_HEIGHT"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_BOX_HEIGHT"
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="box_weight" type="text" size="40" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_BOX_WEIGHT"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_BOX_WEIGHT" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="box_volume" type="text" size="40" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_BOX_VOLUME"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_BOX_VOLUME" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="box_msrp" type="text" size="40" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_BOX_MSRP"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_BOX_MSRP" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="mastercarton_box_length" type="text" size="40" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_MASTERCARTON_BOX_LENGTH"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_MASTERCARTON_BOX_LENGTH" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="mastercarton_box_width" type="text" size="40" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_MASTERCARTON_BOX_WIDTH"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_MASTERCARTON_BOX_WIDTH" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="mastercarton_box_height" type="text" size="40" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_MASTERCARTON_BOX_HEIGHT"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_MASTERCARTON_BOX_HEIGHT" 
+        
+        
+        
+        filter="safehtml" />
+        
+        <field name="mastercarton_box_msrp" type="text" size="40" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_MASTERCARTON_BOX_MSRP"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_MASTERCARTON_BOX_MSRP" 
+        
+        
+        
+        filter="safehtml" />
+        
+        <field name="description1" type="editor"
+                
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_DESCRIPTION1"
+            description="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_DESCRIPTION1" 
+                
+                
+                
+            cols="100"
+            rows="15"
+            filter="raw" /> 
+
+       <field name="description2" type="editor"
+                
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_DESCRIPTION2"
+            description="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_DESCRIPTION2" 
+                
+                
+                
+            cols="100"
+            rows="15"
+            filter="raw" /> 
+            
+
+       <field name="catalog_page" type="media"
+                
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_CATALOG_PAGE"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_CATALOG_PAGE" 
+                
+                              
+            filter="raw"
+            directory="pdfs/antivibratics/catalog_pages" /> 
+            
+       <field name="installation_manual" type="media"
+                
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_INSTALLATION_MANUAL"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_INSTALLATION_MANUAL" 
+                
+                              
+            filter="raw"
+            directory="pdfs/antivibratics/installation_manuals" /> 
+
+        <field name="sketchup" type="media"
+                
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_SKETCHUP"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_SKETCHUP" 
+                
+                              
+            filter="raw"
+            directory="pdfs/antivibratics/sketchups" />     
+
+        <field name="warranty" type="media"
+                
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_WARRANTY"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_WARRANTY" 
+                
+                              
+            filter="raw"
+            directory="pdfs/antivibratics/warranties" />
+
+        <field name="drawings" type="media"
+                
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_DRAWINGS"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_DRAWINGS" 
+                
+                              
+            filter="raw"
+            directory="pdfs/antivibratics/drawings" />          
+
+        <field name="safety_data" type="media"
+                
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_SAFETY_DATA"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_SAFETY_DATA" 
+                
+                              
+            filter="raw"
+            directory="pdfs/antivibratics/safety_data_sheets" />          
+
+	   <field name="video" type="text" size="80"
+                
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_VIDEO"
+            description="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_VIDEO" 
+                
+                                
+           filter="raw"/>
+            
+       <field name="photo_150px" type="media"
+                
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_PHOTO_150PX"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_PHOTO_150PX" 
+                
+                
+                
+            filter="raw"
+            directory="antivibratics/photos_150px" /> 
+
+       <field name="photo_300px" type="media"
+                
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_PHOTO_300PX"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_PHOTO_300PX" 
+                
+                
+                
+            filter="raw"
+            directory="antivibratics/photos_300px" /> 
+
+       <field name="photo_1024px" type="media"
+                
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_PHOTO_1024PX"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_PHOTO_1024PX" 
+                
+                
+                
+            filter="raw"
+            directory="antivibratics/photos_1024px" /> 
+
+       <field name="photo_detail1" type="media"
+                
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_PHOTO_DETAIL1"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_PHOTO_DETAIL1" 
+                
+                
+                
+            filter="raw"
+            directory="antivibratics/photos_details" /> 
+
+       <field name="photo_detail2" type="media"
+                
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_PHOTO_DETAIL2"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_PHOTO_DETAIL2" 
+                
+                
+                
+            filter="raw"
+            directory="antivibratics/photos_details" /> 
+
+       <field name="photo_detail3" type="media"
+                
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_PHOTO_DETAIL3"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_PHOTO_DETAIL3" 
+                
+                
+                
+            filter="raw"
+            directory="antivibratics/photos_details" /> 
+
+       <field name="photo_detail4" type="media"
+                
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_PHOTO_DETAIL4"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_PHOTO_DETAIL4" 
+                
+                
+                
+            filter="raw"
+            directory="antivibratics/photos_details" /> 
+
+       <field name="photo_detail5" type="media"
+                
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_PHOTO_DETAIL5"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_PHOTO_DETAIL5" 
+                
+                
+                
+            filter="raw"
+            directory="antivibratics/photos_details" />       
+
+       <field name="portfolio_photo_id1" type="sql" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_PORTFOLIO_PHOTO_ID1"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_PORTFOLIO_PHOTO_ID1" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `photo` UNION SELECT `id`, `photo` FROM `#__portfolio_photos`" key_field="id" value_field="photo"
+         /> 
+
+        <field name="portfolio_photo_id2" type="sql" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_PORTFOLIO_PHOTO_ID2"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_PORTFOLIO_PHOTO_ID2" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `photo` UNION SELECT `id`, `photo` FROM `#__portfolio_photos`" key_field="id" value_field="photo"
+         /> 
+
+
+        <field name="music_broadcast" type="list" size="1" default="0" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_MUSIC_BROADCAST"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_MUSIC_BROADCAST">
+             
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+        
+        
+       </field> 
+
+       <field name="hifi_home_cinema" type="list" size="1" default="0" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_HIFI_HOME_CINEMA"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_HIFI_HOME_CINEMA">
+             
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+        
+        
+       </field> 
+
+       <field name="building_construction" type="list" size="1" default="0" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_BUILDING_CONSTRUCTION"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_BUILDING_CONSTRUCTION">
+             
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+        
+        
+       </field> 
+
+       <field name="state_featured" type="list" size="1" default="0" class="inputbox"
+        
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_STATE_FEATURED"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_STATE_FEATURED">
+             
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+        
+        
+       </field> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_ANTIVIBRATICS_FORM_LBL_ANTIVIBRATIC_CREATED_BY"
+            description="COM_ANTIVIBRATICS_FORM_DESC_ANTIVIBRATIC_CREATED_BY"  /> 
+
+       <field
+	        name="state"
+	        type="list"
+	        label="JSTATUS"
+	        description="JFIELD_PUBLISHED_DESC"
+	        class="inputbox"
+	        size="1"
+	        default="1">
+	        <option value="1">JPUBLISHED</option>
+	        <option value="0">JUNPUBLISHED</option>
+    	</field>
+
+	</fieldset>
+
+</form>

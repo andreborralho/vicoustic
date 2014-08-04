@@ -1,0 +1,53 @@
+<?xml version="1.1" encoding="utf-8"?>
+<!-- $Id: helloworld.xml 14 2011-06-10 10:35:00 rajug $ -->
+<extension type="component" version="1.6.0" method="upgrade">
+	<name>COM_JLANGEDITOR</name>
+	<creationDate>June 2011</creationDate>
+	<author>Raju Gautam</author>
+	<authorEmail>raju@devraju.com</authorEmail>
+	<authorUrl>http://www.devraju.com</authorUrl>
+	<copyright>Copyright (C) 2011 Raju Gautam - raju@devraju.com  All rights reserved.</copyright>
+	<license>GNU/GPLv3 http://www.gnu.org/copyleft/gpl.html</license>
+	<version>1.1</version>
+	<description>COM_JLANGEDITOR_DESCRIPTION</description>
+	
+	<install> <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+	
+	<administration>
+		<menu img="components/com_jlangeditor/icon-16-jlangeditor.png">COM_JLANGEDITOR_MENU</menu>
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>config.xml</filename>
+			<filename>access.xml</filename>
+			<filename>jlangeditor.php</filename>
+			<filename>icon-48-jlangeditor.png</filename>
+			<filename>icon-16-jlangeditor.png</filename>
+			<filename>jlangeditor.css</filename>
+			<filename>controller.php</filename>
+			<folder>sql</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<folder>helpers</folder>
+		</files>
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_jlangeditor.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_jlangeditor.sys.ini</language>
+		</languages>
+	</administration>
+</extension>
+

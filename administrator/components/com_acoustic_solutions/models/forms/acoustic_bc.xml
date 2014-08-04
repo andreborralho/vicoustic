@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+      <field name="id" type="text" default="0" label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_BC_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+      
+
+    <field name="description" type="editor"
+                
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_BC_DESCRIPTION"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_BC_DESCRIPTION" 
+                
+                
+                
+            filter="raw" /> 
+
+    <field name="technical_file" type="media"
+                
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_BC_TECHNICAL_FILE"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_BC_TECHNICAL_FILE" 
+                
+                
+                
+        filter="raw"
+        directory="pdfs/acoustic_simulator" /> 
+
+    <field name="icon" type="media"
+                
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_BC_ICON"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_BC_ICON" 
+                
+                
+                
+        filter="raw"
+        directory="acoustic_simulator" /> 
+
+    <field name="image1" type="media"
+                
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_BC_IMAGE1"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_BC_IMAGE1" 
+                
+                
+                
+        filter="raw"
+        directory="acoustic_simulator" /> 
+
+    <field name="image2" type="media"
+                
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_BC_IMAGE2"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_BC_IMAGE2" 
+                
+                
+                
+        filter="raw"
+        directory="acoustic_simulator" /> 
+
+     <field name="image3" type="media"
+                
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_BC_IMAGE3"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_BC_IMAGE3" 
+                
+                
+                
+        filter="raw"
+        directory="acoustic_simulator" />
+
+    <field name="panel_id1" type="sql" class="inputbox"
+        
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_BC_PANEL_ID1"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_BC_PANEL_ID1" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `name` UNION SELECT `id`, `name` FROM `#__panels`" key_field="id" value_field="name"
+         />
+
+    <field name="panel_id2" type="sql" class="inputbox"
+        
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_BC_PANEL_ID2"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_BC_PANEL_ID2" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `name` UNION SELECT `id`, `name` FROM `#__panels`" key_field="id" value_field="name"
+         />
+
+    <field name="panel_id3" type="sql" class="inputbox"
+        
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_BC_PANEL_ID3"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_BC_PANEL_ID3" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `name` UNION SELECT `id`, `name` FROM `#__panels`" key_field="id" value_field="name"
+         />
+
+    <field name="panel_id4" type="sql" class="inputbox"
+        
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_BC_PANEL_ID4"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_BC_PANEL_ID4" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `name` UNION SELECT `id`, `name` FROM `#__panels`" key_field="id" value_field="name"
+         />   
+
+    <field name="panel_id5" type="sql" class="inputbox"
+        
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_BC_PANEL_ID5"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_BC_PANEL_ID5" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `name` UNION SELECT `id`, `name` FROM `#__panels`" key_field="id" value_field="name"
+         />   
+
+    <field name="panel_id6" type="sql" class="inputbox"
+        
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_BC_PANEL_ID6"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_BC_PANEL_ID6" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `name` UNION SELECT `id`, `name` FROM `#__panels`" key_field="id" value_field="name"
+         />   
+
+    <field name="panel_id7" type="sql" class="inputbox"
+        
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_BC_PANEL_ID7"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_BC_PANEL_ID7" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `name` UNION SELECT `id`, `name` FROM `#__panels`" key_field="id" value_field="name"
+         />   
+
+    <field name="panel_id8" type="sql" class="inputbox"
+        
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_BC_PANEL_ID8"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_BC_PANEL_ID8" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `name` UNION SELECT `id`, `name` FROM `#__panels`" key_field="id" value_field="name"
+         />   
+
+    <field name="panel_id9" type="sql" class="inputbox"
+        
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_BC_PANEL_ID9"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_BC_PANEL_ID9" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `name` UNION SELECT `id`, `name` FROM `#__panels`" key_field="id" value_field="name"
+         />   
+
+    <field name="panel_id10" type="sql" class="inputbox"
+        
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_BC_PANEL_ID10"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_BC_PANEL_ID10" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `name` UNION SELECT `id`, `name` FROM `#__panels`" key_field="id" value_field="name"
+         />   
+
+    <field name="panel_id11" type="sql" class="inputbox"
+        
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_BC_PANEL_ID11"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_BC_PANEL_ID11" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `name` UNION SELECT `id`, `name` FROM `#__panels`" key_field="id" value_field="name"
+         /> 
+
+    <field name="panel_id12" type="sql" class="inputbox"
+        
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_BC_PANEL_ID12"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_BC_PANEL_ID12" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `name` UNION SELECT `id`, `name` FROM `#__panels`" key_field="id" value_field="name"
+         /> 
+
+    <field name="panel1_percentage" type="text" size="40" class="inputbox"
+        
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_BC_PANEL1_PERCENTAGE"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_BC_PANEL1_PERCENTAGE" 
+        
+        
+         required="false" 
+        filter="safehtml" />
+
+    <field name="panel2_percentage" type="text" size="40" class="inputbox"
+        
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_BC_PANEL2_PERCENTAGE"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_BC_PANEL2_PERCENTAGE" 
+        
+        
+         required="false" 
+        filter="safehtml" />
+
+    <field name="panel3_percentage" type="text" size="40" class="inputbox"
+        
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_BC_PANEL3_PERCENTAGE"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_BC_PANEL3_PERCENTAGE" 
+        
+        
+         required="false" 
+        filter="safehtml" />
+
+    <field name="panel4_percentage" type="text" size="40" class="inputbox"
+        
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_BC_PANEL4_PERCENTAGE"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_BC_PANEL4_PERCENTAGE" 
+        
+        
+         required="false" 
+        filter="safehtml" />
+
+    <field name="panel5_percentage" type="text" size="40" class="inputbox"
+        
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_BC_PANEL5_PERCENTAGE"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_BC_PANEL5_PERCENTAGE" 
+        
+        
+         required="false" 
+        filter="safehtml" />
+
+    <field name="panel6_percentage" type="text" size="40" class="inputbox"
+        
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_BC_PANEL6_PERCENTAGE"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_BC_PANEL6_PERCENTAGE" 
+        
+        
+         required="false" 
+        filter="safehtml" />
+
+    <field name="panel7_percentage" type="text" size="40" class="inputbox"
+        
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_BC_PANEL7_PERCENTAGE"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_BC_PANEL7_PERCENTAGE" 
+        
+        
+         required="false" 
+        filter="safehtml" />
+
+    <field name="panel8_percentage" type="text" size="40" class="inputbox"
+        
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_BC_PANEL8_PERCENTAGE"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_BC_PANEL8_PERCENTAGE" 
+        
+        
+         required="false" 
+        filter="safehtml" />
+
+    <field name="panel9_percentage" type="text" size="40" class="inputbox"
+        
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_BC_PANEL9_PERCENTAGE"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_BC_PANEL9_PERCENTAGE" 
+        
+        
+         required="false" 
+        filter="safehtml" />
+
+    <field name="panel10_percentage" type="text" size="40" class="inputbox"
+        
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_BC_PANEL10_PERCENTAGE"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_BC_PANEL10_PERCENTAGE" 
+        
+        
+         required="false" 
+        filter="safehtml" />
+
+    <field name="panel11_percentage" type="text" size="40" class="inputbox"
+        
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_BC_PANEL11_PERCENTAGE"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_BC_PANEL11_PERCENTAGE" 
+        
+        
+         required="false" 
+        filter="safehtml" />
+
+    <field name="panel12_percentage" type="text" size="40" class="inputbox"
+        
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_BC_PANEL12_PERCENTAGE"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_BC_PANEL12_PERCENTAGE" 
+        
+        
+         required="false" 
+        filter="safehtml" />
+
+    <field name="room_id" type="sql" class="inputbox"
+                
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_BC_ROOM_ID"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_BC_ROOM_ID" 
+                
+                
+                
+            query="SELECT 0 AS `id`, '- Please select -' AS `name` UNION SELECT `id`, `name` FROM `#__acoustic_solution_rooms` WHERE state= 1 AND building_construction = 1" 
+            key_field="id" value_field="name" />
+
+   <field name="created_by" type="createdby" default="" 
+        label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_BC_CREATED_BY"
+        description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_BC_CREATED_BY"  /> 
+
+     <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="1">
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+    </field> 
+
+	</fieldset>
+
+</form>

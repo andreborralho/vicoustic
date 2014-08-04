@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+			<field name="id" type="text" default="0" label="COM_DOORS_FORM_LBL_DOOR_ID"
+						readonly="true" class="readonly"
+						description="JGLOBAL_FIELD_ID_DESC" /> 
+
+			 <field name="name" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_NAME"
+						description="COM_DOORS_FORM_DESC_DOOR_NAME" 
+				
+				
+				 required="true" 
+				filter="safehtml" /> 
+
+			 <field name="ref" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_REF"
+						description="COM_DOORS_FORM_DESC_DOOR_REF" 
+				
+				
+				 required="true" 
+				filter="safehtml" /> 
+
+			 <field name="ean13" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_EAN13"
+						description="COM_DOORS_FORM_DESC_DOOR_EAN13" 
+				
+				
+				 required="true" 
+				filter="safehtml" /> 
+
+		<field name="upc" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_UPC"
+						description="COM_DOORS_FORM_DESC_DOOR_UPC" 
+				
+				
+				 required="true" 
+				filter="safehtml" /> 
+				
+			 <field name="hs_code" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_HS_CODE"
+						description="COM_DOORS_FORM_DESC_DOOR_HS_CODE" 
+				
+				
+				
+				filter="safehtml" /> 
+
+			 <field name="family" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_FAMILY"
+						description="COM_DOORS_FORM_DESC_DOOR_FAMILY" 
+				
+				
+				 required="true" 
+				filter="safehtml" /> 
+
+			 <field name="width" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_WIDTH"
+						description="COM_DOORS_FORM_DESC_DOOR_WIDTH" 
+				
+				
+				
+				filter="safehtml" /> 
+
+			 <field name="height" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_HEIGHT"
+						description="COM_DOORS_FORM_DESC_DOOR_HEIGHT" 
+				
+				
+				
+				filter="safehtml" /> 			 
+
+			 <field name="number_of_doors" type="radio"
+								
+						label="COM_DOORS_FORM_LBL_DOOR_NUMBER_OF_DOORS"
+						description="COM_DOORS_FORM_DESC_DOOR_NUMBER_OF_DOORS" 
+								
+								
+								
+						default="1"
+						filter="raw">
+								<option value="1">1</option>
+								<option value="2">2</option>
+				</field> 
+
+			 <field name="gross_weight" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_GROSS_WEIGHT"
+						description="COM_DOORS_FORM_DESC_DOOR_GROSS_WEIGHT" 
+				
+				
+				
+				filter="safehtml" /> 
+
+			 <field name="finish" type="list"
+								
+						label="COM_DOORS_FORM_LBL_DOOR_FINISH"
+						description="COM_DOORS_FORM_DESC_DOOR_FINISH" 
+								
+								
+								
+						filter="raw"
+						multiple="false">
+								<option value="Wood">Wood</option>
+								<option value="Grey Enamel Primer">Grey Enamel Primer</option>
+				</field> 
+
+			 <field name="fire_resistance" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_FIRE_RESISTANCE"
+						description="COM_DOORS_FORM_DESC_DOOR_FIRE_RESISTANCE" 
+				
+				
+				
+				filter="safehtml" /> 
+
+			 <field name="rw" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_RW"
+						description="COM_DOORS_FORM_DESC_DOOR_RW" 
+				
+				
+				
+				filter="safehtml" /> 
+
+			 <field name="dnfw" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_DNFW"
+						description="COM_DOORS_FORM_DESC_DOOR_DNFW" 
+				
+				
+				
+				filter="safehtml" /> 
+
+ 			 <field name="outer_width" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_OUTER_WIDTH"
+						description="COM_DOORS_FORM_DESC_DOOR_OUTER_WIDTH" 
+				
+				
+				
+				filter="safehtml" /> 
+
+			 <field name="outer_height" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_OUTER_HEIGHT"
+						description="COM_DOORS_FORM_DESC_DOOR_OUTER_HEIGHT" 
+				
+				
+				
+				filter="safehtml" /> 
+
+			<field name="recommended_construction_width" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_RECOMMENDED_CONSTRUCTION_WIDTH"
+						description="COM_DOORS_FORM_DESC_DOOR_RECOMMENDED_CONSTRUCTION_WIDTH" 
+				
+				
+				
+				filter="safehtml" /> 
+
+			 <field name="recommended_construction_height" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_RECOMMENDED_CONSTRUCTION_HEIGHT"
+						description="COM_DOORS_FORM_DESC_DOOR_RECOMMENDED_CONSTRUCTION_HEIGHT" 
+				
+				
+				
+				filter="safehtml" /> 
+
+			 <field name="units_per_pallet" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_UNITS_PER_PALLET"
+						description="COM_DOORS_FORM_DESC_DOOR_UNITS_PER_PALLET" 
+				
+				
+				
+				filter="safehtml" /> 
+
+			 <field name="pallet_length" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_PALLET_LENGTH"
+						description="COM_DOORS_FORM_DESC_DOOR_PALLET_LENGTH" 
+				
+				
+				
+				filter="safehtml" /> 
+
+			 <field name="pallet_width" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_PALLET_WIDTH"
+						description="COM_DOORS_FORM_DESC_DOOR_PALLET_WIDTH" 
+				
+				
+				
+				filter="safehtml" /> 
+
+			 <field name="pallet_height" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_PALLET_HEIGHT"
+						description="COM_DOORS_FORM_DESC_DOOR_PALLET_HEIGHT" 
+				
+				
+				
+				filter="safehtml" /> 
+
+			 <field name="pallet_volume" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_PALLET_VOLUME"
+						description="COM_DOORS_FORM_DESC_DOOR_PALLET_VOLUME" 
+				
+				
+				
+				filter="safehtml" /> 
+
+			 <field name="pallet_weight" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_PALLET_WEIGHT"
+						description="COM_DOORS_FORM_DESC_DOOR_PALLET_WEIGHT" 
+				
+				
+				
+				filter="safehtml" /> 
+
+			 <field name="msrp" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_MSRP"
+						description="COM_DOORS_FORM_DESC_DOOR_MSRP" 
+				
+				
+				
+				filter="safehtml" />
+
+			<field name="msrp_state" type="list" size="1" default="1" class="inputbox"
+			        
+		            label="COM_DOORS_FORM_LBL_DOOR_MSRP_STATE"
+		            description="COM_DOORS_FORM_DESC_DOOR_MSRP_STATE">
+		             
+		        <option value="1">JPUBLISHED</option>
+		        <option value="0">JUNPUBLISHED</option>
+	        	        
+	       </field> 	
+
+
+			 <field name="keylock" type="checkbox"
+								
+						label="COM_DOORS_FORM_LBL_DOOR_KEYLOCK"
+						description="COM_DOORS_FORM_DESC_DOOR_KEYLOCK" 
+								
+								
+								
+						value="1"
+						filter="raw" /> 
+
+			 <field name="keylock_ref" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_KEYLOCK_REF"
+						description="COM_DOORS_FORM_DESC_DOOR_KEYLOCK_REF" 
+				
+				
+				
+				filter="safehtml" /> 
+
+			 <field name="keylock_msrp" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_KEYLOCK_MSRP"
+						description="COM_DOORS_FORM_DESC_DOOR_KEYLOCK_MSRP" 
+				
+				
+				
+				filter="safehtml" /> 
+
+			 <field name="antipanic_bar" type="checkbox"
+								
+						label="COM_DOORS_FORM_LBL_DOOR_ANTIPANIC_BAR"
+						description="COM_DOORS_FORM_DESC_DOOR_ANTIPANIC_BAR" 
+								
+								
+								
+						value="1"
+						filter="raw" /> 
+
+			 <field name="antipanic_bar_ref" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_ANTIPANIC_BAR_REF"
+						description="COM_DOORS_FORM_DESC_DOOR_ANTIPANIC_BAR_REF" 
+				
+				
+				
+				filter="safehtml" /> 
+
+			 <field name="antipanic_bar_msrp" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_ANTIPANIC_BAR_MSRP"
+						description="COM_DOORS_FORM_DESC_DOOR_ANTIPANIC_BAR_MSRP" 
+				
+				
+				
+				filter="safehtml" /> 
+
+			 <field name="keylock_antipanicbar_ref" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_KEYLOCK_ANTIPANICBAR_REF"
+						description="COM_DOORS_FORM_DESC_DOOR_KEYLOCK_ANTIPANICBAR_REF" 
+				
+				
+				
+				filter="safehtml" /> 
+
+			 <field name="keylock_antipanicbar_msrp" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_KEYLOCK_ANTIPANICBAR_MSRP"
+						description="COM_DOORS_FORM_DESC_DOOR_KEYLOCK_ANTIPANICBAR_MSRP" 
+				
+				
+				
+				filter="safehtml" /> 
+
+			 <field name="circular_double_window" type="checkbox"
+								
+						label="COM_DOORS_FORM_LBL_DOOR_CIRCULAR_DOUBLE_WINDOW"
+						description="COM_DOORS_FORM_DESC_DOOR_CIRCULAR_DOUBLE_WINDOW" 
+								
+								
+								
+						value="1"
+						filter="raw" /> 
+
+			 <field name="circular_double_window_ref" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_CIRCULAR_DOUBLE_WINDOW_REF"
+						description="COM_DOORS_FORM_DESC_DOOR_CIRCULAR_DOUBLE_WINDOW_REF" 
+				
+				
+				
+				filter="safehtml" /> 
+
+			 <field name="circular_double_window_msrp" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_CIRCULAR_DOUBLE_WINDOW_MSRP"
+						description="COM_DOORS_FORM_DESC_DOOR_CIRCULAR_DOUBLE_WINDOW_MSRP" 
+				
+				
+				
+				filter="safehtml" /> 
+
+			 <field name="without_floor_frame" type="checkbox"
+								
+						label="COM_DOORS_FORM_LBL_DOOR_WITHOUT_FLOOR_FRAME"
+						description="COM_DOORS_FORM_DESC_DOOR_WITHOUT_FLOOR_FRAME" 
+								
+								
+								
+						value="1"
+						filter="raw" /> 
+
+			 <field name="without_floor_frame_ref" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_WITHOUT_FLOOR_FRAME_REF"
+						description="COM_DOORS_FORM_DESC_DOOR_WITHOUT_FLOOR_FRAME_REF" 
+				
+				
+				
+				filter="safehtml" /> 
+
+			 <field name="without_floor_frame_msrp" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_WITHOUT_FLOOR_FRAME_MSRP"
+						description="COM_DOORS_FORM_DESC_DOOR_WITHOUT_FLOOR_FRAME_MSRP" 
+				
+				
+				
+				filter="safehtml" /> 
+
+			 <field name="autoclose_system" type="checkbox"
+								
+						label="COM_DOORS_FORM_LBL_DOOR_AUTOCLOSE_SYSTEM"
+						description="COM_DOORS_FORM_DESC_DOOR_AUTOCLOSE_SYSTEM" 
+								
+								
+								
+						value="1"
+						filter="raw" /> 
+
+			 <field name="autoclose_system_ref" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_AUTOCLOSE_SYSTEM_REF"
+						description="COM_DOORS_FORM_DESC_DOOR_AUTOCLOSE_SYSTEM_REF" 
+				
+				
+				
+				filter="safehtml" /> 
+
+			 <field name="autoclose_system_msrp" type="text" size="40" class="inputbox"
+				
+						label="COM_DOORS_FORM_LBL_DOOR_AUTOCLOSE_SYSTEM_MSRP"
+						description="COM_DOORS_FORM_DESC_DOOR_AUTOCLOSE_SYSTEM_MSRP" 
+				
+				
+				
+				filter="safehtml" /> 
+
+			 <field name="description1" type="editor"
+								
+						label="COM_DOORS_FORM_LBL_DOOR_DESCRIPTION1"
+						description="COM_DOORS_FORM_DESC_DOOR_DESCRIPTION1" 
+								
+								
+								
+						cols="100"
+						rows="15"
+						filter="raw" /> 
+
+			 <field name="description2" type="editor"
+								
+						label="COM_DOORS_FORM_LBL_DOOR_DESCRIPTION2"
+						description="COM_DOORS_FORM_DESC_DOOR_DESCRIPTION2" 
+								
+								
+								
+						cols="100"
+						rows="15"
+						filter="raw" /> 
+
+
+	       <field name="catalog_page" type="media"
+	                
+	            label="COM_DOORS_FORM_LBL_DOOR_CATALOG_PAGE"
+	            description="COM_DOORS_FORM_DESC_DOOR_CATALOG_PAGE" 
+	                
+	                              
+	            filter="raw"
+	            directory="pdfs/doors/catalog_pages" /> 
+	            
+	       <field name="installation_manual" type="media"
+	                
+	            label="COM_DOORS_FORM_LBL_DOOR_INSTALLATION_MANUAL"
+	            description="COM_DOORS_FORM_DESC_DOOR_INSTALLATION_MANUAL" 
+	                
+	                              
+	            filter="raw"
+	            directory="pdfs/doors/installation_manuals" /> 
+
+	        <field name="sketchup" type="media"
+	                
+	            label="COM_DOORS_FORM_LBL_DOOR_SKETCHUP"
+	            description="COM_DOORS_FORM_DESC_DOOR_SKETCHUP" 
+	                
+	                              
+	            filter="raw"
+	            directory="pdfs/doors/sketchups" />     
+
+	        <field name="warranty" type="media"
+	                
+	            label="COM_DOORS_FORM_LBL_DOOR_WARRANTY"
+	            description="COM_DOORS_FORM_DESC_DOOR_WARRANTY" 
+	                
+	                              
+	            filter="raw"
+	            directory="pdfs/doors/warranties" />
+
+	        <field name="drawings" type="media"
+	                
+	            label="COM_DOORS_FORM_LBL_DOOR_DRAWINGS"
+	            description="COM_DOORS_FORM_DESC_DOOR_DRAWINGS" 
+	                
+	                              
+	            filter="raw"
+	            directory="pdfs/doors/drawings" />          
+
+	        <field name="safety_data" type="media"
+	                
+	            label="COM_DOORS_FORM_LBL_DOOR_SAFETY_DATA"
+	            description="COM_DOORS_FORM_DESC_DOOR_SAFETY_DATA" 
+	                
+	                              
+	            filter="raw"
+	            directory="pdfs/doors/safety_data_sheets" />  
+
+	        <field name="acoustic_report" type="media"
+	                
+	            label="COM_DOORS_FORM_LBL_DOOR_ACOUSTIC_REPORT"
+	            description="COM_DOORS_FORM_DESC_DOOR_ACOUSTIC_REPORT" 
+	                
+	                              
+	            filter="raw"
+	            directory="pdfs/doors/acoustic_reports" />  
+
+
+
+			<field name="video" type="text" size="40" class="inputbox"
+								
+						label="COM_DOORS_FORM_LBL_DOOR_VIDEO"
+						description="COM_DOORS_FORM_DESC_DOOR_VIDEO" 
+								
+								
+								
+						filter="raw"/> 
+						
+			 <field name="photo_150px" type="media"
+								
+						label="COM_DOORS_FORM_LBL_DOOR_PHOTO_150PX"
+						description="COM_DOORS_FORM_DESC_DOOR_PHOTO_150PX" 
+								
+								
+								
+						filter="raw"
+						directory="doors/photos_150px" /> 
+
+			 <field name="photo_300px" type="media"
+								
+						label="COM_DOORS_FORM_LBL_DOOR_PHOTO_300PX"
+						description="COM_DOORS_FORM_DESC_DOOR_PHOTO_300PX" 
+								
+								
+								
+						filter="raw"
+						directory="doors/photos_300px" /> 
+
+			 <field name="photo_1024px" type="media"
+								
+						label="COM_DOORS_FORM_LBL_DOOR_PHOTO_1024PX"
+						description="COM_DOORS_FORM_DESC_DOOR_PHOTO_1024PX" 
+								
+								
+								
+						filter="raw"
+						directory="doors/photos_1024px" /> 
+
+			 <field name="photo_detail1" type="media"
+								
+						label="COM_DOORS_FORM_LBL_DOOR_PHOTO_DETAIL1"
+						description="COM_DOORS_FORM_DESC_DOOR_PHOTO_DETAIL1" 
+								
+								
+								
+						filter="raw"
+						directory="doors/photos_details" /> 
+
+			 <field name="photo_detail2" type="media"
+								
+						label="COM_DOORS_FORM_LBL_DOOR_PHOTO_DETAIL2"
+						description="COM_DOORS_FORM_DESC_DOOR_PHOTO_DETAIL2" 
+								
+								
+								
+						filter="raw"
+						directory="doors/photos_details" /> 
+
+			 <field name="photo_detail3" type="media"
+								
+						label="COM_DOORS_FORM_LBL_DOOR_PHOTO_DETAIL3"
+						description="COM_DOORS_FORM_DESC_DOOR_PHOTO_DETAIL3" 
+								
+								
+								
+						filter="raw"
+						directory="doors/photos_details" /> 
+
+			 <field name="photo_detail4" type="media"
+								
+						label="COM_DOORS_FORM_LBL_DOOR_PHOTO_DETAIL4"
+						description="COM_DOORS_FORM_DESC_DOOR_PHOTO_DETAIL4" 
+								
+								
+								
+						filter="raw"
+						directory="doors/photos_details" /> 
+
+			 <field name="photo_detail5" type="media"
+								
+					label="COM_DOORS_FORM_LBL_DOOR_PHOTO_DETAIL5"
+					description="COM_DOORS_FORM_DESC_DOOR_PHOTO_DETAIL5" 
+							
+							
+							
+					filter="raw"
+					directory="doors/photos_details" /> 
+
+			<field name="portfolio_photo_id1" type="sql" class="inputbox"
+				
+				label="COM_DOORS_FORM_LBL_DOOR_PORTFOLIO_PHOTO_ID1"
+				description="COM_DOORS_FORM_LBL_DOOR_PORTFOLIO_PHOTO_ID1" 
+		
+		
+		
+			query="SELECT 0 AS `id`, '- Please select -' AS `photo` UNION SELECT `id`, `photo` FROM `#__portfolio_photos`" key_field="id" value_field="photo"
+			 /> 
+
+			<field name="portfolio_photo_id2" type="sql" class="inputbox"
+					
+					label="COM_DOORS_FORM_LBL_DOOR_PORTFOLIO_PHOTO_ID2"
+					description="COM_DOORS_FORM_LBL_DOOR_PORTFOLIO_PHOTO_ID2" 
+			
+			
+			
+			query="SELECT 0 AS `id`, '- Please select -' AS `photo` UNION SELECT `id`, `photo` FROM `#__portfolio_photos`" key_field="id" value_field="photo"
+			 />
+
+
+			<field name="music_broadcast" type="list" size="1" default="0" class="inputbox"
+			        
+	            label="COM_DOORS_FORM_LBL_DOOR_MUSIC_BROADCAST"
+	            description="COM_DOORS_FORM_DESC_DOOR_MUSIC_BROADCAST">
+	             
+	        <option value="1">JPUBLISHED</option>
+	        <option value="0">JUNPUBLISHED</option>
+	        
+	        
+	       </field> 
+
+       		<field name="hifi_home_cinema" type="list" size="1" default="0" class="inputbox"
+	        
+	            label="COM_DOORS_FORM_LBL_DOOR_HIFI_HOME_CINEMA"
+	            description="COM_DOORS_FORM_DESC_DOOR_HIFI_HOME_CINEMA">
+	             
+	        <option value="1">JPUBLISHED</option>
+	        <option value="0">JUNPUBLISHED</option>
+	        
+	        
+	       </field> 
+
+	       <field name="building_construction" type="list" size="1" default="0" class="inputbox"
+			        
+	            label="COM_DOORS_FORM_LBL_DOOR_BUILDING_CONSTRUCTION"
+	            description="COM_DOORS_FORM_DESC_DOOR_BUILDING_CONSTRUCTION">
+	             
+	        <option value="1">JPUBLISHED</option>
+	        <option value="0">JUNPUBLISHED</option>
+	        
+	        
+	       </field> 
+
+			<field
+					name="state_featured"
+					type="list"
+					label="COM_DOORS_FORM_LBL_DOOR_STATE_FEATURED"
+					description="COM_DOORS_FORM_DESC_DOOR_STATE_FEATURED"
+					class="inputbox"
+					size="1"
+					default="0">
+					<option value="1">JPUBLISHED</option>
+					<option value="0">JUNPUBLISHED</option>
+			 </field>
+
+			 <field name="created_by" type="createdby" default="" 
+						label="COM_DOORS_FORM_LBL_DOOR_CREATED_BY"
+						description="COM_DOORS_FORM_DESC_DOOR_CREATED_BY"  /> 
+
+			 <field
+				name="state"
+				type="list"
+				label="JSTATUS"
+				description="JFIELD_PUBLISHED_DESC"
+				class="inputbox"
+				size="1"
+				default="1">
+				<option value="1">JPUBLISHED</option>
+				<option value="0">JUNPUBLISHED</option>
+		</field>
+
+	</fieldset>
+
+</form>

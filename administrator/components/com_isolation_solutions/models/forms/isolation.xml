@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+        <field name="id" type="text" default="0" label="COM_ISOLATION_SOLUTIONS_FORM_LBL_ISOLATION_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="name" type="text" size="40" class="inputbox"
+        
+            label="COM_ISOLATION_SOLUTIONS_FORM_LBL_ISOLATION_NAME"
+            description="COM_ISOLATION_SOLUTIONS_FORM_DESC_ISOLATION_NAME" 
+        
+        
+         required="true" 
+        filter="safehtml" /> 
+
+       <field name="ref" type="text" size="40" class="inputbox"
+        
+            label="COM_ISOLATION_SOLUTIONS_FORM_LBL_ISOLATION_REF"
+            description="COM_ISOLATION_SOLUTIONS_FORM_DESC_ISOLATION_REF" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="rw" type="text" size="40" class="inputbox"
+        
+            label="COM_ISOLATION_SOLUTIONS_FORM_LBL_ISOLATION_RW"
+            description="COM_ISOLATION_SOLUTIONS_FORM_DESC_ISOLATION_RW" 
+        
+        
+         required="true" 
+        filter="safehtml" /> 
+
+       <field name="stc" type="text" size="40" class="inputbox"
+        
+            label="COM_ISOLATION_SOLUTIONS_FORM_LBL_ISOLATION_STC"
+            description="COM_ISOLATION_SOLUTIONS_FORM_DESC_ISOLATION_STC" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="price" type="text" size="40" class="inputbox"
+        
+            label="COM_ISOLATION_SOLUTIONS_FORM_LBL_ISOLATION_PRICE"
+            description="COM_ISOLATION_SOLUTIONS_FORM_DESC_ISOLATION_PRICE" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="graph" type="media"
+                
+            label="COM_ISOLATION_SOLUTIONS_FORM_LBL_ISOLATION_GRAPH"
+            description="COM_ISOLATION_SOLUTIONS_FORM_DESC_ISOLATION_GRAPH" 
+                
+                
+                
+            filter="raw"
+            directory="isolation_simulator" /> 
+
+       <field name="solution_image" type="media"
+                
+            label="COM_ISOLATION_SOLUTIONS_FORM_LBL_ISOLATION_SOLUTION_IMAGE"
+            description="COM_ISOLATION_SOLUTIONS_FORM_DESC_ISOLATION_SOLUTION_IMAGE" 
+                
+                
+                
+            filter="raw"
+            directory="isolation_simulator" /> 
+
+         <field name="category_id" type="sql" class="inputbox"
+                
+            label="COM_ISOLATION_SOLUTIONS_FORM_LBL_ISOLATION_CATEGORY_ID"
+            description="COM_ISOLATION_SOLUTIONS_FORM_DESC_ISOLATION_CATEGORY_ID" 
+                
+                
+                
+            query="SELECT 0 AS `id`, '- Please select -' AS `name` UNION SELECT `id`, `name` FROM `#__isolation_solution_categories`" 
+            key_field="id" value_field="name" />
+                
+
+        <field name="solution_data_sheet" type="media"
+                
+            label="COM_ISOLATION_SOLUTIONS_FORM_LBL_ISOLATION_SOLUTION_DATA_SHEET"
+            description="COM_ISOLATION_SOLUTIONS_FORM_DESC_ISOLATION_SOLUTION_DATA_SHEET"
+                
+                              
+            filter="raw"
+            directory="pdfs/isolation_solutions" /> 
+
+
+        <field name="technical_file1" type="media"
+                
+            label="COM_ISOLATION_SOLUTIONS_FORM_LBL_ISOLATION_TECHNICAL_FILE1"
+            description="COM_ISOLATION_SOLUTIONS_FORM_DESC_ISOLATION_TECHNICAL_FILE1" 
+                
+                              
+            filter="raw"
+            directory="pdfs" /> 
+
+         <field name="technical_file2" type="media"
+                
+            label="COM_ISOLATION_SOLUTIONS_FORM_LBL_ISOLATION_TECHNICAL_FILE2"
+            description="COM_ISOLATION_SOLUTIONS_FORM_DESC_ISOLATION_TECHNICAL_FILE2" 
+                
+                              
+            filter="raw"
+            directory="pdfs" /> 
+
+         <field name="technical_file3" type="media"
+                
+            label="COM_ISOLATION_SOLUTIONS_FORM_LBL_ISOLATION_TECHNICAL_FILE3"
+            description="COM_ISOLATION_SOLUTIONS_FORM_DESC_ISOLATION_TECHNICAL_FILE3" 
+                
+                              
+            filter="raw"
+            directory="pdfs" /> 
+
+         <field name="technical_file4" type="media"
+                
+            label="COM_ISOLATION_SOLUTIONS_FORM_LBL_ISOLATION_TECHNICAL_FILE4"
+            description="COM_ISOLATION_SOLUTIONS_FORM_DESC_ISOLATION_TECHNICAL_FILE4" 
+                
+                              
+            filter="raw"
+            directory="pdfs" /> 
+
+         <field name="technical_file5" type="media"
+                
+            label="COM_ISOLATION_SOLUTIONS_FORM_LBL_ISOLATION_TECHNICAL_FILE5"
+            description="COM_ISOLATION_SOLUTIONS_FORM_DESC_ISOLATION_TECHNICAL_FILE5" 
+                
+                              
+            filter="raw"
+            directory="pdfs" /> 
+
+
+        <field name="antivibratic_id1" type="sql" class="inputbox"
+        
+            label="COM_ISOLATION_SOLUTIONS_FORM_LBL_ISOLATION_ANTIVIBRATIC_ID1"
+            description="COM_ISOLATION_SOLUTIONS_FORM_DESC_ISOLATION_ANTIVIBRATIC_ID1" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `name` UNION SELECT `id`, `name` FROM `#__antivibratics`" key_field="id" value_field="name"
+         />
+
+        <field name="antivibratic_id2" type="sql" class="inputbox"
+        
+            label="COM_ISOLATION_SOLUTIONS_FORM_LBL_ISOLATION_ANTIVIBRATIC_ID2"
+            description="COM_ISOLATION_SOLUTIONS_FORM_DESC_ISOLATION_ANTIVIBRATIC_ID2" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `name` UNION SELECT `id`, `name` FROM `#__antivibratics`" key_field="id" value_field="name"
+         />
+
+       <field name="antivibratic_id3" type="sql" class="inputbox"
+        
+            label="COM_ISOLATION_SOLUTIONS_FORM_LBL_ISOLATION_ANTIVIBRATIC_ID3"
+            description="COM_ISOLATION_SOLUTIONS_FORM_DESC_ISOLATION_ANTIVIBRATIC_ID3" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `name` UNION SELECT `id`, `name` FROM `#__antivibratics`" key_field="id" value_field="name"
+         />
+
+        <field name="antivibratic_id4" type="sql" class="inputbox"
+        
+            label="COM_ISOLATION_SOLUTIONS_FORM_LBL_ISOLATION_ANTIVIBRATIC_ID4"
+            description="COM_ISOLATION_SOLUTIONS_FORM_DESC_ISOLATION_ANTIVIBRATIC_ID4" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `name` UNION SELECT `id`, `name` FROM `#__antivibratics`" key_field="id" value_field="name"
+         />
+
+        <field name="antivibratic_id5" type="sql" class="inputbox"
+        
+            label="COM_ISOLATION_SOLUTIONS_FORM_LBL_ISOLATION_ANTIVIBRATIC_ID5"
+            description="COM_ISOLATION_SOLUTIONS_FORM_DESC_ISOLATION_ANTIVIBRATIC_ID5" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `name` UNION SELECT `id`, `name` FROM `#__antivibratics`" key_field="id" value_field="name"
+         />
+
+        <field name="blanket_id1" type="sql" class="inputbox"
+        
+            label="COM_ISOLATION_SOLUTIONS_FORM_LBL_ISOLATION_BLANKET_ID1"
+            description="COM_ISOLATION_SOLUTIONS_FORM_DESC_ISOLATION_BLANKET_ID1" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `name` UNION SELECT `id`, `name` FROM `#__blankets`" key_field="id" value_field="name"
+         />
+        
+        <field name="blanket_id2" type="sql" class="inputbox"
+        
+            label="COM_ISOLATION_SOLUTIONS_FORM_LBL_ISOLATION_BLANKET_ID2"
+            description="COM_ISOLATION_SOLUTIONS_FORM_DESC_ISOLATION_BLANKET_ID2" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `name` UNION SELECT `id`, `name` FROM `#__blankets`" key_field="id" value_field="name"
+         />
+
+        <field name="blanket_id3" type="sql" class="inputbox"
+        
+            label="COM_ISOLATION_SOLUTIONS_FORM_LBL_ISOLATION_BLANKET_ID3"
+            description="COM_ISOLATION_SOLUTIONS_FORM_DESC_ISOLATION_BLANKET_ID3" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `name` UNION SELECT `id`, `name` FROM `#__blankets`" key_field="id" value_field="name"
+         />
+
+        <field name="blanket_id4" type="sql" class="inputbox"
+        
+            label="COM_ISOLATION_SOLUTIONS_FORM_LBL_ISOLATION_BLANKET_ID4"
+            description="COM_ISOLATION_SOLUTIONS_FORM_DESC_ISOLATION_BLANKET_ID4" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `name` UNION SELECT `id`, `name` FROM `#__blankets`" key_field="id" value_field="name"
+         />
+
+        <field name="blanket_id5" type="sql" class="inputbox"
+        
+            label="COM_ISOLATION_SOLUTIONS_FORM_LBL_ISOLATION_BLANKET_ID5"
+            description="COM_ISOLATION_SOLUTIONS_FORM_DESC_ISOLATION_BLANKET_ID5" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `name` UNION SELECT `id`, `name` FROM `#__blankets`" key_field="id" value_field="name"
+         />
+
+
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_ISOLATION_SOLUTIONS_FORM_LBL_ISOLATION_CREATED_BY"
+            description="COM_ISOLATION_SOLUTIONS_FORM_DESC_ISOLATION_CREATED_BY"  /> 
+
+         <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="1">
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+    </field>
+
+	</fieldset>
+
+</form>

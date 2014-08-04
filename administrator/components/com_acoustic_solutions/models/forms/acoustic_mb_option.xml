@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+      <field name="id" type="text" default="0" label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_MB_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+    <field name="name" type="text" size="40" class="inputbox"
+        
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_MB_NAME"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_MB_NAME" 
+        
+        
+         required="true" 
+        filter="safehtml" /> 
+
+   <field name="ref" type="text" size="40" class="inputbox"
+    
+        label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_MB_REF"
+        description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_MB_REF" 
+    
+    
+    
+    filter="safehtml" />    
+
+    <field name="icon" type="media"
+                
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_MB_ICON"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_MB_ICON" 
+                
+                
+                
+        filter="raw"
+        directory="acoustic_simulator/premium_options/icons" /> 
+
+    <field name="image" type="media"
+                
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_MB_IMAGE"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_MB_IMAGE" 
+                
+                
+                
+        filter="raw"
+        directory="acoustic_simulator/premium_options/photos" /> 
+    
+    <field name="solution_id" type="sql" class="inputbox"
+        
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_MB_OPTIONS_SOLUTION_ID"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_MB_OPTIONS_SOLUTION_ID" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `ref` UNION SELECT `id`, `ref` FROM `#__acoustic_solutions_mb`" key_field="id" value_field="ref"
+         />   
+
+    <field name="panel_id1" type="sql" class="inputbox"
+        
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_MB_PANEL_ID1"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_MB_PANEL_ID1" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `name` UNION SELECT `id`, `name` FROM `#__panels`" key_field="id" value_field="name"
+         />
+
+    <field name="panel_id2" type="sql" class="inputbox"
+        
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_MB_PANEL_ID2"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_MB_PANEL_ID2" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `name` UNION SELECT `id`, `name` FROM `#__panels`" key_field="id" value_field="name"
+         />     
+
+   <field name="created_by" type="createdby" default="" 
+        label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_MB_CREATED_BY"
+        description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_MB_CREATED_BY"  /> 
+
+     <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="1">
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+    </field> 
+
+	</fieldset>
+
+</form>

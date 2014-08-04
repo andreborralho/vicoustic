@@ -1,0 +1,1031 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+       <field name="id" type="text" default="0" label="COM_PANELS_FORM_LBL_PANEL_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="name" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_NAME"
+            description="COM_PANELS_FORM_DESC_PANEL_NAME" 
+        
+        
+         required="true" 
+        filter="safehtml" /> 
+
+       <field name="ref" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_REF"
+            description="COM_PANELS_FORM_DESC_PANEL_REF" 
+        
+        
+         required="true" 
+        filter="safehtml" /> 
+
+       <field name="ean13" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_EAN13"
+            description="COM_PANELS_FORM_DESC_PANEL_EAN13" 
+        
+        
+         required="true" 
+        filter="safehtml" /> 
+        
+        <field name="upc" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_UPC"
+            description="COM_PANELS_FORM_DESC_PANEL_UPC" 
+        
+        
+        filter="safehtml" /> 
+
+       <field name="hs_code" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_HS_CODE"
+            description="COM_PANELS_FORM_DESC_PANEL_HS_CODE" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="family" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_FAMILY"
+            description="COM_PANELS_FORM_DESC_PANEL_FAMILY" 
+        
+        
+         required="true" 
+        filter="safehtml" /> 
+
+       <field name="length" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_LENGTH"
+            description="COM_PANELS_FORM_DESC_PANEL_LENGTH" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="width" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_WIDTH"
+            description="COM_PANELS_FORM_DESC_PANEL_WIDTH" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="diameter" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_DIAMETER"
+            description="COM_PANELS_FORM_DESC_PANEL_DIAMETER" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="thickness" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_THICKNESS"
+            description="COM_PANELS_FORM_DESC_PANEL_THICKNESS" 
+        
+        
+        
+        filter="safehtml" /> 
+       
+       <field name="weight" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_WEIGHT"
+            description="COM_PANELS_FORM_DESC_PANEL_WEIGHT" 
+        
+        
+        
+        filter="safehtml" /> 
+        
+        <field name="load_weight" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_LOAD_WEIGHT"
+            description="COM_PANELS_FORM_DESC_PANEL_LOAD_WEIGHT" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="density" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_DENSITY"
+            description="COM_PANELS_FORM_DESC_PANEL_DENSITY" 
+        
+        
+        
+        filter="safehtml" />       
+       
+       <field name="absorption_class" type="list"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_ABSORPTION_CLASS"
+            description="COM_PANELS_FORM_DESC_PANEL_ABSORPTION_CLASS" 
+            default=""    
+                
+                
+            filter="raw"
+            multiple="false">
+            	<option value="">Please select</option>
+                <option value="a">A</option>
+                <option value="b">B</option>
+                <option value="c">C</option>
+                <option value="d">D</option>
+                <option value="e">E</option>
+                <option value="f">F</option>
+        </field> 
+           
+       <field name="aw" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_AW"
+            description="COM_PANELS_FORM_DESC_PANEL_AW" 
+               
+        
+        filter="safehtml" /> 
+        
+        <field name="nrc" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_NRC"
+            description="COM_PANELS_FORM_DESC_PANEL_NRC" 
+        
+        
+        
+        filter="safehtml" />                 
+
+       
+        <field name="absorption_class_2" type="list"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_ABSORPTION_CLASS_2"
+            description="COM_PANELS_FORM_DESC_PANEL_ABSORPTION_CLASS_2" 
+            default=""    
+                
+                
+            filter="raw"
+            multiple="false">
+            	<option value="">Please select</option>
+                <option value="a">A</option>
+                <option value="b">B</option>
+                <option value="c">C</option>
+                <option value="d">D</option>
+                <option value="e">E</option>
+                <option value="f">F</option>
+        </field> 
+        
+        <field name="aw_2" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_AW_2"
+            description="COM_PANELS_FORM_DESC_PANEL_AW_2" 
+        
+        
+        
+        filter="safehtml" /> 
+        
+        <field name="nrc_2" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_NRC_2"
+            description="COM_PANELS_FORM_DESC_PANEL_NRC_2" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="light_reflection" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_LIGHT_REFLECTION"
+            description="COM_PANELS_FORM_DESC_PANEL_LIGHT_REFLECTION" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="humidity_resistance" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_HUMIDITY_RESISTANCE"
+            description="COM_PANELS_FORM_DESC_PANEL_HUMIDITY_RESISTANCE" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="thermal_conductivity" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_THERMAL_CONDUCTIVITY"
+            description="COM_PANELS_FORM_DESC_PANEL_THERMAL_CONDUCTIVITY" 
+        
+        
+        
+        filter="safehtml" /> 
+        
+        <field name="absorption_frequency" type="radio"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_ABSORPTION_FREQUENCY"
+            description="COM_PANELS_FORM_DESC_PANEL_ABSORPTION_FREQUENCY" 
+                
+                
+            required="true" 
+            default=""
+            filter="raw">            	
+                <option value="low">Low Frequencies</option>
+                <option value="medium">Medium Frequencies</option>
+                <option value="high">High Frequencies</option>
+                <option value="flat">Full Frequencies</option>
+        </field> 
+        
+        <field name="fire_class_en" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_FIRE_CLASS_EN"
+            description="COM_PANELS_FORM_DESC_PANEL_FIRE_CLASS_EN" 
+        
+        
+        
+        filter="safehtml" /> 
+
+      
+       <field name="fire_class_din" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_FIRE_CLASS_DIN"
+            description="COM_PANELS_FORM_DESC_PANEL_FIRE_CLASS_DIN" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="fire_class_nf_p" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_FIRE_CLASS_NF_P"
+            description="COM_PANELS_FORM_DESC_PANEL_FIRE_CLASS_NF_P" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="fire_class_uni" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_FIRE_CLASS_UNI"
+            description="COM_PANELS_FORM_DESC_PANEL_FIRE_CLASS_UNI" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="fire_class_bs" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_FIRE_CLASS_BS"
+            description="COM_PANELS_FORM_DESC_PANEL_FIRE_CLASS_BS" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="humidity_class" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_HUMIDITY_CLASS"
+            description="COM_PANELS_FORM_DESC_PANEL_HUMIDITY_CLASS" 
+        
+        
+        
+        filter="safehtml" />
+                
+
+       <field name="functionality" type="radio"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_FUNCTIONALITY"
+            description="COM_PANELS_FORM_DESC_PANEL_FUNCTIONALITY" 
+                
+                
+            required="true" 
+            filter="raw">
+                <option value="absorption">Absorption</option>
+                <option value="diffusion">Diffusion</option>
+				<option value="basstrap">Basstrap</option>
+                <option value="hybrid">Hybrid</option>
+        </field> 
+        
+        <field name="installation_wall" type="checkbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_INSTALLATION_WALL"
+            description="COM_PANELS_FORM_DESC_PANEL_INSTALLATION_WALL" 
+        
+        
+        
+        value="1"
+        filter="raw" /> 
+        
+        <field name="installation_ceiling" type="checkbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_INSTALLATION_CEILING"
+            description="COM_PANELS_FORM_DESC_PANEL_INSTALLATION_CEILING" 
+        
+        
+        
+        value="1"
+        filter="raw" /> 
+        
+        <field name="installation_vas" type="checkbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_INSTALLATION_VERTICAL_ACOUSTIC_SYSTEM"
+            description="COM_PANELS_FORM_DESC_PANEL_INSTALLATION_VERTICAL_ACOUSTIC_SYSTEM" 
+        
+        
+        
+        value="1"
+        filter="raw" /> 
+        
+        <field name="installation_floor" type="checkbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_INSTALLATION_FLOOR"
+            description="COM_PANELS_FORM_DESC_PANEL_INSTALLATION_FLOOR" 
+        
+        
+        
+        value="1"
+        filter="raw" /> 
+        
+        <field name="installation_corner" type="checkbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_INSTALLATION_CORNER"
+            description="COM_PANELS_FORM_DESC_PANEL_INSTALLATION_CORNER" 
+        
+        
+        
+        value="1"
+        filter="raw" /> 
+        
+        <field name="fixing_type_standard15" type="checkbox"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_FIXING_TYPE_STANDARD15"
+            description="COM_PANELS_FORM_DESC_PANEL_FIXING_TYPE_STANDARD15" 
+                
+                
+                
+            value="1"
+            filter="raw" /> 
+
+       <field name="fixing_type_standard24" type="checkbox"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_FIXING_TYPE_STANDARD24"
+            description="COM_PANELS_FORM_DESC_PANEL_FIXING_TYPE_STANDARD24" 
+                
+                
+                
+            value="1"
+            filter="safehtml" /> 
+
+       <field name="fixing_type_clipin" type="checkbox"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_FIXING_TYPE_CLIPIN"
+            description="COM_PANELS_FORM_DESC_PANEL_FIXING_TYPE_CLIPIN" 
+                
+                
+                
+            value="1"
+            filter="raw" /> 
+
+       <field name="fixing_type_screwed" type="checkbox"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_FIXING_TYPE_SCREWED"
+            description="COM_PANELS_FORM_DESC_PANEL_FIXING_TYPE_SCREWED" 
+                
+                
+                
+            value="1"
+            filter="raw" /> 
+
+       <field name="fixing_type_glued" type="checkbox"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_FIXING_TYPE_GLUED"
+            description="COM_PANELS_FORM_DESC_PANEL_FIXING_TYPE_GLUED" 
+                
+                
+                
+            value="1"
+            filter="raw" /> 
+            
+        <field name="fixing_type_adhesive" type="checkbox"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_FIXING_TYPE_ADHESIVE"
+            description="COM_PANELS_FORM_DESC_PANEL_FIXING_TYPE_ADHESIVE" 
+                
+                
+                
+            value="1"
+            filter="raw" /> 
+        
+		<field name="wood" type="checkbox"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_WOOD"
+            description="COM_PANELS_FORM_DESC_PANEL_WOOD" 
+                
+                
+                
+            value="1"
+            filter="raw" /> 
+            
+		<field name="metal" type="checkbox"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_METAL"
+            description="COM_PANELS_FORM_DESC_PANEL_METAL" 
+                
+                
+                
+            value="1"
+            filter="raw" /> 
+            
+		<field name="fabric" type="checkbox"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_FABRIC"
+            description="COM_PANELS_FORM_DESC_PANEL_FABRIC" 
+                
+                
+                
+            value="1"
+            filter="raw" /> 
+            
+        <field name="foam" type="checkbox"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_FOAM"
+            description="COM_PANELS_FORM_DESC_PANEL_FOAM" 
+                
+                
+                
+            value="1"
+            filter="raw" /> 
+
+		<field name="polystyrene" type="checkbox"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_POLYSTYRENE"
+            description="COM_PANELS_FORM_DESC_PANEL_POLYSTYRENE" 
+                
+                
+                
+            value="1"
+            filter="raw" /> 
+
+		<field name="wood_color" type="list"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_WOOD_COLOR"
+            description="COM_PANELS_FORM_DESC_PANEL_WOOD_COLOR" 
+            default=""      
+                
+                
+            filter="raw"
+            multiple="false">
+            	<option value="">Please select</option>
+                <option value="cherry">Wood - Cherry</option>
+                <option value="light brown">Wood - Light Brown</option>
+                <option value="nordik">Wood - Nordik</option>
+                <option value="black">Wood - Black</option>
+                <option value="white">Wood - White</option>
+                <option value="wenge">Wood - Wenge</option>
+				<option value="melamine cherry">Wood - Melamine Cherry</option>
+                <option value="melamine light brown">Wood - Melamine Light Brown</option>
+				<option value="melamine nordik">Wood - Melamine Nordik</option>
+				<option value="melamine wenge">Wood - Melamine Wenge</option>
+				<option value="melamine ash wood">Wood - Melamine Ash Wood</option>
+				<option value="melamine walnut">Wood - Melamine Walnut</option>				                
+        </field> 
+        
+        <field name="wood_type" type="list"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_WOOD_TYPE"
+            description="COM_PANELS_FORM_DESC_PANEL_WOOD_TYPE" 
+            default=""    
+                
+                
+            filter="raw"
+            multiple="false">
+           		<option value="">Please select</option>
+                <option value="mdf laminated">MDF Laminated</option>
+                <option value="mdf natural">MDF Natural</option>
+                <option value="mdf painted">MDF Painted</option>
+                <option value="solid">Solid</option>
+				<option value="melamine">Melamine</option>
+        </field> 
+        
+        <field name="metal_color" type="text" size="40" class="inputbox"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_METAL_COLOR"
+            description="COM_PANELS_FORM_DESC_PANEL_METAL_COLOR" 
+                                            
+        filter="safehtml" /> 
+        
+       <field name="fabric_color" type="list"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_FABRIC_COLOR"
+            description="COM_PANELS_FORM_DESC_PANEL_FABRIC_COLOR" 
+                                
+            default=""    
+            filter="raw"
+            multiple="false">
+            	<option value="">Please select</option>
+                <option value="black">Ref 04 - Black</option>
+                <option value="grey">Ref 22 - Grey</option>
+                <option value="bordeaux">Ref 29 - Bordeaux</option>
+                <option value="beige">Ref 82 - Beige</option>
+                <option value="natural white">Ref 87 - Natural White</option>
+                <option value="brown">Ref 92 - Brown</option>
+                <option value="blue">Ref 99 - Blue</option>
+                <option value="orange">Ref 116 - Orange</option>
+        </field> 
+
+       <field name="fabric_type" type="list"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_FABRIC_TYPE"
+            description="COM_PANELS_FORM_DESC_PANEL_FABRIC_TYPE" 
+            default=""    
+                
+                
+            filter="raw"
+            multiple="false">
+            	<option value="">Please select</option>
+                <option value="fiberglass veil">FiberGlass Veil</option>
+                <option value="microsuede">Microsuede</option>                
+        </field>       
+
+       <field name="foam_type" type="list"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_FOAM_TYPE"
+            description="COM_PANELS_FORM_DESC_PANEL_FOAM_TYPE" 
+            default=""    
+                
+                
+            filter="raw"
+            multiple="false">
+           		<option value="">Please select</option>
+                <option value="m1">M1</option>
+                <option value="recycled">Recycled</option>
+                <option value="tech">Tech</option>
+                <option value="quash">Quash</option>
+				<option value="rockwool">Rockwool</option>
+        </field> 
+
+       <field name="polystyrene_color" type="list"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_POLYSTYRENE_COLOR"
+            description="COM_PANELS_FORM_DESC_PANEL_POLYSTYRENE_COLOR" 
+                
+                
+                
+            default=""
+            filter="raw"
+            multiple="false">
+           		<option value="">Please select</option>
+                <option value="white">White</option>
+                <option value="black">Black</option>
+                <option value="grey">Grey</option>
+        </field> 
+
+       <field name="polystyrene_density" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_POLYSTYRENE_DENSITY"
+            description="COM_PANELS_FORM_DESC_PANEL_POLYSTYRENE_DENSITY" 
+        
+        
+        
+        filter="safehtml" /> 
+            
+
+       <field name="edge_leveled" type="checkbox"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_EDGE_LEVELED"
+            description="COM_PANELS_FORM_DESC_PANEL_EDGE_LEVELED" 
+                
+                
+                
+            value="1"
+            filter="raw" /> 
+
+       <field name="edge_angled" type="checkbox"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_EDGE_ANGLED"
+            description="COM_PANELS_FORM_DESC_PANEL_EDGE_ANGLED" 
+                
+                
+                
+            value="1"
+            filter="raw" /> 
+
+       <field name="scratch_resistance" type="checkbox"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_SCRATCH_RESISTANCE"
+            description="COM_PANELS_FORM_DESC_PANEL_SCRATCH_RESISTANCE" 
+                
+                
+                
+            value="1"
+            filter="raw" /> 
+
+       <field name="washable" type="checkbox"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_WASHABLE"
+            description="COM_PANELS_FORM_DESC_PANEL_WASHABLE" 
+                
+                
+                
+            value="1"
+            filter="raw" /> 
+
+       <field name="recycle_coefficient" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_RECYCLE_COEFFICIENT"
+            description="COM_PANELS_FORM_DESC_PANEL_RECYCLE_COEFFICIENT" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="units_per_box" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_UNITS_PER_BOX"
+            description="COM_PANELS_FORM_DESC_PANEL_UNITS_PER_BOX" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="box_length" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_BOX_LENGTH"
+            description="COM_PANELS_FORM_DESC_PANEL_BOX_LENGTH" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="box_width" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_BOX_WIDTH"
+            description="COM_PANELS_FORM_DESC_PANEL_BOX_WIDTH" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="box_height" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_BOX_HEIGHT"
+            description="COM_PANELS_FORM_DESC_PANEL_BOX_HEIGHT"
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="box_weight" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_BOX_WEIGHT"
+            description="COM_PANELS_FORM_DESC_PANEL_BOX_WEIGHT" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="box_volume" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_BOX_VOLUME"
+            description="COM_PANELS_FORM_DESC_PANEL_BOX_VOLUME" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="box_msrp" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_BOX_MSRP"
+            description="COM_PANELS_FORM_DESC_PANEL_BOX_MSRP" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="mastercarton_box_length" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_MASTERCARTON_BOX_LENGTH"
+            description="COM_PANELS_FORM_DESC_PANEL_MASTERCARTON_BOX_LENGTH" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="mastercarton_box_width" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_MASTERCARTON_BOX_WIDTH"
+            description="COM_PANELS_FORM_DESC_PANEL_MASTERCARTON_BOX_WIDTH" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="mastercarton_box_height" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_MASTERCARTON_BOX_HEIGHT"
+            description="COM_PANELS_FORM_DESC_PANEL_MASTERCARTON_BOX_HEIGHT" 
+        
+        
+        
+        filter="safehtml" />
+        
+        <field name="mastercarton_box_msrp" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_MASTERCARTON_BOX_MSRP"
+            description="COM_PANELS_FORM_DESC_PANEL_MASTERCARTON_BOX_MSRP" 
+        
+        
+        
+        filter="safehtml" />
+        
+        <field name="description1" type="editor"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_DESCRIPTION1"
+            description="COM_PANELS_FORM_LBL_PANEL_DESCRIPTION1" 
+                
+                
+                
+            cols="100"
+            rows="10"
+            filter="raw" /> 
+
+       <field name="description2" type="editor"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_DESCRIPTION2"
+            description="COM_PANELS_FORM_LBL_PANEL_DESCRIPTION2" 
+                
+                
+                
+            cols="100"
+            rows="15"
+            filter="raw" /> 
+        
+
+
+       <field name="catalog_page" type="media"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_CATALOG_PAGE"
+            description="COM_PANELS_FORM_DESC_PANEL_CATALOG_PAGE" 
+                
+                              
+            filter="raw"
+            directory="pdfs/panels/catalog_pages" /> 
+            
+       <field name="installation_manual" type="media"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_INSTALLATION_MANUAL"
+            description="COM_PANELS_FORM_DESC_PANEL_INSTALLATION_MANUAL" 
+                
+                              
+            filter="raw"
+            directory="pdfs/panels/installation_manuals" /> 
+
+        <field name="sketchup" type="media"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_SKETCHUP"
+            description="COM_PANELS_FORM_DESC_PANEL_SKETCHUP" 
+                
+                              
+            filter="raw"
+            directory="pdfs/panels/sketchup" />     
+
+        <field name="warranty" type="media"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_WARRANTY"
+            description="COM_PANELS_FORM_DESC_PANEL_WARRANTY" 
+                
+                              
+            filter="raw"
+            directory="pdfs/panels/warranties" />
+
+        <field name="drawings" type="media"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_DRAWINGS"
+            description="COM_PANELS_FORM_DESC_PANEL_DRAWINGS" 
+                
+                              
+            filter="raw"
+            directory="pdfs/panels/drawings" />          
+
+        <field name="safety_data" type="media"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_SAFETY_DATA"
+            description="COM_PANELS_FORM_DESC_PANEL_SAFETY_DATA" 
+                
+                              
+            filter="raw"
+            directory="pdfs/panels/safety_data_sheets" />  
+
+        <field name="acoustic_report" type="media"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_ACOUSTIC_REPORT"
+            description="COM_PANELS_FORM_DESC_PANEL_ACOUSTIC_REPORT" 
+                
+                              
+            filter="raw"
+            directory="pdfs/panels/acoustic_reports" />  
+
+
+
+	   <field name="video" type="text" size="80"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_VIDEO"
+            description="COM_PANELS_FORM_LBL_PANEL_VIDEO" 
+                
+                                
+           filter="raw"/>
+            
+       <field name="photo_row_material" type="media"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_PHOTO_ROW_MATERIAL"
+            description="COM_PANELS_FORM_DESC_PANEL_PHOTO_ROW_MATERIAL" 
+                
+                
+                
+            filter="raw"
+            directory="panels/photos_row_materials" /> 
+
+       <field name="photo_150px" type="media"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_PHOTO_150PX"
+            description="COM_PANELS_FORM_DESC_PANEL_PHOTO_150PX" 
+                
+                
+                
+            filter="raw"
+            directory="panels/photos_150px" /> 
+
+       <field name="photo_300px" type="media"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_PHOTO_300PX"
+            description="COM_PANELS_FORM_DESC_PANEL_PHOTO_300PX" 
+                
+                
+                
+            filter="raw"
+            directory="panels/photos_300px" /> 
+
+       <field name="photo_1024px" type="media"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_PHOTO_1024PX"
+            description="COM_PANELS_FORM_DESC_PANEL_PHOTO_1024PX" 
+                
+                
+                
+            filter="raw"
+            directory="panels/photos_1024px" /> 
+
+       <field name="photo_detail1" type="media"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_PHOTO_DETAIL1"
+            description="COM_PANELS_FORM_DESC_PANEL_PHOTO_DETAIL1" 
+                
+                
+                
+            filter="raw"
+            directory="panels/photos_details" /> 
+
+       <field name="photo_detail2" type="media"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_PHOTO_DETAIL2"
+            description="COM_PANELS_FORM_DESC_PANEL_PHOTO_DETAIL2" 
+                
+                
+                
+            filter="raw"
+            directory="panels/photos_details" /> 
+
+       <field name="photo_detail3" type="media"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_PHOTO_DETAIL3"
+            description="COM_PANELS_FORM_DESC_PANEL_PHOTO_DETAIL3" 
+                
+                
+                
+            filter="raw"
+            directory="panels/photos_details" /> 
+
+       <field name="photo_detail4" type="media"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_PHOTO_DETAIL4"
+            description="COM_PANELS_FORM_DESC_PANEL_PHOTO_DETAIL4" 
+                
+                
+                
+            filter="raw"
+            directory="panels/photos_details" /> 
+
+       <field name="photo_detail5" type="media"
+                
+            label="COM_PANELS_FORM_LBL_PANEL_PHOTO_DETAIL5"
+            description="COM_PANELS_FORM_DESC_PANEL_PHOTO_DETAIL5" 
+                
+                
+                
+            filter="raw"
+            directory="panels/photos_details" />       
+            
+        <field name="portfolio_photo_id1" type="sql" class="inputbox"
+        
+            label="COM_PANELS_PANELS_PORTFOLIO_PHOTO_ID1"
+            description="COM_PANELS_PANELS_PORTFOLIO_PHOTO_ID1" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `photo` UNION SELECT `id`, `photo` FROM `#__portfolio_photos`" key_field="id" value_field="photo"
+         /> 
+
+		<field name="portfolio_photo_id2" type="sql" class="inputbox"
+        
+            label="COM_PANELS_PANELS_PORTFOLIO_PHOTO_ID2"
+            description="COM_PANELS_PANELS_PORTFOLIO_PHOTO_ID2" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `photo` UNION SELECT `id`, `photo` FROM `#__portfolio_photos`" key_field="id" value_field="photo"
+         /> 
+		
+		<field name="portfolio_photo_id3" type="sql" class="inputbox"
+        
+            label="COM_PANELS_PANELS_PORTFOLIO_PHOTO_ID3"
+            description="COM_PANELS_PANELS_PORTFOLIO_PHOTO_ID3" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `photo` UNION SELECT `id`, `photo` FROM `#__portfolio_photos`" key_field="id" value_field="photo"
+         />
+
+
+       <field name="music_broadcast" type="list" size="1" default="0" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_MUSIC_BROADCAST"
+            description="COM_PANELS_FORM_DESC_PANEL_MUSIC_BROADCAST">
+             
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+        
+        
+       </field> 
+
+       <field name="hifi_home_cinema" type="list" size="1" default="0" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_HIFI_HOME_CINEMA"
+            description="COM_PANELS_FORM_DESC_PANEL_HIFI_HOME_CINEMA">
+             
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+        
+        
+       </field> 
+
+       <field name="building_construction" type="list" size="1" default="0" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_BUILDING_CONSTRUCTION"
+            description="COM_PANELS_FORM_DESC_PANEL_BUILDING_CONSTRUCTION">
+             
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+        
+        
+       </field>  
+
+       <field name="graph_id" type="sql" class="inputbox"
+        
+            label="COM_PANELS_LEGEND_PANEL_GRAPH"
+            description="COM_PANELS_FORM_DESC_PANEL_GRAPH_ID" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `label` UNION SELECT `id`, `label` FROM `#__panel_graphs`" key_field="id" value_field="label"
+         /> 
+         
+       <field name="state_featured" type="list" size="1" default="0" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_STATE_FEATURED"
+            description="COM_PANELS_FORM_DESC_PANEL_STATE_FEATURED">
+             
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+        
+        
+       </field> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_PANELS_FORM_LBL_PANEL_CREATED_BY"
+            description="COM_PANELS_FORM_DESC_PANEL_CREATED_BY"  /> 
+
+       <field
+	        name="state"
+	        type="list"
+	        label="JSTATUS"
+	        description="JFIELD_PUBLISHED_DESC"
+	        class="inputbox"
+	        size="1"
+	        default="1">
+	        <option value="1">JPUBLISHED</option>
+	        <option value="0">JUNPUBLISHED</option>
+    	</field>
+
+	</fieldset>
+
+</form>

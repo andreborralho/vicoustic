@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="id" type="text" default="0" label="COM_DISTRIBUTORS_FORM_LBL_DISTRIBUTOR_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="name" type="text" size="40" class="inputbox"
+        
+            label="COM_DISTRIBUTORS_FORM_LBL_DISTRIBUTOR_NAME"
+            description="COM_DISTRIBUTORS_FORM_DESC_DISTRIBUTOR_NAME" 
+        
+        
+         required="true" 
+        filter="safehtml" /> 
+
+       <field name="address" type="text" size="40" class="inputbox"
+        
+            label="COM_DISTRIBUTORS_FORM_LBL_DISTRIBUTOR_ADDRESS"
+            description="COM_DISTRIBUTORS_FORM_DESC_DISTRIBUTOR_ADDRESS" 
+        
+        
+         required="true" 
+        filter="safehtml" /> 
+
+       <field name="zippostalcode" type="text" size="40" class="inputbox"
+        
+            label="COM_DISTRIBUTORS_FORM_LBL_DISTRIBUTOR_ZIPPOSTALCODE"
+            description="COM_DISTRIBUTORS_FORM_DESC_DISTRIBUTOR_ZIPPOSTALCODE" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="city" type="text" size="40" class="inputbox"
+        
+            label="COM_DISTRIBUTORS_FORM_LBL_DISTRIBUTOR_CITY"
+            description="COM_DISTRIBUTORS_FORM_DESC_DISTRIBUTOR_CITY" 
+        
+        
+         required="true" 
+        filter="safehtml" /> 
+
+       <field name="telephone" type="text" size="40" class="inputbox"
+        
+            label="COM_DISTRIBUTORS_FORM_LBL_DISTRIBUTOR_TELEPHONE"
+            description="COM_DISTRIBUTORS_FORM_DESC_DISTRIBUTOR_TELEPHONE" 
+        
+         validate="tel" 
+        
+        filter="safehtml" /> 
+
+       <field name="country" type="text" size="40" class="inputbox"
+        
+            label="COM_DISTRIBUTORS_FORM_LBL_DISTRIBUTOR_COUNTRY"
+            description="COM_DISTRIBUTORS_FORM_DESC_DISTRIBUTOR_COUNTRY" 
+        
+        
+         required="true" 
+        filter="safehtml" /> 
+
+       <field name="email" type="text" size="40" class="inputbox"
+        
+            label="COM_DISTRIBUTORS_FORM_LBL_DISTRIBUTOR_EMAIL"
+            description="COM_DISTRIBUTORS_FORM_DESC_DISTRIBUTOR_EMAIL" 
+        
+         validate="email" 
+        
+        filter="safehtml" /> 
+
+       <field name="website" type="text" size="40" class="inputbox"
+        
+            label="COM_DISTRIBUTORS_FORM_LBL_DISTRIBUTOR_WEBSITE"
+            description="COM_DISTRIBUTORS_FORM_DESC_DISTRIBUTOR_WEBSITE" 
+        
+         validate="url" 
+        
+        filter="safehtml" /> 
+
+       <field name="facebook" type="text" size="40" class="inputbox"
+        
+            label="COM_DISTRIBUTORS_FORM_LBL_DISTRIBUTOR_FACEBOOK"
+            description="COM_DISTRIBUTORS_FORM_DESC_DISTRIBUTOR_FACEBOOK" 
+        
+         validate="url" 
+        
+        filter="safehtml" /> 
+
+       <field name="category" type="text" size="40" class="inputbox"
+        
+            label="COM_DISTRIBUTORS_FORM_LBL_DISTRIBUTOR_CATEGORY"
+            description="COM_DISTRIBUTORS_FORM_DESC_DISTRIBUTOR_CATEGORY" 
+         default="Distributor" 
+        
+        
+        filter="safehtml" /> 
+
+       <field name="image" type="media"
+                
+            label="COM_DISTRIBUTORS_FORM_LBL_DISTRIBUTOR_IMAGE"
+            description="COM_DISTRIBUTORS_FORM_DESC_DISTRIBUTOR_IMAGE" 
+                
+                
+                
+            filter="raw"
+            directory="distributors" /> 
+
+        <field name="music_broadcast" type="list" size="1" default="0" class="inputbox"
+        
+            label="COM_DISTRIBUTORS_FORM_LBL_DISTRIBUTOR_MUSIC_BROADCAST"
+            description="COM_DISTRIBUTORS_FORM_DESC_DISTRIBUTOR_MUSIC_BROADCAST">
+             
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+        
+        
+       </field> 
+
+       <field name="hifi_home_cinema" type="list" size="1" default="0" class="inputbox"
+        
+            label="COM_DISTRIBUTORS_FORM_LBL_DISTRIBUTOR_HIFI_HOME_CINEMA"
+            description="COM_DISTRIBUTORS_FORM_DESC_DISTRIBUTOR_HIFI_HOME_CINEMA">
+             
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+        
+        
+       </field> 
+
+       <field name="building_construction" type="list" size="1" default="0" class="inputbox"
+        
+            label="COM_DISTRIBUTORS_FORM_LBL_DISTRIBUTOR_BUILDING_CONSTRUCTION"
+            description="COM_DISTRIBUTORS_FORM_DESC_DISTRIBUTOR_BUILDING_CONSTRUCTION">
+             
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+        
+        
+       </field> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_DISTRIBUTORS_FORM_LBL_DISTRIBUTOR_CREATED_BY"
+            description="COM_DISTRIBUTORS_FORM_DESC_DISTRIBUTOR_CREATED_BY"  /> 
+
+         <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="1">
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+    </field>
+
+	</fieldset>
+
+</form>

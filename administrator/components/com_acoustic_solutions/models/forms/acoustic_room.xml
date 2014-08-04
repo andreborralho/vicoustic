@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+      <field name="id" type="text" default="0" label="JGRID_HEADING_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+    <field name="name" type="text" size="40" class="inputbox"
+        
+            label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_ROOM_NAME"
+            description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_ROOM_NAME" 
+        
+        
+         required="true" 
+        filter="safehtml" />    
+
+
+    <field name="music_broadcast" type="list" size="1" default="0" class="inputbox"
+        
+        label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_ROOM_MUSIC_BROADCAST"
+        description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_ROOM_MUSIC_BROADCAST">
+         
+    <option value="1">JPUBLISHED</option>
+    <option value="0">JUNPUBLISHED</option>
+    
+    
+   </field> 
+
+   <field name="hifi_home_cinema" type="list" size="1" default="0" class="inputbox"
+    
+        label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_ROOM_HIFI_HOME_CINEMA"
+        description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_ROOM_HIFI_HOME_CINEMA">
+         
+    <option value="1">JPUBLISHED</option>
+    <option value="0">JUNPUBLISHED</option>
+    
+    
+   </field> 
+
+   <field name="building_construction" type="list" size="1" default="0" class="inputbox"
+    
+        label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_ROOM_BUILDING_CONSTRUCTION"
+        description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_ROOM_BUILDING_CONSTRUCTION">
+         
+    <option value="1">JPUBLISHED</option>
+    <option value="0">JUNPUBLISHED</option>
+    
+    
+   </field> 
+
+   <field name="created_by" type="createdby" default="" 
+        label="COM_ACOUSTIC_SOLUTIONS_FORM_LBL_ACOUSTIC_ROOM_CREATED_BY"
+        description="COM_ACOUSTIC_SOLUTIONS_FORM_DESC_ACOUSTIC_ROOM_CREATED_BY"  /> 
+
+     <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="1">
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+    </field> 
+ 
+	</fieldset>
+
+</form>

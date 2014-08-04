@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="id" type="text" default="0" label="COM_PANELS_FORM_LBL_PANEL_GRAPH_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+		<field name="panel_id" type="sql" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_GRAPH_ID"
+            description="COM_PANELS_FORM_DESC_PANEL_GRAPH_ID" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `name` UNION SELECT `id`, `name` FROM `#__panels`" key_field="id" value_field="name"
+         /> 
+         
+       <field name="label" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_GRAPH_LABEL"
+            description="COM_PANELS_FORM_DESC_PANEL_GRAPH_LABEL" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="graph_63hz" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_GRAPH_GRAPH_63HZ"
+            description="COM_PANELS_FORM_DESC_PANEL_GRAPH_GRAPH_63HZ" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="graph_80hz" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_GRAPH_GRAPH_80HZ"
+            description="COM_PANELS_FORM_DESC_PANEL_GRAPH_GRAPH_80HZ" 
+        
+        
+        
+        filter="safehtml" />                 
+
+       <field name="graph_100hz" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_GRAPH_GRAPH_100HZ"
+            description="COM_PANELS_FORM_DESC_PANEL_GRAPH_GRAPH_100HZ" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="graph_125hz" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_GRAPH_GRAPH_125HZ"
+            description="COM_PANELS_FORM_DESC_PANEL_GRAPH_125HZ" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="graph_160hz" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_GRAPH_GRAPH_160HZ"
+            description="COM_PANELS_FORM_DESC_PANEL_GRAPH_GRAPH_160HZ" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="graph_200hz" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_GRAPH_GRAPH_200HZ"
+            description="COM_PANELS_FORM_DESC_PANEL_GRAPH_GRAPH_200HZ" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="graph_250hz" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_GRAPH_GRAPH_250HZ"
+            description="COM_PANELS_FORM_DESC_PANEL_GRAPH_GRAPH_250HZ" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="graph_315hz" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_GRAPH_GRAPH_315HZ"
+            description="COM_PANELS_FORM_DESC_PANEL_GRAPH_GRAPH_315HZ" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="graph_400hz" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_GRAPH_GRAPH_400HZ"
+            description="COM_PANELS_FORM_DESC_PANEL_GRAPH_GRAPH_400HZ" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="graph_500hz" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_GRAPH_GRAPH_500HZ"
+            description="COM_PANELS_FORM_DESC_PANEL_GRAPH_GRAPH_500HZ" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="graph_630hz" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_GRAPH_GRAPH_630HZ"
+            description="COM_PANELS_FORM_DESC_PANEL_GRAPH_GRAPH_630HZ" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="graph_800hz" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_GRAPH_GRAPH_800HZ"
+            description="COM_PANELS_FORM_DESC_PANEL_GRAPH_GRAPH_800HZ" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="graph_1000hz" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_GRAPH_GRAPH_1000HZ"
+            description="COM_PANELS_FORM_DESC_PANEL_GRAPH_GRAPH_1000HZ" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="graph_1250hz" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_GRAPH_GRAPH_1250HZ"
+            description="COM_PANELS_FORM_DESC_PANEL_GRAPH_GRAPH_1250HZ" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="graph_1600hz" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_GRAPH_GRAPH_1600HZ"
+            description="COM_PANELS_FORM_DESC_PANEL_GRAPH_GRAPH_1600HZ" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="graph_2000hz" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_GRAPH_GRAPH_2000HZ"
+            description="COM_PANELS_FORM_DESC_PANEL_GRAPH_GRAPH_2000HZ" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="graph_2500hz" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_GRAPH_GRAPH_2500HZ"
+            description="COM_PANELS_FORM_DESC_PANEL_GRAPH_GRAPH_2500HZ" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="graph_3150hz" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_GRAPH_GRAPH_3150HZ"
+            description="COM_PANELS_FORM_DESC_PANEL_GRAPH_GRAPH_3150HZ" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="graph_4000hz" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_GRAPH_GRAPH_4000HZ"
+            description="COM_PANELS_FORM_DESC_PANEL_GRAPH_GRAPH_4000HZ" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="graph_5000hz" type="text" size="40" class="inputbox"
+        
+            label="COM_PANELS_FORM_LBL_PANEL_GRAPH_GRAPH_5000HZ"
+            description="COM_PANELS_FORM_DESC_PANEL_GRAPH_GRAPH_5000HZ" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_PANELS_FORM_LBL_PANEL_GRAPH_CREATED_BY"
+            description="COM_PANELS_FORM_DESC_PANEL_GRAPH_CREATED_BY"  /> 
+
+         <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="1">
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+    </field>
+
+	</fieldset>
+
+</form>

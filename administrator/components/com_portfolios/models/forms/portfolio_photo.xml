@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+       <field name="id" type="text" default="0" label="COM_PORTFOLIOS_FORM_LBL_PORTFOLIO_PHOTO_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+	  <field name="portfolio_id" type="sql" class="inputbox"
+        
+            label="COM_PORTFOLIOS_FORM_LBL_PORTFOLIO_PHOTO_PORTFOLIO_ID"
+            description="COM_PORTFOLIOS_FORM_DESC_PORTFOLIO_PHOTO_PORTFOLIO_ID" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `title` UNION SELECT `id`, `title` FROM `#__portfolios`" key_field="id" value_field="title"
+         /> 
+         
+       <field name="filter_portfolio_id" type="sql" onchange="this.form.submit();"
+			query="SELECT 0 AS `id`, '- Select Portfolio -' AS `title` UNION SELECT `id`, `title` FROM `#__portfolios`" key_field="id" value_field="title"
+		/>
+		  
+       <field name="photo" type="media"
+                
+            label="COM_PORTFOLIOS_FORM_LBL_PORTFOLIO_PHOTO_PHOTO"
+            description="COM_PORTFOLIOS_FORM_DESC_PORTFOLIO_PHOTO_PHOTO"                 
+                
+                
+            filter="raw"
+            directory="portfolios/photos" />
+
+         <field name="thumbnail" type="media"
+                
+            label="COM_PORTFOLIOS_FORM_LBL_PORTFOLIO_PHOTO_THUMBNAIL"
+            description="COM_PORTFOLIOS_FORM_DESC_PORTFOLIO_PHOTO_THUMBNAIL"                 
+                
+                
+            filter="raw"
+            directory="portfolios/thumbnails" />
+       
+       <field name="label" type="text" size="40" class="inputbox"
+        
+            label="COM_PORTFOLIOS_FORM_LBL_PORTFOLIO_PHOTO_LABEL"
+            description="COM_PORTFOLIOS_FORM_DESC_PORTFOLIO_PHOTO_LABEL" 
+        
+        
+         required="true" 
+        filter="safehtml" /> 
+        
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_PORTFOLIOS_FORM_LBL_PORTFOLIO_PHOTO_CREATED_BY"
+            description="COM_PORTFOLIOS_FORM_DESC_PORTFOLIO_PHOTO_CREATED_BY"  /> 
+
+         <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="1">
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+    </field>
+
+	</fieldset>
+
+</form>

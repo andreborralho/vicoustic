@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6.0" method="upgrade">
+    <name>com_isolation_solutions</name>
+    <creationDate>2013-02-27</creationDate>
+    <copyright>Copyright (C) 2013. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <author>Andre</author>
+    <authorEmail>andrefilipe_one@hotmail.com</authorEmail>
+    <authorUrl>http://</authorUrl>
+    <version>1.0.0</version>
+    <description></description>
+    
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>isolation_solutions.php</filename>
+        <filename>controller.php</filename>
+        <filename>router.php</filename>
+        <folder>views</folder>
+        <folder>models</folder>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+    </files>
+    
+    <administration>
+        <menu img="components/com_isolation_solutions/assets/images/s_com_isolation_solutions.png" >COM_ISOLATION_SOLUTIONS</menu>
+        <submenu>
+            
+			<menu link="option=com_isolation_solutions&amp;view=isolations" view="isolations" img="components/com_isolation_solutions/assets/images/s_isolations.png" alt="Isolation_solutions/Isolations">COM_ISOLATION_SOLUTIONS_TITLE_ISOLATIONS</menu>
+
+            <menu link="option=com_isolation_solutions&amp;view=isolation_categories" view="isolation_categories" img="components/com_isolation_solutions/assets/images/s_isolations.png" alt="Isolation_solutions/Isolation_categories">COM_ISOLATION_SOLUTIONS_TITLE_ISOLATION_CATEGORIES</menu>
+
+            <menu link="option=com_isolation_solutions&amp;view=isolation_currencies" view="isolation_currencies" img="components/com_isolation_solutions/assets/images/s_isolations.png" alt="Isolation_solutions/Isolation_currencies">COM_ISOLATION_SOLUTIONS_TITLE_ISOLATION_CURRENCIES</menu>
+
+            <menu link="option=com_isolation_solutions&amp;view=isolation_units" view="isolation_units" img="components/com_isolation_solutions/assets/images/s_isolations.png" alt="Isolation_solutions/Isolation_units">COM_ISOLATION_SOLUTIONS_TITLE_ISOLATION_UNITS</menu>
+
+        </submenu>
+        <files folder="administrator">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>isolation_solutions.php</filename>
+            <folder>controllers</folder>
+            <folder>assets</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+        <languages folder="administrator">
+            <language tag="en-GB">language/en-GB.com_isolation_solutions.ini
+            </language>
+            <language tag="en-GB">language/en-GB.com_isolation_solutions.sys.ini
+            </language>
+        </languages>
+    </administration>
+</extension>
+<!-- Component built by the Joomla Component Creator -->
+<!-- http://www.notwebdesign.com/joomla-component-creator/ -->

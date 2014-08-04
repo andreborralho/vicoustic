@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+       <field name="id" type="text" default="0" label="COM_BLANKETS_FORM_LBL_BLANKET_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="name" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_NAME"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_NAME" 
+        
+        
+         required="true" 
+        filter="safehtml" /> 
+
+       <field name="ref" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_REF"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_REF" 
+        
+        
+         required="true" 
+        filter="safehtml" /> 
+
+       <field name="ean13" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_EAN13"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_EAN13" 
+        
+        
+         required="true" 
+        filter="safehtml" />     
+
+       <field name="hs_code" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_HS_CODE"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_HS_CODE" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="family" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_FAMILY"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_FAMILY" 
+        
+        
+         required="true" 
+        filter="safehtml" /> 
+
+       <field name="length" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_LENGTH"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_LENGTH" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="width" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_WIDTH"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_WIDTH" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="thickness" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_THICKNESS"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_THICKNESS" 
+        
+        
+        
+        filter="safehtml" /> 
+       
+       <field name="weight" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_WEIGHT"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_WEIGHT" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="density" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_DENSITY"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_DENSITY" 
+        
+        
+        
+        filter="safehtml" />     
+        
+        <field name="recycle_coefficient" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_RECYCLE_COEFFICIENT"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_RECYCLE_COEFFICIENT" 
+        
+        
+        
+        filter="safehtml" />   
+       
+       <field name="rw" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_RW"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_RW" 
+               
+        
+        filter="safehtml" /> 
+        
+        <field name="rw_ctr" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_RW_CTR"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_RW_CTR" 
+        
+        
+        
+        filter="safehtml" />  
+
+        <field name="stc" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_STC"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_STC" 
+        
+        
+        
+        filter="safehtml" />  
+        
+        <field name="dnfw" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_DNFW"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_DNFW" 
+        
+        
+        
+        filter="safehtml" />                 
+
+		<field name="fire_class_en" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_FIRE_CLASS_EN"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_FIRE_CLASS_EN" 
+        
+        
+        
+        filter="safehtml" />        
+
+       <field name="fire_class_din" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_FIRE_CLASS_DIN"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_FIRE_CLASS_DIN" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="fire_class_nf_p" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_FIRE_CLASS_NF_P"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_FIRE_CLASS_NF_P" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="fire_class_uni" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_FIRE_CLASS_UNI"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_FIRE_CLASS_UNI" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="fire_class_bs" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_FIRE_CLASS_BS"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_FIRE_CLASS_BS" 
+        
+        
+        
+        filter="safehtml" />       
+		
+       <field name="humidity_resistance" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_HUMIDITY_RESISTANCE"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_HUMIDITY_RESISTANCE" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="thermal_conductivity" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_THERMAL_CONDUCTIVITY"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_THERMAL_CONDUCTIVITY" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="units_per_box" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_UNITS_PER_BOX"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_UNITS_PER_BOX" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="box_length" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_BOX_LENGTH"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_BOX_LENGTH" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="box_width" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_BOX_WIDTH"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_BOX_WIDTH" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="box_height" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_BOX_HEIGHT"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_BOX_HEIGHT"
+        
+        
+        
+        filter="safehtml" /> 
+
+        <field name="box_diameter" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_BOX_DIAMETER"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_BOX_DIAMETER"
+        
+        
+        
+        filter="safehtml" />
+
+       <field name="box_weight" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_BOX_WEIGHT"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_BOX_WEIGHT" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="box_volume" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_BOX_VOLUME"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_BOX_VOLUME" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="box_msrp" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_BOX_MSRP"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_BOX_MSRP" 
+        
+        
+        
+        filter="safehtml" /> 
+
+	   <field name="units_per_pallet" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_UNITS_PER_PALLET"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_UNITS_PER_PALLET" 
+        
+        
+        
+        filter="safehtml" /> 
+	   
+       <field name="pallet_length" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_PALLET_LENGTH"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_PALLET_LENGTH" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="pallet_width" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_PALLET_WIDTH"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_PALLET_WIDTH" 
+        
+        
+        
+        filter="safehtml" /> 
+
+       <field name="pallet_height" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_PALLET_HEIGHT"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_PALLET_HEIGHT" 
+        
+        
+        
+        filter="safehtml" />
+        
+        <field name="pallet_msrp" type="text" size="40" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_PALLET_MSRP"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_PALLET_MSRP" 
+        
+        
+        
+        filter="safehtml" />
+        
+        <field name="description1" type="editor"
+                
+            label="COM_BLANKETS_FORM_LBL_BLANKET_DESCRIPTION1"
+            description="COM_BLANKETS_FORM_LBL_BLANKET_DESCRIPTION1" 
+                
+                
+                
+            cols="100"
+            rows="15"
+            filter="raw" /> 
+
+       <field name="description2" type="editor"
+                
+            label="COM_BLANKETS_FORM_LBL_BLANKET_DESCRIPTION2"
+            description="COM_BLANKETS_FORM_LBL_BLANKET_DESCRIPTION2" 
+                
+                
+                
+            cols="100"
+            rows="15"
+            filter="raw" /> 
+
+       <field name="catalog_page" type="media"
+                
+            label="COM_BLANKETS_FORM_LBL_BLANKET_CATALOG_PAGE"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_CATALOG_PAGE" 
+                
+                              
+            filter="raw"
+            directory="pdfs/blankets/catalog_pages" /> 
+            
+       <field name="installation_manual" type="media"
+                
+            label="COM_BLANKETS_FORM_LBL_BLANKET_INSTALLATION_MANUAL"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_INSTALLATION_MANUAL" 
+                
+                              
+            filter="raw"
+            directory="pdfs/blankets/installation_manuals" /> 
+
+        <field name="warranty" type="media"
+                
+            label="COM_BLANKETS_FORM_LBL_BLANKET_WARRANTY"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_WARRANTY" 
+                
+                              
+            filter="raw"
+            directory="pdfs/blankets/warranties" />
+
+        <field name="drawings" type="media"
+                
+            label="COM_BLANKETS_FORM_LBL_BLANKET_DRAWINGS"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_DRAWINGS" 
+                
+                              
+            filter="raw"
+            directory="pdfs/blankets/drawings" />          
+
+        <field name="safety_data" type="media"
+                
+            label="COM_BLANKETS_FORM_LBL_BLANKET_SAFETY_DATA"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_SAFETY_DATA" 
+                
+                              
+            filter="raw"
+            directory="pdfs/blankets/safety_data_sheets" />  
+
+
+	   <field name="video" type="text" size="80"
+                
+            label="COM_BLANKETS_FORM_LBL_BLANKET_VIDEO"
+            description="COM_BLANKETS_FORM_LBL_BLANKET_VIDEO" 
+                
+                                
+           filter="raw"/>
+            
+       <field name="photo_row_material" type="media"
+                
+            label="COM_BLANKETS_FORM_LBL_BLANKET_PHOTO_ROW_MATERIAL"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_PHOTO_ROW_MATERIAL" 
+                
+                
+                
+            filter="raw"
+            directory="blankets/photos_row_materials" /> 
+
+       <field name="photo_150px" type="media"
+                
+            label="COM_BLANKETS_FORM_LBL_BLANKET_PHOTO_150PX"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_PHOTO_150PX" 
+                
+                
+                
+            filter="raw"
+            directory="blankets/photos_150px" /> 
+
+       <field name="photo_300px" type="media"
+                
+            label="COM_BLANKETS_FORM_LBL_BLANKET_PHOTO_300PX"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_PHOTO_300PX" 
+                
+                
+                
+            filter="raw"
+            directory="blankets/photos_300px" /> 
+
+       <field name="photo_1024px" type="media"
+                
+            label="COM_BLANKETS_FORM_LBL_BLANKET_PHOTO_1024PX"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_PHOTO_1024PX" 
+                
+                
+                
+            filter="raw"
+            directory="blankets/photos_1024px" /> 
+
+       <field name="photo_detail1" type="media"
+                
+            label="COM_BLANKETS_FORM_LBL_BLANKET_PHOTO_DETAIL1"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_PHOTO_DETAIL1" 
+                
+                
+                
+            filter="raw"
+            directory="blankets/photos_details" /> 
+
+       <field name="photo_detail2" type="media"
+                
+            label="COM_BLANKETS_FORM_LBL_BLANKET_PHOTO_DETAIL2"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_PHOTO_DETAIL2" 
+                
+                
+                
+            filter="raw"
+            directory="blankets/photos_details" /> 
+
+       <field name="photo_detail3" type="media"
+                
+            label="COM_BLANKETS_FORM_LBL_BLANKET_PHOTO_DETAIL3"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_PHOTO_DETAIL3" 
+                
+                
+                
+            filter="raw"
+            directory="blankets/photos_details" /> 
+
+       <field name="photo_detail4" type="media"
+                
+            label="COM_BLANKETS_FORM_LBL_BLANKET_PHOTO_DETAIL4"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_PHOTO_DETAIL4" 
+                
+                
+                
+            filter="raw"
+            directory="blankets/photos_details" /> 
+
+       <field name="photo_detail5" type="media"
+                
+            label="COM_BLANKETS_FORM_LBL_BLANKET_PHOTO_DETAIL5"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_PHOTO_DETAIL5" 
+                
+                
+                
+            filter="raw"
+            directory="blankets/photos_details" />       
+
+        <field name="portfolio_photo_id1" type="sql" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_PORTFOLIO_PHOTO_ID1"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_PORTFOLIO_PHOTO_ID1" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `photo` UNION SELECT `id`, `photo` FROM `#__portfolio_photos`" key_field="id" value_field="photo"
+         /> 
+
+        <field name="portfolio_photo_id2" type="sql" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_PORTFOLIO_PHOTO_ID2"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_PORTFOLIO_PHOTO_ID2" 
+        
+        
+        
+        query="SELECT 0 AS `id`, '- Please select -' AS `photo` UNION SELECT `id`, `photo` FROM `#__portfolio_photos`" key_field="id" value_field="photo"
+         /> 
+
+        <field name="music_broadcast" type="list" size="1" default="0" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_MUSIC_BROADCAST"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_MUSIC_BROADCAST">
+             
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+        
+        
+       </field> 
+
+       <field name="hifi_home_cinema" type="list" size="1" default="0" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_HIFI_HOME_CINEMA"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_HIFI_HOME_CINEMA">
+             
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+        
+        
+       </field> 
+
+       <field name="building_construction" type="list" size="1" default="0" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_BUILDING_CONSTRUCTION"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_BUILDING_CONSTRUCTION">
+             
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+        
+        
+       </field> 
+
+       <field name="state_featured" type="list" size="1" default="0" class="inputbox"
+        
+            label="COM_BLANKETS_FORM_LBL_BLANKET_STATE_FEATURED"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_STATE_FEATURED">
+             
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+        
+        
+       </field> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_BLANKETS_FORM_LBL_BLANKET_CREATED_BY"
+            description="COM_BLANKETS_FORM_DESC_BLANKET_CREATED_BY"  /> 
+
+       <field
+	        name="state"
+	        type="list"
+	        label="JSTATUS"
+	        description="JFIELD_PUBLISHED_DESC"
+	        class="inputbox"
+	        size="1"
+	        default="1">
+	        <option value="1">JPUBLISHED</option>
+	        <option value="0">JUNPUBLISHED</option>
+    	</field>
+
+	</fieldset>
+
+</form>

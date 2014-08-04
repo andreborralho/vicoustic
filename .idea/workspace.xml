@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="74b8ff10-fc99-41e1-b03c-3e8aabaa6e13" name="Default" comment="" />
+    <ignored path="vicoustic.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="vicoustic" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="default.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/com_distributors/views/distributors/tmpl/default.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="82" column="32" selection-start="2456" selection-end="2456" vertical-scroll-proportion="0.0" vertical-offset="978" max-vertical-offset="2160">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/com_product_filter/views/productfilters/tmpl/default.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1267" column="8" selection-start="49223" selection-end="49223" vertical-scroll-proportion="0.0" vertical-offset="19005" max-vertical-offset="23760">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/mod_footer/tmpl/default.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="47" selection-start="1580" selection-end="1580" vertical-scroll-proportion="0.8518519" vertical-offset="0" max-vertical-offset="810">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template_not_minified.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/shape5_vertex/css/template_not_minified.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2532" column="23" selection-start="53515" selection-end="53515" vertical-scroll-proportion="0.0" vertical-offset="37741" max-vertical-offset="77175">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/shape5_vertex/css/template.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="45" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/components/com_resources/views/resources/tmpl/default.php" />
+        <option value="$PROJECT_DIR$/configuration.php" />
+        <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/components/com_panels/models/panels.php" />
+        <option value="$PROJECT_DIR$/components/com_panels/views/panels/tmpl/default.php" />
+        <option value="$PROJECT_DIR$/components/com_blankets/views/blankets/tmpl/default.php" />
+        <option value="$PROJECT_DIR$/scripts/components.js" />
+        <option value="$PROJECT_DIR$/components/com_search/models/search.php" />
+        <option value="$PROJECT_DIR$/plugins/search/accessories/accessories.php" />
+        <option value="$PROJECT_DIR$/plugins/search/antivibratics/antivibratics.php" />
+        <option value="$PROJECT_DIR$/plugins/search/blankets/blankets.php" />
+        <option value="$PROJECT_DIR$/plugins/search/doors/doors.php" />
+        <option value="$PROJECT_DIR$/plugins/search/panels/panels.php" />
+        <option value="$PROJECT_DIR$/components/com_search/views/search/tmpl/default_results.php" />
+        <option value="$PROJECT_DIR$/language/en-GB/en-GB.com_search.ini" />
+        <option value="$PROJECT_DIR$/components/com_search/views/search/tmpl/default_form.php" />
+        <option value="$PROJECT_DIR$/components/com_distributors/views/distributors/tmpl/default.php" />
+        <option value="$PROJECT_DIR$/templates/shape5_vertex/css/template_not_minified.css" />
+        <option value="$PROJECT_DIR$/templates/shape5_vertex/css/template.css" />
+        <option value="$PROJECT_DIR$/components/com_product_filter/views/productfilters/tmpl/default.php" />
+        <option value="$PROJECT_DIR$/modules/mod_footer/tmpl/default.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
+    <option name="width" value="1680" />
+    <option name="height" value="957" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vicoustic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vicoustic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vicoustic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vicoustic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vicoustic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vicoustic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vicoustic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mod_footer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vicoustic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vicoustic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mod_footer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tmpl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vicoustic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vicoustic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vicoustic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vicoustic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="portfolios" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.lastSelected" value="appearance" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="74b8ff10-fc99-41e1-b03c-3e8aabaa6e13" name="Default" comment="" />
+      <created>1399282511215</created>
+      <updated>1399282511215</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="22" width="1680" height="957" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1947497" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16971917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32714617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32946634" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/components/com_distributors/views/distributors/tmpl/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="32" selection-start="2456" selection-end="2456" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2160">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_product_filter/views/productfilters/tmpl/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1249" column="62" selection-start="48631" selection-end="48631" vertical-scroll-proportion="0.0" vertical-offset="18735" max-vertical-offset="23670">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/shape5_vertex/css/template_not_minified.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2532" column="23" selection-start="53515" selection-end="53515" vertical-scroll-proportion="0.0" vertical-offset="37741" max-vertical-offset="77175">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/shape5_vertex/css/template.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="45" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_resources/views/resources/tmpl/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="125" column="0" selection-start="5114" selection-end="5114" vertical-scroll-proportion="0.0" vertical-offset="1875" max-vertical-offset="5070" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_resources/views/resources/tmpl/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="125" column="0" selection-start="5114" selection-end="5114" vertical-scroll-proportion="0.0" vertical-offset="1875" max-vertical-offset="5070" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_resources/views/resources/tmpl/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="125" column="0" selection-start="5114" selection-end="5114" vertical-scroll-proportion="0.0" vertical-offset="1875" max-vertical-offset="5070" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_resources/views/resources/tmpl/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="125" column="0" selection-start="5114" selection-end="5114" vertical-scroll-proportion="0.0" vertical-offset="1875" max-vertical-offset="5070" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_resources/views/resources/tmpl/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="74" selection-start="3543" selection-end="3543" vertical-scroll-proportion="0.0" vertical-offset="1305" max-vertical-offset="5070" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_resources/views/resource/tmpl/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="520" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.ftpquota">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="552" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.project">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525" />
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/robots.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.59090906" vertical-offset="312" max-vertical-offset="840" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web.config.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="35" selection-start="2073" selection-end="2082" vertical-scroll-proportion="-0.1121673" vertical-offset="779" max-vertical-offset="1305" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configuration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="52" selection-start="610" selection-end="610" vertical-scroll-proportion="0.39772728" vertical-offset="75" max-vertical-offset="1065" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_resources/views/resources/tmpl/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="125" column="0" selection-start="5114" selection-end="5114" vertical-scroll-proportion="0.39772728" vertical-offset="1575" max-vertical-offset="5070" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_distributors/models/distributors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="8" selection-start="2687" selection-end="2711" vertical-scroll-proportion="-7.625" vertical-offset="1107" max-vertical-offset="2130" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_search/views/search/view.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="34" selection-start="1431" selection-end="1435" vertical-scroll-proportion="-3.38" vertical-offset="2470" max-vertical-offset="2970" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_search/views/search/tmpl/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="40" selection-start="792" selection-end="792" vertical-scroll-proportion="0.5703422" vertical-offset="0" max-vertical-offset="526" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_search/views/search/view.opensearch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.40159047" vertical-offset="202" max-vertical-offset="705" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_search/models/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="9" selection-start="657" selection-end="657" vertical-scroll-proportion="0.36501902" vertical-offset="423" max-vertical-offset="3240" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/mod_search/tmpl/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="31" selection-start="1270" selection-end="1270" vertical-scroll-proportion="0.7076023" vertical-offset="12" max-vertical-offset="795" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/mod_search/mod_search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="45" selection-start="966" selection-end="966" vertical-scroll-proportion="0.61403507" vertical-offset="0" max-vertical-offset="645" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/mod_search/helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="550" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/search/antivibratics/antivibratics.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="0" selection-start="2338" selection-end="2338" vertical-scroll-proportion="0.74334604" vertical-offset="1019" max-vertical-offset="2010" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/search/accessories/accessories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="99" selection-start="1966" selection-end="2126" vertical-scroll-proportion="0.37072244" vertical-offset="990" max-vertical-offset="2010" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/search/blankets/blankets.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="25" selection-start="2153" selection-end="2153" vertical-scroll-proportion="0.4011407" vertical-offset="1019" max-vertical-offset="2010" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/search/doors/doors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="99" selection-start="1930" selection-end="2090" vertical-scroll-proportion="0.48479086" vertical-offset="930" max-vertical-offset="2010" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/search/panels/panels.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="20" selection-start="2369" selection-end="2369" vertical-scroll-proportion="-15.041667" vertical-offset="1034" max-vertical-offset="2055" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_search/views/search/tmpl/default_results.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="51" selection-start="810" selection-end="810" vertical-scroll-proportion="0.62737644" vertical-offset="0" max-vertical-offset="870" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_search/views/search/tmpl/default_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="22" selection-start="1178" selection-end="1178" vertical-scroll-proportion="0.4639376" vertical-offset="92" max-vertical-offset="645" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/components.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="127" column="16" selection-start="5305" selection-end="5305" vertical-scroll-proportion="0.6413044" vertical-offset="1551" max-vertical-offset="2385" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_panels/views/panels/view.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="21" selection-start="509" selection-end="509" vertical-scroll-proportion="0.22772278" vertical-offset="110" max-vertical-offset="1515" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_panels/models/panels.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="0" selection-start="2884" selection-end="2884" vertical-scroll-proportion="0.46022728" vertical-offset="1107" max-vertical-offset="2010" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_panels/views/panels/tmpl/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="29" selection-start="2244" selection-end="2244" vertical-scroll-proportion="0.8330097" vertical-offset="531" max-vertical-offset="9300" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_blankets/views/blankets/tmpl/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="0" selection-start="1400" selection-end="1400" vertical-scroll-proportion="0.47572815" vertical-offset="250" max-vertical-offset="1035" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/language/en-GB/en-GB.mod_search.sys.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="552" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/language/en-GB/en-GB.mod_search.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="46" max-vertical-offset="585" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/language/en-GB/en-GB.com_search.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="74" selection-start="1124" selection-end="1124" vertical-scroll-proportion="0.59782606" vertical-offset="0" max-vertical-offset="552" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/administrator/components/com_panels/models/forms/panel.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="506" column="31" selection-start="16218" selection-end="16218" vertical-scroll-proportion="0.7243948" vertical-offset="7201" max-vertical-offset="15555" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/mod_footer/mod_footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="29" selection-start="586" selection-end="586" vertical-scroll-proportion="0.42775667" vertical-offset="0" max-vertical-offset="526" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_distributors/views/distributors/tmpl/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="32" selection-start="2456" selection-end="2456" vertical-scroll-proportion="0.0" vertical-offset="978" max-vertical-offset="2160">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/com_product_filter/views/productfilters/tmpl/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1267" column="8" selection-start="49223" selection-end="49223" vertical-scroll-proportion="0.0" vertical-offset="19005" max-vertical-offset="23760">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/shape5_vertex/css/template_not_minified.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2532" column="23" selection-start="53515" selection-end="53515" vertical-scroll-proportion="0.0" vertical-offset="37741" max-vertical-offset="77175">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/shape5_vertex/css/template.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="45" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/mod_footer/tmpl/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="47" selection-start="1580" selection-end="1580" vertical-scroll-proportion="0.8518519" vertical-offset="0" max-vertical-offset="810">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+
