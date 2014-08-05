@@ -1256,8 +1256,6 @@ $tokens = explode('/', $url);
 			$wood_color .= ') AND';
 		endif;
 
-    echo $wood_color;
-
 	//----------------------------FABRIC COLOR--------------------------//
 		$panels_fabric_black = $_POST['panels_fabric_black'];
 		$panels_fabric_grey = $_POST['panels_fabric_grey'];
