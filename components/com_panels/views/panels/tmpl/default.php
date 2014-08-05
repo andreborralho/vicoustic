@@ -359,7 +359,7 @@ $last_url = $tokens[sizeof($tokens)-1];
         </a>
       <?php endif; ?>
 
-      <?php if($last_url == "absorption" && $item->functionality == "absorption"): ?>
+      <?php if($last_url == "absorption" && ($item->functionality == "absorption" || $item->functionality == "hybrid")): ?>
         <a class="products_list_entry" style="cursor: pointer;" href="<?php echo JRoute::_('index.php?option=com_panels&view=panel&id=' . (int)$item->id); ?>">
 
           <div class="products_list_img">
@@ -438,7 +438,7 @@ $last_url = $tokens[sizeof($tokens)-1];
         </a>
       <?php endif; ?>
 
-      <?php if($last_url == "diffusion" && $item->functionality == "diffusion"): ?>
+      <?php if($last_url == "diffusion" && ($item->functionality == "diffusion" || $item->functionality == "hybrid")): ?>
         <a class="products_list_entry" style="cursor: pointer;" href="<?php echo JRoute::_('index.php?option=com_panels&view=panel&id=' . (int)$item->id); ?>">
 
           <div class="products_list_img">
