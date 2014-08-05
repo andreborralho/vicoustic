@@ -84,15 +84,16 @@ $countries = array_unique($countries);
                     <?php echo $this->escape($item->name); ?>
                   </div>
                 </li>
-                <li>
-                  <div class="distributor_country">
+                <li class="distributor_country">
+                  <div>
                     <?php echo $item->country; ?>
                   </div>
                 </li>
-                <li>
-                  <b>Address: </b><?php echo $item->address; ?>
+                <li class="distributor_address_title">
+                  <b>Address: </b>
                 </li>
-                <li>
+                <li class="distributor_address">
+                  <?php echo $item->address; ?>
                   <div class="distributor_city">
                     <?php echo $item->zippostalcode; ?>
                     <?php echo $item->city; ?>
