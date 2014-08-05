@@ -839,31 +839,6 @@ $tokens = explode('/', $url);
 				<?php endif; ?>				
 			</div>
 
-			<!-- <div class="filter_form_title">Polystyrene Color</div>
-			<div id="filter_panels_polystyrene_color" class="filter_form_content">
-
-				<input type="hidden" name="panels_polystyrene_black" value="2" >
-				<?php /*if($_POST['panels_polystyrene_black'] == 2): */?>
-					<input type="checkbox" name="panels_polystyrene_black" value="1">Black<br>
-				<?php /* else :*/?>
-					<input type="checkbox" name="panels_polystyrene_black" value="1" checked>Black<br>
-				<?php/* endif;*/ ?>	
-
-				<input type="hidden" name="panels_polystyrene_white" value="2" >
-				<?php /*if($_POST['panels_polystyrene_white'] == 2): */?>
-					<input type="checkbox" name="panels_polystyrene_white" value="1">White<br>
-				<?php /*else :*/?>
-					<input type="checkbox" name="panels_polystyrene_white" value="1" checked>White<br>
-				<?php /*endif;*/ ?>	
-
-				<input type="hidden" name="panels_polystyrene_grey" value="2" >
-				<?php /*if($_POST['panels_polystyrene_grey'] == 2): */?>
-					<input type="checkbox" name="panels_polystyrene_grey" value="1">Grey<br>			
-				<?php /*else :*/?>
-					<input type="checkbox" name="panels_polystyrene_grey" value="1" checked>Grey<br>			
-				<?php /* endif;*/ ?>
-			</div> -->
-
 			<div class="filter_form_title">Foam Type</div>
 			<div id="filter_panels_foam_type" class="filter_form_content">
 
@@ -1331,34 +1306,6 @@ $tokens = explode('/', $url);
 			$fabric_color .= ') AND';
 		endif;	
 
-
-	//--------------------------POLYSTYRENE COLOR-----------------------//
-		/*$panels_polystyrene_black = $_POST['panels_polystyrene_black'];
-		$panels_polystyrene_white = $_POST['panels_polystyrene_white'];
-		$panels_polystyrene_grey = $_POST['panels_polystyrene_grey'];		
-
-		if($panels_polystyrene == '' || ($panels_polystyrene_black == 1 && $panels_polystyrene_white == 1 && $panels_polystyrene_grey == 1)):
-			$polystyrene_color = '';		
-		elseif($panels_polystyrene_black == '' && $panels_polystyrene_white == '' && $panels_polystyrene_grey == ''):
-			$polystyrene_color = 'polystyrene_color="o" AND';	
-		else:
-			$polystyrene_color = '(';
-
-			if($panels_polystyrene_black == 1):
-				$polystyrene_color .= 'UPPER(polystyrene_color)=UPPER("black") OR ';
-			endif;
-			if($panels_polystyrene_white == 1):
-				$polystyrene_color .= 'UPPER(polystyrene_color)=UPPER("white") OR ';
-			endif;
-			if($panels_polystyrene_grey == 1):
-				$polystyrene_color .= 'UPPER(polystyrene_color)=UPPER("grey") OR ';
-			endif;			
-			
-			$polystyrene_color = substr($polystyrene_color, 0, -4);
-			$polystyrene_color .= ') AND';
-		endif;	
-*/
-
 	//-----------------------------FOAM TYPE----------------------------//
 		$panels_foam_m1 = $_POST['panels_foam_m1'];
 		$panels_foam_recycled = $_POST['panels_foam_recycled'];
@@ -1417,8 +1364,8 @@ $tokens = explode('/', $url);
 		
 		$db =& JFactory::getDBO();
 	    $query = 'SELECT * FROM `#__panels` WHERE ' . $length . ' ' . $width . ' ' . $thickness . ' ' . $functionality . ' ' . $absorption_frequency . ' ' . 
-	    $absorption_class . ' ' .  $installation . ' ' . $fixing_type . ' ' . $edges . ' ' . $material . ' ' . $wood_color . ' ' . $fabric_color 
-	    /*. ' ' . $polystyrene_color*/  . ' ' . $foam_type . ' ' . $market_area . ' AND state=1 ORDER BY name DESC';
+	    $absorption_class . ' ' .  $installation . ' ' . $fixing_type . ' ' . $edges . ' ' . $material . ' ' . $wood_color . ' ' . $fabric_color . ' ' .
+          $foam_type . ' ' . $market_area . ' AND state=1 ORDER BY name DESC';
 		$db->setQuery( $query, 0 , $this->items );
 	    $items = $db->loadObjectList();
 	?>
