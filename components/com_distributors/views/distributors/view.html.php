@@ -13,6 +13,9 @@
   jimport('joomla.application.component.view');
   require_once JPATH_COMPONENT . '/helpers/distributors.php';
   JFactory::getLanguage()->load('com_vicoustic', JPATH_SITE, 'en-GB');
+  $document = JFactory::getDocument();
+  $document->addScript('//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js');
+  $document->addScript('components/com_distributors/assets/scripts/jquery-jvectormap-1.2.2.min.js');
 
 
   class DistributorsViewDistributors extends JView {

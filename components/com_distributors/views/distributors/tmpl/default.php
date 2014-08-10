@@ -10,12 +10,7 @@
 
   // no direct access
   defined('_JEXEC') or die;
-  error_reporting(E_ALL);
   $url_tokens = explode('/', JURI::current());
-
-  $document = JFactory::getDocument();
-  $document->addScript('//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js');
-  $document->addScript('components/com_distributors/assets/scripts/jquery-jvectormap-1.2.2.min.js');
 ?>
 
 <h1 class="page_title"><?php echo JText::_('WHERE_TO_BUY'); ?></h1>
