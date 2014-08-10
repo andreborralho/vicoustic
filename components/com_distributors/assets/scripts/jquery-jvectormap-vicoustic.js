@@ -1,4 +1,4 @@
-jQuery('#world-map').vectorMap({
+jQuery('#distributors-map').vectorMap({
     series: {
         regions: [{
             values: {

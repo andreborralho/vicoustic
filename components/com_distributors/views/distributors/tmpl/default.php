@@ -1,139 +1,111 @@
 <?php
-/**
- * @version     1.0.3
- * @package     com_distributors
- * @copyright   Copyright (C) 2012. All rights reserved.
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
- * @author      Andre <andrefilipe_one@hotmail.com> - http://
- */
+  /**
+   * @version     1.0.3
+   * @package     com_distributors
+   * @copyright   Copyright (C) 2012. All rights reserved.
+   * @license     GNU General Public License version 2 or later; see LICENSE.txt
+   * @author      Andre <andrefilipe_one@hotmail.com> - http://
+   */
 
 
-// no direct access
-defined('_JEXEC') or die;
+  // no direct access
+  defined('_JEXEC') or die;
+  error_reporting(E_ALL);
+  $url_tokens = explode('/', JURI::current());
 
-$geral_url = JURI::current();
-$geral_tokens = explode('/', $geral_url);
-
-$document = JFactory::getDocument();
-$document->addScript('//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js');
-$document->addScript('components/com_distributors/assets/scripts/jquery-jvectormap-1.2.2.min.js');
+  $document = JFactory::getDocument();
+  $document->addScript('//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js');
+  $document->addScript('components/com_distributors/assets/scripts/jquery-jvectormap-1.2.2.min.js');
 ?>
 
-<h1 class="page_title">Where to Buy</h1>
+<h1 class="page_title"><?php echo JText::_('WHERE_TO_BUY'); ?></h1>
 
-<div id="world-map" style="width: 100%; height: 400px; margin-bottom: 10px"></div>
+<div id="distributors-map"></div>
 
+<?php $countries = DistributorsHelper::listCountries($this->items); ?>
 
-<?php
-$countries = array();
+<form id="distributors-form" method="post">
 
-foreach ($this->items as $i=>$item) :
-  if($item->state == 1) :
-    $countries[] = $item->country;
-  endif;
-endforeach;
-
-sort($countries);
-$countries = array_unique($countries);
-?>
-
-<form action="<?php echo JRoute::_('index.php?option=com_distributors&view=distributors'); ?>" method="post" name="site_form" id="site_form">
-
-  <a href="https://visound.wufoo.eu/forms/new-distributor-form/">
-    <img alt="Distributor Form" src="images/distributors/apply_button.png" width="293px" height="96px">
+  <a id="distributors-apply" href="https://visound.wufoo.eu/forms/new-distributor-form/">
+	<img alt="Distributor Form" src="images/distributors/apply_button.png">
   </a>
 
-  <div class="distributors_filters">
-
-    <select id="filter_country" name="filter_country" onchange="this.form.submit();">
-      <option value="  " selected>Please select a country</option>
-
-      <?php foreach ($countries as $value) : ?>
-
-        <option class="country_option" value="<?php echo $value; ?>" ><?php echo $value; ?></option>
-
-      <?php endforeach;?>
-
-    </select>
-
-    <br>
-
-    <button id="button_clear" type="button" onclick="window.open('<?php echo $geral_tokens[3]; ?>/where-to-buy','_self')">Show All</button>
-
+  <div id="distributors-filters">
+	<select id="filter-country" name="filter_country" onchange="this.form.submit();">
+	  <?php echo DistributorsHelper::countrySelectOptions($countries); ?>
+	</select>
+	<br>
+	<button id="button-clear" type="button" onclick="window.open('<?php echo $url_tokens[3]; ?>/where-to-buy','_self')"><?php echo JText::_('SHOW_ALL'); ?></button>
   </div>
 
-  <div class="clr"> </div>
+  <?php if($this->items) { ?>
+	<ul id="distributors-list">
 
-  <?php if($this->items) : ?>
-    <div id="distributors_list">
+	  <?php foreach ($this->items as $i=>$item) { ?>
 
-      <ul id="distributors_ul">
+		<?php if(!isset($_POST['filter_country']) || $_POST['filter_country'] == 'clear' || $item->country == $_POST['filter_country']) { ?>
+		  <li>
+			<ul class="distributor-entry">
+			  <?php
+				if (!empty($item->image)) {
+				  echo '<img class="distributor-image" alt="' . $item->name . '" src="' . $item->image . '">';
+				}
+			  ?>
+			  <li>
+				<div class="distributor-name">
+				  <?php echo $this->escape($item->name); ?>
+				</div>
+			  </li>
+			  <li class="distributor-country">
+				<div>
+				  <?php echo $item->country; ?>
+				</div>
+			  </li>
+			  <li class="distributor-address-title">
+				<?php echo JText::_('ADDRESS') . ':'; ?>
+			  </li>
+			  <li class="distributor-address">
+				<?php echo $item->address; ?>
+				<div class="distributor-city">
+				  <?php echo $item->zippostalcode . $item->city; ?>
+				</div>
+			  </li>
+			  <li>
+				<?php
+				  if (!empty($item->telephone)) {
+					echo '<b>' . JText::_('PHONE') . ': </b>' . $item->telephone;
+				  }
+				?>
+			  </li>
+			  <li>
+				<?php if (!empty($item->email)) { ?>
+				  <div class="distributor-contact">
+					<b><?php echo JText::_('EMAIL') . ':'; ?></b><br><a href="mailto:<?php echo $item->email; ?>"><?php echo $item->email; ?></a>
+				  </div>
+				<?php } ?>
+				<?php if (!empty($item->website)) { ?>
+				  <div class="distributor-contact">
+					<b><?php echo JText::_('WEBSITE') . ':'; ?></b><br><a href="<?php echo $item->website; ?>"><?php echo $item->website; ?></a>
+				  </div>
+				<?php } ?>
+				<?php if(!empty($item->facebook)) { ?>
+				  <div class="distributor-contact">
+					<b><?php echo JText::_('FACEBOOK') . ':'; ?></b><br><a href="<?php echo $item->facebook; ?>"><?php echo $item->facebook; ?></a>
+				  </div>
+				<?php } ?>
+			  </li>
 
-        <?php foreach ($this->items as $i=>$item) :?>
+			</ul>
+		  </li>
+		<?php } ?>
+	  <?php } ?>
 
-          <?php if($item->country == $_POST[filter_country] || !isset($_POST[filter_country]) || $_POST[filter_country] == 'clear') : ?>
-            <li>
-              <ul class="distributors_entry">
-
-                <?php if ($item->image !== '') : ?>
-                  <img alt="<?php echo $item->name; ?>" src="<?php echo $item->image; ?>" height="90px" width="200px">
-                <?php endif; ?>
-
-                <li>
-                  <div class="distributor_name">
-                    <?php echo $this->escape($item->name); ?>
-                  </div>
-                </li>
-                <li class="distributor_country">
-                  <div>
-                    <?php echo $item->country; ?>
-                  </div>
-                </li>
-                <li class="distributor_address_title">
-                  <b>Address: </b>
-                </li>
-                <li class="distributor_address">
-                  <?php echo $item->address; ?>
-                  <div class="distributor_city">
-                    <?php echo $item->zippostalcode; ?>
-                    <?php echo $item->city; ?>
-                  </div>
-                </li>
-                <li>
-                  <?php if ($item->telephone !== '') : ?>
-                    <b>Phone: </b><?php echo $item->telephone; ?>
-                  <?php endif; ?>
-                </li>
-                <li>
-                  <div class="distributor_contact">
-                    <b>e-mail: </b><br><a href="mailto:<?php echo $item->email; ?>"><?php echo $item->email; ?></a>
-                  </div>
-                  <div class="distributor_contact">
-                    <b>Website: </b><br><a href="<?php echo $item->website; ?>"><?php echo $item->website; ?></a>
-                  </div>
-                  <?php if($item->facebook): ?>
-                    <div class="distributor_contact">
-                      <b>Facebook: </b><br><a href="<?php echo $item->facebook; ?>"><?php echo $item->facebook; ?></a>
-                    </div>
-                  <?php endif; ?>
-                </li>
-
-              </ul>
-            </li>
-          <?php endif; ?>
-        <?php endforeach; ?>
-
-      </ul>
-
-      <div id="distributors_pagination">
-        <?php echo $this->pagination->getPagesLinks(); ?>
-      </div>
-
-    </div>
-
-
-  <?php else: ?>
-    There are no items in the list
-  <?php endif; ?>
+	</ul>
+  <?php
+  }
+  else {
+	echo JText::_('NO_COUNTRIES');
+  }
+  ?>
 </form>
 
