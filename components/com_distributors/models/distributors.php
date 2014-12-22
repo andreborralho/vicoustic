@@ -44,11 +44,6 @@
 	}
 
 	protected function getListQuery() {
-	  $current_url = JURI::current();
-	  $url_parts = explode('/', $current_url);
-	  $url_market1 = $url_parts[3];
-	  $url_market2 = $url_parts[4];
-
 	  // Create a new query object.
 	  $db = $this->getDbo();
 	  $query = $db->getQuery(true);
@@ -76,26 +71,15 @@
 		$query->where('(a.state = 1)');
 	  }
 
-	  if($url_market1 == "music-broadcast" || $url_market2 == "music-broadcast"){
+
+	  if(strpos(JURI::current(),'music-broadcast') !== false) {
 		$query->where('a.music_broadcast = 1');
 	  }
-	  elseif($url_market1 == "hifi-home-cinema" || $url_market2 == "hifi-home-cinema"){
+	  elseif(strpos(JURI::current(),'hifi-home-cinema') !== false){
 		$query->where('a.hifi_home_cinema = 1');
 	  }
-	  elseif($url_market1 == "building-construction" || $url_market2 == "building-construction"){
+	  elseif(strpos(JURI::current(),'building-construction') !== false){
 		$query->where('a.building_construction = 1');
-	  }
-
-	  // Filter by search in title
-	  $search = $this->getState('filter.search');
-	  if (!empty($search)) {
-		if (stripos($search, 'id:') === 0) {
-		  $query->where('a.id = '.(int) substr($search, 3));
-		}
-		else {
-		  $search = $db->Quote('%'.$db->escape($search, true).'%');
-		  $query->where('( a.country LIKE '.$search.' )');
-		}
 	  }
 
 	  return $query;

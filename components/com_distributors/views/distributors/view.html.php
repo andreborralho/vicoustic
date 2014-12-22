@@ -38,7 +38,7 @@
 	  $this->state		= $this->get('State');
 	  $this->items		= $this->get('Items');
 	  $this->pagination	= $this->get('Pagination');
-	  $this->params       = $app->getParams('com_distributors');
+	  $this->params     = $app->getParams('com_distributors');
 
 	  // Check for errors.
 	  if (count($errors = $this->get('Errors'))) {
