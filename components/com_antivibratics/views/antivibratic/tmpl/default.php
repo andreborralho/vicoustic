@@ -9,7 +9,7 @@
 
 // no direct access
 defined('_JEXEC') or die;
-require_once('fpdf/fpdf.php');
+require_once JPATH_BASE . '/libraries/fpdf/fpdf.php';
 
 //Load admin language file
 $lang = JFactory::getLanguage();

@@ -9,7 +9,7 @@
 
 // no direct access
 defined('_JEXEC') or die;
-require_once('fpdf/fpdf.php');
+require_once JPATH_BASE . '/libraries/fpdf/fpdf.php';
 
 //Load admin language file
 $lang = JFactory::getLanguage();
@@ -778,7 +778,7 @@ $document->addScript('scripts/galleria-1.2.9.min.js');
 			$pdf->Cell(90, 5, JText::_('COM_DOORS_FORM_LBL_DOOR_PALLET_WEIGHT') . ": " . $this->item->pallet_weight . " kg", 'L');
 			/*$pdf->Ln();
 			$pdf->SetX(37);
-			$pdf->Cell(90, 5, JText::_('COM_DOORS_FORM_LBL_DOOR_MSRP') . ": " . $this->item->msrp . " €", 'L');			
+			$pdf->Cell(90, 5, JText::_('COM_DOORS_FORM_LBL_DOOR_MSRP') . ": " . $this->item->msrp . " ï¿½", 'L');			
 			*/$pdf->Ln(9);							
 			
 			
