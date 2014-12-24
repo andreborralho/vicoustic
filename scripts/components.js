@@ -151,3 +151,41 @@ function changeCurrentButton(button){
         jQuery("#option_preview").css("top",(e.pageY - xOffset) + "px").css("left",(e.pageX + yOffset) + "px");
     });
 
+//----------------ISOLATION SIMULATOR-------------------
+var currency_value = 1, unit_value = 1;
+
+$('#currency_list_form').change(function() {
+    var currency_symbol = $(this).find('option:selected').data('symbol');
+
+    currency_value = $(this).val();
+
+    $('.iso_currency_symbol').text(currency_symbol);
+
+    $('.iso_price').each(function(){
+        $(this).text(($(this).data('price') * currency_value * unit_value).toFixed(2));
+    });
+});
+
+$('#unit_list_form').change(function() {
+    var unit_symbol = $(this).find('option:selected').data('symbol');
+
+    unit_value = $(this).val();
+
+    $('.iso_unit_symbol').text(unit_symbol);
+
+    $('.iso_price').each(function(){
+        $(this).text(($(this).data('price') * currency_value * unit_value).toFixed(2));
+    });
+});
+
+jQuery('.iso_category_button').click(function(category){
+    console.log(category.target.id);
+    if(jQuery('#' + category.target.id).hasClass('iso_simulator_button_checked')){
+        jQuery('.' + category.target.id).css('display', 'none');
+        jQuery('#' + category.target.id).removeClass('iso_simulator_button_checked');
+    }
+    else{
+        jQuery('.' + category.target.id).css('display', 'block');
+        jQuery('#' + category.target.id).addClass('iso_simulator_button_checked');
+    }
+});
