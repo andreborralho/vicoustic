@@ -1,29 +1,28 @@
 <?php
-/**
- * @version     1.0.0
- * @package     com_accessories
- * @copyright   Copyright (C) 2013. All rights reserved.
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
- * @author      Andre <andrefilipe_one@hotmail.com> - http://
- */
+	/**
+	 * @version     1.0.0
+	 * @package     com_accessories
+	 * @copyright   Copyright (C) 2013. All rights reserved.
+	 * @license     GNU General Public License version 2 or later; see LICENSE.txt
+	 * @author      Andre <andrefilipe_one@hotmail.com> - http://
+	 */
 
 // No direct access.
-defined('_JEXEC') or die;
+	defined('_JEXEC') or die;
 
-require_once JPATH_COMPONENT.'/controller.php';
+	require_once JPATH_COMPONENT.'/controller.php';
 
-/**
- * Accessories list controller class.
- */
-class AccessoriesControllerAccessories extends AccessoriesController
-{
 	/**
-	 * Proxy for getModel.
-	 * @since	1.6
+	 * Accessories list controller class.
 	 */
-	public function &getModel($name = 'Accessories', $prefix = 'AccessoriesModel')
-	{
-		$model = parent::getModel($name, $prefix, array('ignore_request' => true));
-		return $model;
+	class AccessoriesControllerAccessories extends AccessoriesController {
+		/**
+		 * Proxy for getModel.
+		 * @since	1.6
+		 */
+		public function &getModel($name = 'Accessories', $prefix = 'AccessoriesModel')
+		{
+			$model = parent::getModel($name, $prefix, array('ignore_request' => true));
+			return $model;
+		}
 	}
-}

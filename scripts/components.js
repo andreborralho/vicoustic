@@ -1,3 +1,4 @@
+//----------------RESOURCES-------------------
 jQuery("#catalogs_entry").fadeIn(500);
 
 jQuery("#catalogs_icon").click(function(){
@@ -53,6 +54,7 @@ else{
 }
 
 
+//----------------ACOUSTIC SIMULATOR-------------------
 fadeIfChecked("panels_wood", "#filter_panels_wood_color");
 fadeIfChecked("panels_fabric", "#filter_panels_fabric_color");
 fadeIfChecked("panels_foam", "#filter_panels_foam_type");
@@ -125,31 +127,31 @@ function changeCurrentButton(button){
     jQuery(button).addClass('filter_button_current');
 }
 
-    /* CONFIG */
-    xOffset = 5;
-    yOffset = 20;
+/* CONFIG */
+xOffset = 5;
+yOffset = 20;
 
-    // these 2 variable determine popup's distance from the cursor
-    // you might want to adjust to get the right result
+// these 2 variable determine popup's distance from the cursor
+// you might want to adjust to get the right result
 
-    /* END CONFIG */
-    jQuery(".acoustic_simulator_other_options_preview").hover(function(e){
-            this.t = this.title;
-            this.title = "";
-            var c = (this.t != "") ? "<br/>" + this.t : "";
-            jQuery("body").append("<p id='option_preview'><img src='"+ this.href +"' alt='url preview'>"+ c +"</p>");
-            jQuery("#option_preview")
-                .css("top",(e.pageY - xOffset) + "px")
-                .css("left",(e.pageX + yOffset) + "px")
-                .fadeIn("slow");
-        },
-        function(){
-            this.title = this.t;
-            jQuery("#option_preview").remove();
-        });
-    jQuery(".acoustic_simulator_other_options_preview").mousemove(function(e){
-        jQuery("#option_preview").css("top",(e.pageY - xOffset) + "px").css("left",(e.pageX + yOffset) + "px");
+/* END CONFIG */
+jQuery(".acoustic_simulator_other_options_preview").hover(function(e){
+        this.t = this.title;
+        this.title = "";
+        var c = (this.t != "") ? "<br/>" + this.t : "";
+        jQuery("body").append("<p id='option_preview'><img src='"+ this.href +"' alt='url preview'>"+ c +"</p>");
+        jQuery("#option_preview")
+            .css("top",(e.pageY - xOffset) + "px")
+            .css("left",(e.pageX + yOffset) + "px")
+            .fadeIn("slow");
+    },
+    function(){
+        this.title = this.t;
+        jQuery("#option_preview").remove();
     });
+jQuery(".acoustic_simulator_other_options_preview").mousemove(function(e){
+    jQuery("#option_preview").css("top",(e.pageY - xOffset) + "px").css("left",(e.pageX + yOffset) + "px");
+});
 
 //----------------ISOLATION SIMULATOR-------------------
 var currency_value = 1, unit_value = 1;
@@ -188,4 +190,50 @@ jQuery('.iso_category_button').click(function(category){
         jQuery('.' + category.target.id).css('display', 'block');
         jQuery('#' + category.target.id).addClass('iso_simulator_button_checked');
     }
+});
+
+
+//----------------PRODUCTS-------------------
+function screenshotPreview(){
+    // these 2 variable determine popup's distance from the cursor
+    // you might want to adjust to get the right result
+    var xOffset = 10;
+    var yOffset = 30;
+
+    /* END CONFIG */
+    jQuery(".product_similar_link").hover(function(e){
+            this.t = this.title;
+            this.title = "";
+            var c = (this.t != "") ? "<br/>" + this.t : "";
+            jQuery("body").append("<p id='product_preview'><img src='"+ this.rel +"' alt='url preview'>"+ c +"</p>");
+            jQuery("#product_preview").css("top",(e.pageY - xOffset) + "px").css("left",(e.pageX + yOffset) + "px").fadeIn("fast");
+        },
+        function(){
+            this.title = this.t;
+            jQuery("#product_preview").remove();
+        }
+    ).mousemove(function(e){
+        jQuery("#product_preview").css("top",(e.pageY - xOffset) + "px").css("left",(e.pageX + yOffset) + "px");
+    });
+}
+
+function initGalleria() {
+    if(jQuery('.product_main_img').length != 0) {
+        Galleria.ready(function() {
+            var galleria = this;
+
+            jQuery('.product_main_img').click(function(event) {
+                if(event.target != '[object HTMLDivElement]')
+                    galleria.openLightbox(); // toggles the fullscreen
+            });
+        });
+
+        Galleria.run('.product_main_img');
+    }
+}
+
+// starting the script on page load
+jQuery(document).ready(function(){
+    screenshotPreview();
+    initGalleria();
 });
