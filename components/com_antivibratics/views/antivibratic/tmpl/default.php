@@ -18,6 +18,7 @@ $lang->load('com_antivibratics', JPATH_ADMINISTRATOR);
 $document = JFactory::getDocument();
 $document->addScript('//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js');
 $document->addScript('scripts/galleria-1.2.9.min.js');
+$document->addScript('scripts/components.js');
 
 ?>
 
@@ -34,7 +35,7 @@ $document->addScript('scripts/galleria-1.2.9.min.js');
         		<?php echo $this->item->name; ?>
         	</h1>
         	    			
-        	<div id="antivibratic_main_img">
+        	<div class="product_main_img">
         		<?php if($this->item->photo_300px): ?>
         			<img alt="<?php echo $this->item->name; ?>" src="<?php echo $this->item->photo_300px; ?>">
         		<?php else : ?>
