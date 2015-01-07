@@ -13,7 +13,6 @@
 
 
 <?php if( $this->item ) {
-  //var_dump($this->item);
   $GLOBALS['accessory_name'] = $this->item->name;
   ?>
 
@@ -21,7 +20,7 @@
 
 	<h1 class="product_name"><?php echo $this->item->name; ?></h1>
 
-	<div id="accessory_main_img">
+	<div class="product_main_img">
 	  <?php
 		echo AccessoriesHelper::renderProductGalleryImage($this->item);
 		echo AccessoriesHelper::renderProductGallerySubImage($this->item->photo_detail1);

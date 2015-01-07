@@ -25,7 +25,7 @@
 	public static function renderProductGalleryImage($product) {
 	  $html_output = '<img alt="' . $product->name . '" ';
 	  if(!empty($product->photo_300px) && !empty($product->photo_1024px)) {
-		$html_output .= 'src="/' . $product->photo_300px . '" data-big="http://www.vicoustic.com/' . $product->photo_1024px . '">';
+		$html_output .= 'src="/' . $product->photo_300px . '" data-big="' . JURI::root() . $product->photo_1024px . '">';
 	  }
 	  elseif(!empty($product->photo_300px)) {
 		$html_output .= 'src="/' . $product->photo_300px . '">';

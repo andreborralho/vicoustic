@@ -13,12 +13,12 @@
   jimport('joomla.application.component.view');
   require_once JPATH_COMPONENT . '/helpers/accessories.php';
   require_once JPATH_BASE . '/libraries/fpdf/fpdf.php';
-  //TODO: fazer import em todos os produtos do novo path.....
 
   JFactory::getLanguage()->load('com_vicoustic', JPATH_SITE, 'en-GB');
   $document = JFactory::getDocument();
   $document->addScript('//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js');
   $document->addScript('scripts/galleria-1.2.9.min.js');
+  $document->addScript('scripts/components.js');
 
   class AccessoriesViewAccessory extends JView {
 
