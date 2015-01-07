@@ -2796,13 +2796,8 @@ li.li_number9  {
 
 #panel_main_img{
 	height: 220px;
-	width: 250px;
-	display: inline;
-	float: left;
-	margin-right: 10px;
-	text-align: center;
 }
-#door_main_img, #antivibratic_main_img, #accessory_main_img, #blanket_main_img{
+.product_main_img{
 	width: 250px;
 	height: 250px;
 	display: inline;
