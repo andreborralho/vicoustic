@@ -40,24 +40,28 @@
 			if(!empty($photo)) {
 				return '<img alt="" src="/' . $photo . '">';
 			}
+			return false;
 		}
 
 		public static function renderProductFileLink($file, $file_label) {
 			if(!empty($file)) {
 				return '<li class="product_link"><img alt="" src="/images/icons/plus_arrow.gif"><a class="product_links_a" href="' . $file . '"> ' . $file_label . '</a></li>';
 			}
+			return false;
 		}
 
 		public static function renderTechnicalProperty($property, $label, $units = '') {
 			if(!empty($property) && $property !== '0.0' && $property !== '0.00' && $property !== '0.000') {
 				return '<li><b>' . $label . ': </b>' . $property . ' ' . $units . '</li>';
 			}
+			return false;
 		}
 
 		public static function renderProductPortfolioImage($product_photo_id, $portfolio_photo_id, $portfolio_thumbnail, $portfolio_label) {
 			if(!empty($portfolio_photo_id) && $portfolio_photo_id == $product_photo_id) {
 				return '<div class="product_portfolio_image"><img alt="" src="/' . $portfolio_thumbnail . '"><div>' . $portfolio_label . '</div></div>';
 			}
+			return false;
 		}
 
 		public static function hasSimilarProducts($products, $current_product) {
@@ -69,8 +73,8 @@
 			return false;
 		}
 
-		public static function renderSimilarProductImage($product) {
-			$html_output = '<a class="product_similar_link" href="' .  JRoute::_('index.php?option=com_accessories&view=accessory&id=' . (int)$product->id) . '" ';
+		public static function renderSimilarProductImage($product, $href) {
+			$html_output = '<a class="product_similar_link" href="' .  $href . '" ';
 			if($product->photo_150px) {
 				$html_output .= 'rel="/' . $product->photo_150px . '">' . $product->name . '</a>';
 			}

@@ -11,7 +11,6 @@
 	defined('_JEXEC') or die;
 
 	jimport('joomla.application.component.modellist');
-	jimport('joomla.event.dispatcher');
 
 	/**
 	 * Antivibratics model.
@@ -19,14 +18,6 @@
 	class AntivibraticsModelAntivibratic extends JModelList {
 
 		var $_item = null;
-
-		public function __construct($config = array()) {
-			parent::__construct($config);
-
-			// Set the pagination request variables
-			$this->setState('limit', JRequest::getVar('limit', 500, '', 'int'));
-			$this->setState('limitstart', JRequest::getVar('limitstart', 0, '', 'int'));
-		}
 
 		protected function populateState() {
 			$app = JFactory::getApplication('com_antivibratics');
@@ -51,9 +42,11 @@
 				$table = $this->getTable();
 
 				// Attempt to load the row.
-				if ($table->load($id) && $published = $this->getState('filter.published')) {
-					if ($table->state != $published) {
-						return $this->_item;
+				if ($table->load($id)){
+					if ($published = $this->getState('filter.published')) {
+						if ($table->state != $published) {
+							return $this->_item;
+						}
 					}
 					// Convert the JTable to a clean JObject.
 					$properties = $table->getProperties(1);
@@ -82,6 +75,7 @@
 
 			$query->from('`#__antivibratics` AS a');
 
+
 			// Join over the portfolio field 'portfolio'
 			$query->select('portfolio_photos1.id AS portfolio_photo1_id,
 						portfolio_photos1.photo AS portfolio_photo1_photo, 
@@ -98,14 +92,13 @@
 
 			$query->join('LEFT', '#__portfolio_photos AS portfolio_photos2 ON portfolio_photo_id2 = portfolio_photos2.id');
 
-
 			// Filter by published state
 			$published = $this->getState('filter.state');
 
 			if (is_numeric($published)) {
 				$query->where('a.state = '.(int) $published);
 			} else {
-				$query->where('(a.state = 1)');
+				$query->where('a.state = 1');
 			}
 
 			return $query;

@@ -7,13 +7,11 @@
 	 * @author      Andre <andrefilipe_one@hotmail.com> - http://
 	 */
 
-
 	// no direct access
 	defined('_JEXEC') or die;
-
 ?>
 
-<h1 class="page_title"><?php echo JText::_('ACCESSORIES'); ?></h1>
+	<h1 class="page_title"><?php echo JText::_('ACCESSORIES'); ?></h1>
 
 <?php if($this->items) { ?>
 
@@ -38,4 +36,3 @@
 else {
 	echo JText::_('NO_ACCESSORIES');
 }
-?>

@@ -42,9 +42,11 @@
 				$table = $this->getTable();
 
 				// Attempt to load the row.
-				if ($table->load($id) && $published = $this->getState('filter.published')) {
-					if ($table->state != $published) {
-						return $this->_item;
+				if ($table->load($id)){
+					if ($published = $this->getState('filter.published')) {
+						if ($table->state != $published) {
+							return $this->_item;
+						}
 					}
 					// Convert the JTable to a clean JObject.
 					$properties = $table->getProperties(1);
