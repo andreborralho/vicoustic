@@ -2740,6 +2740,8 @@ li.li_number9  {
 }
 .products_list_icons img{
 	float: left;
+	width: 30px;
+	height: 30px;
 }
 .products_list_icon{
 	float: left;
