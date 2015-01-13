@@ -112,10 +112,10 @@
 				<ul class="product_technical_details">
 					<?php
 						echo AntivibraticsHelper::renderTechnicalProperty($this->item->units_per_box, JText::_('UNITS_PER_BOX'));
-						echo AntivibraticsHelper::renderBoxDimensions($this->item->box_length, $this->item->box_width, $this->item->box_height, JText::_('BOX_DIMENSIONS'), JText::_('MM'));
+						echo AntivibraticsHelper::renderDimensionsProperty($this->item->box_length, $this->item->box_width, $this->item->box_height, JText::_('BOX_DIMENSIONS'), JText::_('MM'));
 						echo AntivibraticsHelper::renderTechnicalProperty($this->item->box_weight, JText::_('BOX_WEIGHT'), JText::_('KG'));
 						echo AntivibraticsHelper::renderTechnicalProperty($this->item->box_volume, JText::_('BOX_VOLUME'), 'm<span style="vertical-align:super; font-size:0.8em">3</span>');
-						echo AntivibraticsHelper::renderBoxDimensions($this->item->mastercarton_box_length, $this->item->mastercarton_box_width, $this->item->mastercarton_box_height, JText::_('MASTERCARTON_BOX_DIMENSIONS'), JText::_('MM'))
+						echo AntivibraticsHelper::renderDimensionsProperty($this->item->mastercarton_box_length, $this->item->mastercarton_box_width, $this->item->mastercarton_box_height, JText::_('MASTERCARTON_BOX_DIMENSIONS'), JText::_('MM'))
 					?>
 				</ul>
 			</div>
@@ -182,9 +182,9 @@
 		$pdf->AddPage();
 		$pdf->SetFont('Arial','B',16);
 
-		if($this->item->photo_300px):
+		if($this->item->photo_300px) {
 			$pdf->Image($this->item->photo_300px, 10, 30, 60);
-		endif;
+		}
 
 		$pdf->Image(JPATH_BASE . '/images/icons/contactos-pdf.jpg', 155, 33, 46);
 
@@ -230,7 +230,7 @@
 
 		if($this->item->rupture_point > 0) {
 			$pdf->SetX(37);
-			$pdf->Cell(90, 5, JText::_('RUPTURE_POINT') . ": " . $this->item->rupture_point . " Kg", 'L');
+			$pdf->Cell(90, 5, JText::_('RUPTURE_POINT') . ": " . $this->item->rupture_point . ' ' . JText::_('KG'), 'L');
 			$pdf->Ln();
 		}
 
@@ -384,7 +384,7 @@
 		$pdf->Cell(90, 5, JText::_('BOX_DIMENSIONS') . ": " . $this->item->box_length . " x " . $this->item->box_width ." x " . $this->item->box_height ." mm", 'L');
 		$pdf->Ln();
 		$pdf->SetX(37);
-		$pdf->Cell(90, 5, JText::_('BOX_WEIGHT') . ": " . $this->item->box_weight . " kg", 'L');
+		$pdf->Cell(90, 5, JText::_('BOX_WEIGHT') . ": " . $this->item->box_weight . ' ' . JText::_('KG'), 'L');
 
 		if($this->item->mastercarton_box_length > 0 && $this->item->mastercarton_box_width > 0 && $this->item->mastercarton_box_height > 0) {
 			$pdf->Ln();

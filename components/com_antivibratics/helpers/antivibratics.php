@@ -126,7 +126,7 @@
 			return $html_output;
 		}
 
-		public static function renderBoxDimensions($length, $width, $height, $label, $unit) {
+		public static function renderDimensionsProperty($length, $width, $height, $label, $unit) {
 			if($length > 0 && $width > 0) {
 				return '<li><b>' . $label . ': </b>' . number_format((float)$length, 0, '.', '') . ' x ' . number_format((float)$width, 0, '.', '') . ' x ' . number_format((float)$height, 0, '.', '') . ' ' .  $unit . '</li>';
 			}
