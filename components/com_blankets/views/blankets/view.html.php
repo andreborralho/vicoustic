@@ -14,7 +14,6 @@
 	require_once JPATH_COMPONENT . '/helpers/blankets.php';
 	JFactory::getLanguage()->load('com_vicoustic', JPATH_SITE, 'en-GB');
 
-
 	/**
 	 * View class for a list of Blankets.
 	 */
