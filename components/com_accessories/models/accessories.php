@@ -49,12 +49,7 @@
 			$query->from('`#__accessories` AS a');
 
 			// Filter by published state
-			$published = $this->getState('filter.state');
-			if (is_numeric($published)) {
-				$query->where('a.state = '.(int) $published);
-			} else {
-				$query->where('a.state_featured = 1');
-			}
+			$query->where('a.state_featured = 1');
 
 			if(strpos(JURI::current(),'music-broadcast') !== false) {
 				$query->where('a.music_broadcast = 1');
