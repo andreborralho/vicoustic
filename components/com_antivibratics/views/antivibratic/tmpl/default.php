@@ -92,7 +92,7 @@
 
 				<ul class="product_technical_details">
 					<?php
-						if($this->item->installation_wall == 1 || $this->item->installation_ceiling == 1 || $this->item->installation_floor == 1 || $this->item->installation_division_wall == 1) {
+						if ($this->item->installation_wall == 1 || $this->item->installation_ceiling == 1 || $this->item->installation_floor == 1 || $this->item->installation_division_wall == 1) {
 							echo AntivibraticsHelper::renderTechnicalProperty(AntivibraticsHelper::renderInstallationPlaceProperty($this->item->installation_wall, $this->item->installation_ceiling, $this->item->installation_floor, $this->item->installation_division_wall), JText::_('INSTALLATION_PLACE'));
 						}
 
@@ -130,7 +130,7 @@
 				?>
 			</div>
 
-			<?php if(AntivibraticsHelper::hasSimilarProducts($this->items, $this->item)) { ?>
+			<?php if (AntivibraticsHelper::hasSimilarProducts($this->items, $this->item)) { ?>
 				<table class="product_similar_table">
 					<thead>
 					<tr>
@@ -144,9 +144,9 @@
 
 					<tbody>
 					<?php foreach ($this->items as $i => $item) {
-						if($item->family == $this->item->family) { ?>
+						if ($item->family == $this->item->family) { ?>
 							<tr>
-								<td><?php echo AntivibraticsHelper::renderSimilarProductImage($item, JRoute::_('index.php?option=com_antivibratics&view=antivibratic&id=' . (int)$item->id)); ?></td>
+								<td><?php echo AntivibraticsHelper::renderSimilarProductImage($item, JRoute::_('index.php?option=com_antivibratics&view=antivibratic&id=' . (int) $item->id)); ?></td>
 								<td><?php echo $item->ref; ?></td>
 								<td><?php echo $item->ean13; ?></td>
 								<td><?php echo $item->mounting_width; ?></td>
@@ -162,50 +162,51 @@
 		</section>
 
 		<?php
-		class PDF extends FPDF{
 
-			function Header(){
+		class PDF extends FPDF {
+
+			function Header() {
 				$this->Image(JPATH_BASE . '/images/icons/cab-pdf.jpg', 0, 0, 210);
-				$this->SetFont('Arial','B',16);
+				$this->SetFont('Arial', 'B', 16);
 
 				$antivibratic_name = $GLOBALS['antivibratic_name'];
 
 				$this->Cell(40, 10, $antivibratic_name);
 				$this->Ln(23);
 			}
-			function Footer(){
+
+			function Footer() {
 				$this->Image(JPATH_BASE . '/images/icons/footer-pdf.jpg', 0, 258, 210);
 			}
 		}
 
 		$pdf = new PDF();
 		$pdf->AddPage();
-		$pdf->SetFont('Arial','B',16);
+		$pdf->SetFont('Arial', 'B', 16);
 
-		if($this->item->photo_300px) {
+		if ($this->item->photo_300px) {
 			$pdf->Image($this->item->photo_300px, 10, 30, 60);
 		}
 
 		$pdf->Image(JPATH_BASE . '/images/icons/contactos-pdf.jpg', 155, 33, 46);
 
-
 		$pdf->SetDrawColor(150);
-		$pdf->SetFont('Arial','',9);
+		$pdf->SetFont('Arial', '', 9);
 		$pdf->SetXY(10, 87);
 
 		$description1 = iconv('UTF-8', 'windows-1252', $this->item->description1);
 		$description2 = iconv('UTF-8', 'windows-1252', $this->item->description2);
 
 		$pdf->Ln();
-		$pdf->MultiCell(190,4,strip_tags($description1));
+		$pdf->MultiCell(190, 4, strip_tags($description1));
 		$pdf->Ln();
-		$pdf->MultiCell(190,4,strip_tags($description2));
+		$pdf->MultiCell(190, 4, strip_tags($description2));
 		$pdf->Ln();
 
-		$pdf->SetFont('Arial','B',10.5);
+		$pdf->SetFont('Arial', 'B', 10.5);
 		$pdf->Cell(27, 7, JText::_('MAIN_INFO'));
 
-		$pdf->SetFont('Arial','',9);
+		$pdf->SetFont('Arial', '', 9);
 		$pdf->Cell(90, 5, JText::_('REF') . ": " . $this->item->ref, 'L');
 		$pdf->Ln();
 		$pdf->SetX(37);
@@ -215,27 +216,27 @@
 		$pdf->Cell(90, 5, JText::_('HS_CODE') . ": " . $this->item->hs_code, 'L');
 		$pdf->Ln();
 
-		if($this->item->recycle_coefficient > 0) {
+		if ($this->item->recycle_coefficient > 0) {
 			$pdf->SetX(37);
 			$pdf->Cell(90, 5, JText::_('RECYCLE_COEFFICIENT') . ": " . $this->item->recycle_coefficient . " %", 'L');
 		}
 		$pdf->Ln(9);
 
-		$pdf->SetFont('Arial','B',10.5);
+		$pdf->SetFont('Arial', 'B', 10.5);
 		$pdf->Cell(27, 7, JText::_('PERFORMANCE'));
 
-		$pdf->SetFont('Arial','',9);
+		$pdf->SetFont('Arial', '', 9);
 		$pdf->Cell(90, 5, JText::_('MOUNTING_WIDTH') . ": " . $this->item->mounting_width, 'L');
 		$pdf->Ln();
 
-		if($this->item->rupture_point > 0) {
+		if ($this->item->rupture_point > 0) {
 			$pdf->SetX(37);
 			$pdf->Cell(90, 5, JText::_('RUPTURE_POINT') . ": " . $this->item->rupture_point . ' ' . JText::_('KG'), 'L');
 			$pdf->Ln();
 		}
 
 		$pdf->SetX(37);
-		if($this->item->load_weight_min == $this->item->load_weight_max) {
+		if ($this->item->load_weight_min == $this->item->load_weight_max) {
 			$pdf->Cell(90, 5, JText::_('LOAD_WEIGHT') . ": " . $this->item->load_weight_min . " " . JText::_('KG'), 'L');
 		}
 		else {
@@ -244,75 +245,72 @@
 
 		$pdf->Ln(6);
 
-
-		if($this->item->fire_class_en) {
+		if ($this->item->fire_class_en) {
 			$pdf->SetX(37);
 			$pdf->Cell(90, 5, JText::_('FIRE_CLASS_EN') . ": " . $this->item->fire_class_en, 'L');
 			$pdf->Ln();
 		}
-		if($this->item->fire_class_din) {
+		if ($this->item->fire_class_din) {
 			$pdf->SetX(37);
 			$pdf->Cell(90, 5, JText::_('FIRE_CLASS_DIN') . ": " . $this->item->fire_class_din, 'L');
 			$pdf->Ln();
 		}
-		if($this->item->fire_class_nf_p) {
+		if ($this->item->fire_class_nf_p) {
 			$pdf->SetX(37);
 			$pdf->Cell(90, 5, JText::_('FIRE_CLASS_NF_P') . ": " . $this->item->fire_class_nf_p, 'L');
 			$pdf->Ln();
 		}
-		if($this->item->fire_class_uni) {
+		if ($this->item->fire_class_uni) {
 			$pdf->SetX(37);
 			$pdf->Cell(90, 5, JText::_('FIRE_CLASS_UNI') . ": " . $this->item->fire_class_uni, 'L');
 			$pdf->Ln();
 		}
-		if($this->item->fire_class_bs) {
+		if ($this->item->fire_class_bs) {
 			$pdf->SetX(37);
 			$pdf->Cell(90, 5, JText::_('FIRE_CLASS_BS') . ": " . $this->item->fire_class_bs, 'L');
 			$pdf->Ln();
 		}
 		$pdf->Ln(9);
 
-
-		$pdf->SetFont('Arial','B',10.5);
+		$pdf->SetFont('Arial', 'B', 10.5);
 		$pdf->Cell(27, 7, JText::_('INSTALLATION'));
 
-		$pdf->SetFont('Arial','',9);
+		$pdf->SetFont('Arial', '', 9);
 		$pdf->SetX(37);
 
-		if($this->item->installation_wall == 1 || $this->item->installation_ceiling == 1 || $this->item->installation_floor == 1 ||
-			$this->item->installation_division_wall == 1):
+		if ($this->item->installation_wall == 1 || $this->item->installation_ceiling == 1 || $this->item->installation_floor == 1 || $this->item->installation_division_wall == 1) {
 			$pdf->Cell(26, 5, JText::_('INSTALLATION_PLACE') . ": ", 'L');
 
-			if($this->item->installation_wall == 1):
+			if ($this->item->installation_wall == 1) {
 				$pdf->Cell(6, 5, JText::_('WALL'));
 
-				if($this->item->installation_ceiling == 1 || $this->item->installation_floor == 1 || $this->item->installation_division_wall == 1):
+				if ($this->item->installation_ceiling == 1 || $this->item->installation_floor == 1 || $this->item->installation_division_wall == 1) {
 					$pdf->Cell(2, 5, ",");
-				endif;
-			endif;
+				}
+			}
 
-			if($this->item->installation_ceiling == 1):
+			if ($this->item->installation_ceiling == 1) {
 				$pdf->Cell(10, 5, JText::_('CEILING'));
 
-				if($this->item->installation_floor == 1 || $this->item->installation_division_wall == 1):
+				if ($this->item->installation_floor == 1 || $this->item->installation_division_wall == 1) {
 					$pdf->Cell(2, 5, ",");
-				endif;
-			endif;
+				}
+			}
 
-			if($this->item->installation_floor == 1):
+			if ($this->item->installation_floor == 1) {
 				$pdf->Cell(7, 5, JText::_('FLOOR'));
 
-				if($this->item->installation_division_wall == 1):
+				if ($this->item->installation_division_wall == 1) {
 					$pdf->Cell(2, 5, ",");
-				endif;
-			endif;
+				}
+			}
 
-			if($this->item->installation_division_wall == 1):
+			if ($this->item->installation_division_wall == 1) {
 				$pdf->Cell(8, 5, JText::_('DIVISION_WALL'));
-			endif;
+			}
 
 			$pdf->Ln();
-		endif;
+		}
 
 
 		$pdf->SetX(37);

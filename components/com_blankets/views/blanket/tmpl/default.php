@@ -9,6 +9,7 @@
 
 // no direct access
 	defined('_JEXEC') or die;
+	error_reporting(E_ALL);
 ?>
 
 <?php
@@ -116,7 +117,7 @@
 						echo BlanketsHelper::renderTechnicalProperty($this->item->box_weight, JText::_('BOX_WEIGHT'), JText::_('KG'));
 						echo BlanketsHelper::renderTechnicalProperty($this->item->box_volume, JText::_('BOX_VOLUME'), 'm<span style="vertical-align:super; font-size:0.8em">3</span>');
 						echo BlanketsHelper::renderTechnicalProperty($this->item->units_per_pallet, JText::_('UNITS_PER_PALLET'));
-						echo BlanketsHelper::renderDimensionsProperty($this->item->mastercarton_box_length, $this->item->mastercarton_box_width, $this->item->mastercarton_box_height, JText::_('PALLET_DIMENSIONS'), JText::_('MM'));
+						echo BlanketsHelper::renderDimensionsProperty($this->item->pallet_length, $this->item->pallet_width, $this->item->pallet_height, JText::_('PALLET_DIMENSIONS'), JText::_('MM'));
 					?>
 				</ul>
 			</div>
@@ -149,7 +150,7 @@
 								<td><?php echo BlanketsHelper::renderSimilarProductImage($item, JRoute::_('index.php?option=com_blankets&view=blanket&id=' . (int) $item->id)); ?></td>
 								<td><?php echo $item->ref; ?></td>
 								<td><?php echo $item->ean13; ?></td>
-								<td><?php echo BlanketsHelper::renderDimensions($length, $width, $height, JText::_('MM')) ?></td>
+								<td><?php echo BlanketsHelper::renderDimensions($item->length, $item->width, $item->thickness, JText::_('MM')); ?></td>
 							</tr>
 						<?php
 						}
@@ -162,6 +163,7 @@
 
 
 		<?php
+
 		class PDF extends FPDF {
 
 			function Header() {
@@ -183,7 +185,7 @@
 		$pdf->AddPage();
 		$pdf->SetFont('Arial', 'B', 16);
 
-		if($this->item->photo_300px) {
+		if ($this->item->photo_300px) {
 			$pdf->Image($this->item->photo_300px, 10, 30, 60);
 		}
 
@@ -214,32 +216,27 @@
 		$pdf->SetX(37);
 		$pdf->Cell(90, 5, JText::_('HS_CODE') . ": " . $this->item->hs_code, 'L');
 		$pdf->Ln(6);
+
 		$pdf->SetX(37);
-
-		if ($this->item->diameter == 0):
-			$pdf->Cell(90, 5, JText::_('DIMENSIONS') . ": " . number_format((float) $this->item->length, 0, '.', '') . " x " . number_format((float) $this->item->width, 0, '.', '') . " x " . number_format((float) $this->item->thickness, 0, '.', '') . " mm", 'L');
-		else :
-			$pdf->Cell(90, 5, JText::_('DIMENSIONS') . ": " . number_format((float) $this->item->thickness, 0, '.', '') . " x " . number_format((float) $this->item->diameter, 0, '.', '') . " mm", 'L');
-		endif;
-
+		$pdf->Cell(90, 5, JText::_('DIMENSIONS') . ": " . number_format((float) $this->item->length, 0, '.', '') . " x " . number_format((float) $this->item->width, 0, '.', '') . " x " . number_format((float) $this->item->thickness, 0, '.', '') . " mm", 'L');
 		$pdf->Ln();
 
-		if ($this->item->weight != 0):
+		if ($this->item->weight != 0) {
 			$pdf->SetX(37);
 			$pdf->Cell(90, 5, JText::_('WEIGHT') . ": " . $this->item->weight . " kg", 'L');
 			$pdf->Ln();
-		endif;
+		}
 
-		if ($this->item->density != 0):
+		if ($this->item->density != 0) {
 			$pdf->SetX(37);
 			$pdf->Cell(90, 5, JText::_('DENSITY') . ": " . $this->item->density, 'L');
 			$pdf->Ln();
-		endif;
+		}
 
-		if ($this->item->recycle_coefficient != 0):
+		if ($this->item->recycle_coefficient != 0) {
 			$pdf->SetX(37);
 			$pdf->Cell(90, 5, JText::_('RECYCLE_COEFFICIENT') . ": " . $this->item->recycle_coefficient . " %", 'L');
-		endif;
+		}
 		$pdf->Ln(9);
 
 		$pdf->SetFont('Arial', 'B', 10.5);
@@ -247,69 +244,64 @@
 
 		$pdf->SetFont('Arial', '', 9);
 
-		if ($this->item->rw > 0):
+		if ($this->item->rw > 0) {
 			$pdf->Cell(90, 5, JText::_('RW') . ": " . ucwords($this->item->rw) . " dB", 'L');
 			$pdf->Ln();
-		endif;
+		}
 
-		if ($this->item->rw_ctr > 0):
+		if ($this->item->rw_ctr > 0) {
 			$pdf->SetX(37);
 			$pdf->Cell(90, 5, JText::_('RW_CTR') . ": " . ucwords($this->item->rw_ctr) . " dB", 'L');
 			$pdf->Ln();
-		endif;
+		}
 
-		if ($this->item->stc > 0):
+		if ($this->item->stc > 0) {
 			$pdf->SetX(37);
 			$pdf->Cell(90, 5, JText::_('STC') . ": " . ucwords($this->item->stc) . " dB", 'L');
 			$pdf->Ln();
-		endif;
+		}
 
-		if ($this->item->dnfw > 0):
+		if ($this->item->dnfw > 0) {
 			$pdf->SetX(37);
 			$pdf->Cell(90, 5, JText::_('DNFW') . ": " . ' ' . $this->item->dnfw, 'L');
 			$pdf->Ln();
-		endif;
+		}
 
-		if ($this->item->fire_class_en):
+		if ($this->item->fire_class_en) {
 			$pdf->SetX(37);
 			$pdf->Cell(90, 5, JText::_('FIRE_CLASS_EN') . ": " . $this->item->fire_class_en, 'L');
 			$pdf->Ln();
-		endif;
-		if ($this->item->fire_class_m):
+		}
+		if ($this->item->fire_class_din) {
 			$pdf->SetX(37);
-			$pdf->Cell(90, 5, JText::_('FIRE_CLASS_M') . ": " . $this->item->fire_class_m, 'L');
+			$pdf->Cell(90, 5, JText::_('FIRE_CLASS_DIN') . ": " . $this->item->fire_class_din, 'L');
 			$pdf->Ln();
-		endif;
-		if ($this->item->fire_class_nf_p):
+		}
+		if ($this->item->fire_class_nf_p) {
 			$pdf->SetX(37);
 			$pdf->Cell(90, 5, JText::_('FIRE_CLASS_NF_P') . ": " . $this->item->fire_class_nf_p, 'L');
 			$pdf->Ln();
-		endif;
-		if ($this->item->fire_class_uni):
+		}
+		if ($this->item->fire_class_uni) {
 			$pdf->SetX(37);
 			$pdf->Cell(90, 5, JText::_('FIRE_CLASS_UNI') . ": " . $this->item->fire_class_uni, 'L');
 			$pdf->Ln();
-		endif;
-		if ($this->item->fire_class_bs):
+		}
+		if ($this->item->fire_class_bs) {
 			$pdf->SetX(37);
 			$pdf->Cell(90, 5, JText::_('FIRE_CLASS_BS') . ": " . $this->item->fire_class_bs, 'L');
 			$pdf->Ln();
-		endif;
-		if ($this->item->humidity_class != 0):
-			$pdf->SetX(37);
-			$pdf->Cell(90, 5, JText::_('HUMIDITY_CLASS') . ": " . $this->item->humidity_class, 'L');
-			$pdf->Ln();
-		endif;
+		}
 
-		if ($this->item->humidity_resistance != 0):
+		if ($this->item->humidity_resistance != 0) {
 			$pdf->SetX(37);
 			$pdf->Cell(90, 5, JText::_('HUMIDITY_RESISTANCE') . ": " . $this->item->humidity_resistance . " %", 'L');
 			$pdf->Ln();
-		endif;
-		if ($this->item->thermal_conductivity != 0):
+		}
+		if ($this->item->thermal_conductivity != 0) {
 			$pdf->SetX(37);
 			$pdf->Cell(90, 5, JText::_('THERMAL_CONDUCTIVITY') . ": " . $this->item->thermal_conductivity . " W/mK", 'L');
-		endif;
+		}
 		$pdf->Ln(9);
 
 		$pdf->SetFont('Arial', 'B', 10.5);
@@ -323,16 +315,16 @@
 		$pdf->Cell(90, 5, JText::_('BOX_DIMENSIONS') . ": " . $this->item->box_length . " x " . $this->item->box_width . " x " . $this->item->box_height . " mm", 'L');
 		$pdf->Ln();
 
-		if ($this->item->box_weight != 0):
+		if ($this->item->box_weight != 0) {
 			$pdf->SetX(37);
 			$pdf->Cell(90, 5, JText::_('BOX_WEIGHT') . ": " . $this->item->box_weight . " kg", 'L');
 			$pdf->Ln();
-		endif;
+		}
 
-		if ($this->item->mastercarton_box_length != 0 && $this->item->mastercarton_box_width != 0 && $this->item->mastercarton_box_height != 0):
+		if ($this->item->pallet_length != 0 && $this->item->pallet_width != 0 && $this->item->pallet_height != 0) {
 			$pdf->SetX(37);
-			$pdf->Cell(90, 5, JText::_('PALLET_DIMENSIONS') . ": " . $this->item->mastercarton_box_length . " x " . $this->item->mastercarton_box_width . " x " . $this->item->mastercarton_box_height . " mm", 'L');
-		endif;
+			$pdf->Cell(90, 5, JText::_('PALLET_DIMENSIONS') . ": " . $this->item->pallet_length . " x " . $this->item->pallet_width . " x " . $this->item->pallet_height . " mm", 'L');
+		}
 
 		header('Content-Type: application/pdf');
 		$pdf->Output(JPATH_BASE . '/images/pdfs/blankets/technical_files/' . $this->item->name . '.pdf');
