@@ -30,7 +30,7 @@
 				<div class="products_list_description"><?php echo $item->description1; ?></div>
 
 				<div class="products_list_icons">
-					<img title="Acoustic Reduction (rw)" alt="Acoustic Reduction (rw)" src="images/icons/icon_rw.png" height="30px" width="30px">
+					<img title="Acoustic Reduction (rw)" alt="Acoustic Reduction (rw)" src="images/icons/icon_rw.png">
 					<div class="products_list_icon blankets_list_rw">
 						<?php
 							if ($item->rw == 0) {
@@ -42,7 +42,7 @@
 						?>
 					</div>
 
-					<img title="Dimensions" alt="Dimensions" src="images/icons/icon_dimensions.png" height="30px" width="30px">
+					<img title="Dimensions" alt="Dimensions" src="images/icons/icon_dimensions.png">
 					<div class="products_list_icon blankets_list_dimensions">
 						<?php
 							echo number_format((float)$item->length, 0, '.', '') . ' x ' .

@@ -41,7 +41,7 @@
 	 */
 	function DoorsParseRoute($segments) {
 		$vars = array();
-		
+
 		switch($segments[0]) {
 			case 'door':
 				$vars['view'] = 'door';

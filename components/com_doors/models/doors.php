@@ -48,6 +48,9 @@
 
 			$query->from('`#__doors` AS a');
 
+			// Filter by published state
+			$query->where('a.state_featured = 1');
+
 			return $query;
 		}
 
