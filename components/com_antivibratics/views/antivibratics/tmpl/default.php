@@ -35,7 +35,7 @@
 						<?php echo PanelsHelper::renderInterval($item->load_weight_min, $item->load_weight_max, JText::_('KG')); ?>
 					</div>
 
-					<img title="Mounting Width" alt="Mounting Width" src="images/icons/icon_nrc.png">
+					<img title="Mounting Width" alt="Mounting Width" src="images/icons/icon_mounting_width.png">
 					<div class="products_list_icon antivibratics_list_mounting_width">
 						<?php echo $item->mounting_width; ?>
 					</div>

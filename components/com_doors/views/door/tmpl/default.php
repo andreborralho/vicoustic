@@ -70,7 +70,7 @@
 						<div><?php echo JText::_('WOOD'); ?></div>
 					<?php elseif (strcasecmp($this->item->finish, 'Grey Enamel Primer') == 0) : ?>
 						<img alt="" src="images/doors/options_icons/steel.png">
-						<div><?php echo JText::_('STEEL'); ?></div>
+						<div><?php echo $this->item->finish; ?></div>
 					<?php endif; ?>
 				</div>
 			</div>
@@ -287,7 +287,7 @@
 		$pdf->Cell(23, 5, JText::_('WOOD'), 0, 0, 'C');
 	elseif (strcasecmp($this->item->finish, 'Grey Enamel Primer') == 0) :
 		$pdf->Image('images/doors/options_icons/steel.png', 29, NULL, 10);
-		$pdf->Cell(23, 5, JText::_('STEEL'), 0, 0, 'C');
+		$pdf->Cell(23, 5, $this->item->finish, 0, 0, 'C');
 	endif;
 	$pdf_currentX = $pdf->getX();
 
