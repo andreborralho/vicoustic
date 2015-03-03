@@ -326,7 +326,7 @@
 		}
 
 		header('Content-Type: application/pdf');
-		$pdf->Output(JPATH_BASE . '/images/pdfs/blankets/technical_files/' . $this->item->name . '.pdf');
+		$pdf->Output(JPATH_BASE . '/images/pdfs/blankets/technical_files/' . PanelsHelper::seoUrl($this->item->name) . '.pdf');
 	}
 
 	else {
