@@ -11,7 +11,7 @@
 	defined('_JEXEC') or die;
 
 	jimport('joomla.application.component.view');
-	require_once JPATH_COMPONENT . '/helpers/antivibratics.php';
+	require_once JPATH_BASE . '/components/com_panels/helpers/panels.php';
 	JFactory::getLanguage()->load('com_vicoustic', JPATH_SITE, 'en-GB');
 
 	/**

@@ -9,7 +9,6 @@
 
 // no direct access
 	defined('_JEXEC') or die;
-	error_reporting(E_ALL);
 ?>
 
 <?php
@@ -23,13 +22,13 @@
 
 			<div class="product_main_img">
 				<?php
-					echo BlanketsHelper::renderProductGalleryImage($this->item);
-					echo BlanketsHelper::renderProductGallerySubImage($this->item->photo_row_material);
-					echo BlanketsHelper::renderProductGallerySubImage($this->item->photo_detail1);
-					echo BlanketsHelper::renderProductGallerySubImage($this->item->photo_detail2);
-					echo BlanketsHelper::renderProductGallerySubImage($this->item->photo_detail3);
-					echo BlanketsHelper::renderProductGallerySubImage($this->item->photo_detail4);
-					echo BlanketsHelper::renderProductGallerySubImage($this->item->photo_detail5);
+					echo PanelsHelper::renderProductGalleryImage($this->item);
+					echo PanelsHelper::renderProductGallerySubImage($this->item->photo_row_material);
+					echo PanelsHelper::renderProductGallerySubImage($this->item->photo_detail1);
+					echo PanelsHelper::renderProductGallerySubImage($this->item->photo_detail2);
+					echo PanelsHelper::renderProductGallerySubImage($this->item->photo_detail3);
+					echo PanelsHelper::renderProductGallerySubImage($this->item->photo_detail4);
+					echo PanelsHelper::renderProductGallerySubImage($this->item->photo_detail5);
 				?>
 			</div>
 
@@ -40,12 +39,12 @@
 					<li class="product_links_title"><?php echo JText::_('DOCUMENTS'); ?></li>
 
 					<?php
-						echo BlanketsHelper::renderProductFileLink($this->item->catalog_page, JText::_('CATALOG_PAGE'));
-						echo BlanketsHelper::renderProductFileLink('/images/pdfs/blankets/technical_files/' . BlanketsHelper::seoUrl($this->item->name) . '.pdf', JText::_('TECHNICAL_FILE'));
-						echo BlanketsHelper::renderProductFileLink($this->item->installation_manual, JText::_('INSTALLATION_MANUAL'));
-						echo BlanketsHelper::renderProductFileLink($this->item->warranty, JText::_('WARRANTY'));
-						echo BlanketsHelper::renderProductFileLink($this->item->drawings, JText::_('DRAWINGS'));
-						echo BlanketsHelper::renderProductFileLink($this->item->safety_data, JText::_('SAFETY_DATE'));
+						echo PanelsHelper::renderProductFileLink($this->item->catalog_page, JText::_('CATALOG_PAGE'));
+						echo PanelsHelper::renderProductFileLink('/images/pdfs/blankets/technical_files/' . PanelsHelper::seoUrl($this->item->name) . '.pdf', JText::_('TECHNICAL_FILE'));
+						echo PanelsHelper::renderProductFileLink($this->item->installation_manual, JText::_('INSTALLATION_MANUAL'));
+						echo PanelsHelper::renderProductFileLink($this->item->warranty, JText::_('WARRANTY'));
+						echo PanelsHelper::renderProductFileLink($this->item->drawings, JText::_('DRAWINGS'));
+						echo PanelsHelper::renderProductFileLink($this->item->safety_data, JText::_('SAFETY_DATE'));
 					?>
 				</ul>
 			</div>
@@ -64,16 +63,16 @@
 
 				<ul class="product_technical_details">
 					<?php
-						echo BlanketsHelper::renderTechnicalProperty($this->item->ref, JText::_('REF'));
-						echo BlanketsHelper::renderTechnicalProperty($this->item->ean13, JText::_('EAN13'));
-						echo BlanketsHelper::renderTechnicalProperty($this->item->hs_code, JText::_('HS_CODE'));
+						echo PanelsHelper::renderTechnicalProperty($this->item->ref, JText::_('REF'));
+						echo PanelsHelper::renderTechnicalProperty($this->item->ean13, JText::_('EAN13'));
+						echo PanelsHelper::renderTechnicalProperty($this->item->hs_code, JText::_('HS_CODE'));
 					?>
 					<li></li>
 					<?php
-						echo BlanketsHelper::renderDimensionsProperty($this->item->length, $this->item->width, $this->item->thickness, JText::_('DIMENSIONS'), JText::_('MM'));
-						echo BlanketsHelper::renderTechnicalProperty($this->item->weight, JText::_('WEIGHT'), JText::_('KG'));
-						echo BlanketsHelper::renderTechnicalProperty($this->item->density, JText::_('DENSITY'));
-						echo BlanketsHelper::renderTechnicalProperty($this->item->recycle_coefficient, JText::_('RECYCLE_COEFFICIENT'), '%');
+						echo PanelsHelper::renderDimensionsProperty($this->item->length, $this->item->width, $this->item->thickness, JText::_('DIMENSIONS'), JText::_('MM'));
+						echo PanelsHelper::renderTechnicalProperty($this->item->weight, JText::_('WEIGHT'), JText::_('KG'));
+						echo PanelsHelper::renderTechnicalProperty($this->item->density, JText::_('DENSITY'));
+						echo PanelsHelper::renderTechnicalProperty($this->item->recycle_coefficient, JText::_('RECYCLE_COEFFICIENT'), '%');
 					?>
 				</ul>
 
@@ -81,23 +80,23 @@
 
 				<ul class="product_technical_details">
 					<?php
-						echo BlanketsHelper::renderTechnicalProperty($this->item->rw, JText::_('RW'), JText::_('DB'));
-						echo BlanketsHelper::renderTechnicalProperty($this->item->rw_ctr, JText::_('RW_CTR'), JText::_('DB'));
-						echo BlanketsHelper::renderTechnicalProperty($this->item->stc, JText::_('STC'), JText::_('DB'));
-						echo BlanketsHelper::renderTechnicalProperty($this->item->dnfw, JText::_('DNFW'));
+						echo PanelsHelper::renderTechnicalProperty($this->item->rw, JText::_('RW'), JText::_('DB'));
+						echo PanelsHelper::renderTechnicalProperty($this->item->rw_ctr, JText::_('RW_CTR'), JText::_('DB'));
+						echo PanelsHelper::renderTechnicalProperty($this->item->stc, JText::_('STC'), JText::_('DB'));
+						echo PanelsHelper::renderTechnicalProperty($this->item->dnfw, JText::_('DNFW'));
 					?>
 					<li></li>
 					<?php
-						echo BlanketsHelper::renderTechnicalProperty($this->item->fire_class_en, JText::_('FIRE_CLASS_EN'));
-						echo BlanketsHelper::renderTechnicalProperty($this->item->fire_class_din, JText::_('FIRE_CLASS_DIN'));
-						echo BlanketsHelper::renderTechnicalProperty($this->item->fire_class_nf_p, JText::_('FIRE_CLASS_NF_P'));
-						echo BlanketsHelper::renderTechnicalProperty($this->item->fire_class_uni, JText::_('FIRE_CLASS_UNI'));
-						echo BlanketsHelper::renderTechnicalProperty($this->item->fire_class_bs, JText::_('FIRE_CLASS_BS'));
+						echo PanelsHelper::renderTechnicalProperty($this->item->fire_class_en, JText::_('FIRE_CLASS_EN'));
+						echo PanelsHelper::renderTechnicalProperty($this->item->fire_class_din, JText::_('FIRE_CLASS_DIN'));
+						echo PanelsHelper::renderTechnicalProperty($this->item->fire_class_nf_p, JText::_('FIRE_CLASS_NF_P'));
+						echo PanelsHelper::renderTechnicalProperty($this->item->fire_class_uni, JText::_('FIRE_CLASS_UNI'));
+						echo PanelsHelper::renderTechnicalProperty($this->item->fire_class_bs, JText::_('FIRE_CLASS_BS'));
 					?>
 					<li></li>
 					<?php
-						echo BlanketsHelper::renderTechnicalProperty($this->item->humidity_resistance, JText::_('HUMIDITY_RESISTANCE'), '%');
-						echo BlanketsHelper::renderTechnicalProperty($this->item->thermal_conductivity, JText::_('THERMAL_CONDUCTIVITY'), 'W/mK');
+						echo PanelsHelper::renderTechnicalProperty($this->item->humidity_resistance, JText::_('HUMIDITY_RESISTANCE'), '%');
+						echo PanelsHelper::renderTechnicalProperty($this->item->thermal_conductivity, JText::_('THERMAL_CONDUCTIVITY'), 'W/mK');
 					?>
 				</ul>
 
@@ -105,19 +104,19 @@
 
 				<ul class="product_technical_details">
 					<?php
-						echo BlanketsHelper::renderTechnicalProperty($this->item->units_per_box, JText::_('UNITS_PER_BOX'));
+						echo PanelsHelper::renderTechnicalProperty($this->item->units_per_box, JText::_('UNITS_PER_BOX'));
 
 						if ($this->item->box_diameter > 0) {
-							echo BlanketsHelper::renderDimensionsProperty($this->item->box_length, $this->item->box_diameter, 0, JText::_('BOX_DIMENSIONS'), JText::_('MM'));
+							echo PanelsHelper::renderDimensionsProperty($this->item->box_length, $this->item->box_diameter, 0, JText::_('BOX_DIMENSIONS'), JText::_('MM'));
 						}
 						else {
-							echo BlanketsHelper::renderDimensionsProperty($this->item->box_length, $this->item->box_width, $this->item->box_length, JText::_('BOX_DIMENSIONS'), JText::_('MM'));
+							echo PanelsHelper::renderDimensionsProperty($this->item->box_length, $this->item->box_width, $this->item->box_length, JText::_('BOX_DIMENSIONS'), JText::_('MM'));
 						}
 
-						echo BlanketsHelper::renderTechnicalProperty($this->item->box_weight, JText::_('BOX_WEIGHT'), JText::_('KG'));
-						echo BlanketsHelper::renderTechnicalProperty($this->item->box_volume, JText::_('BOX_VOLUME'), 'm<span style="vertical-align:super; font-size:0.8em">3</span>');
-						echo BlanketsHelper::renderTechnicalProperty($this->item->units_per_pallet, JText::_('UNITS_PER_PALLET'));
-						echo BlanketsHelper::renderDimensionsProperty($this->item->pallet_length, $this->item->pallet_width, $this->item->pallet_height, JText::_('PALLET_DIMENSIONS'), JText::_('MM'));
+						echo PanelsHelper::renderTechnicalProperty($this->item->box_weight, JText::_('BOX_WEIGHT'), JText::_('KG'));
+						echo PanelsHelper::renderTechnicalProperty($this->item->box_volume, JText::_('BOX_VOLUME'), 'm<span style="vertical-align:super; font-size:0.8em">3</span>');
+						echo PanelsHelper::renderTechnicalProperty($this->item->units_per_pallet, JText::_('UNITS_PER_PALLET'));
+						echo PanelsHelper::renderDimensionsProperty($this->item->pallet_length, $this->item->pallet_width, $this->item->pallet_height, JText::_('PALLET_DIMENSIONS'), JText::_('MM'));
 					?>
 				</ul>
 			</div>
@@ -126,13 +125,13 @@
 				<?php
 					//TODO: tem muitos ciclos e queries e comparaçoes so para devolver uma row de uma tabela
 					foreach ($this->items as $i => $item) {
-						echo BlanketsHelper::renderProductPortfolioImage($this->item->portfolio_photo_id1, $item->portfolio_photo_id1, $item->portfolio_photo1_thumbnail, $item->portfolio_photo1_label);
-						echo BlanketsHelper::renderProductPortfolioImage($this->item->portfolio_photo_id2, $item->portfolio_photo_id2, $item->portfolio_photo2_thumbnail, $item->portfolio_photo2_label);
+						echo PanelsHelper::renderProductPortfolioImage($this->item->portfolio_photo_id1, $item->portfolio_photo_id1, $item->portfolio_photo1_thumbnail, $item->portfolio_photo1_label);
+						echo PanelsHelper::renderProductPortfolioImage($this->item->portfolio_photo_id2, $item->portfolio_photo_id2, $item->portfolio_photo2_thumbnail, $item->portfolio_photo2_label);
 					}
 				?>
 			</div>
 
-			<?php if (BlanketsHelper::hasSimilarProducts($this->items, $this->item)) { ?>
+			<?php if (PanelsHelper::hasSimilarProducts($this->items, $this->item)) { ?>
 				<table class="product_similar_table">
 					<thead>
 					<tr>
@@ -147,10 +146,10 @@
 					<?php foreach ($this->items as $i => $item) {
 						if ($item->family == $this->item->family) { ?>
 							<tr>
-								<td><?php echo BlanketsHelper::renderSimilarProductImage($item, JRoute::_('index.php?option=com_blankets&view=blanket&id=' . (int) $item->id)); ?></td>
+								<td><?php echo PanelsHelper::renderSimilarProductImage($item, JRoute::_('index.php?option=com_blankets&view=blanket&id=' . (int) $item->id)); ?></td>
 								<td><?php echo $item->ref; ?></td>
 								<td><?php echo $item->ean13; ?></td>
-								<td><?php echo BlanketsHelper::renderDimensions($item->length, $item->width, $item->thickness, JText::_('MM')); ?></td>
+								<td><?php echo PanelsHelper::render3Dimensions($item->length, $item->width, $item->thickness, JText::_('MM')); ?></td>
 							</tr>
 						<?php
 						}

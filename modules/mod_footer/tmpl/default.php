@@ -27,27 +27,27 @@ $tokens = explode('/', $url);
 		<div class="footer_title">
 			Copyright &copy; 2007 Vicoustic. All Rights Reserved.
 		</div>
-	</div>	
-	
+	</div>
+
 	<div class="footer_entry">
 		<div class="footer_title">
 			Office 2
 		</div>
 		<div class="footer_text">
 			Rua Quinta do Bom Retiro n&deg;16, Armaz&eacute;m 9. 2820-690 Charneca da Caparica - Portugal<br>
-			Tlm +351 212 964 105. Fax +351 212 954 101.
+			Tlm +351 212 964 100. Fax +351 212 954 101.
 		</div>
 		<div class="footer_image">
 			<img alt="QREN" src="images/icons/logos-qren.png" width="238px" height="48px">
 		</div>
 		<div class="footer_title">
-			<i>Co-Financed Projects: 
-				<a href="<?php echo $tokens[3] . '/tuned-rooms'; ?>">Tuned Rooms</a> |
-				<a href="<?php echo $tokens[3] . '/vale-inovacao'; ?>">Vale Inovação</a> | 
-				<a href="<?php echo $tokens[3] . '/vicoustic-lab'; ?>">Vicoustic Lab</a>
+			<i>Co-Financed Projects:
+				<a href="<?php echo $tokens[3] . '/tuned-rooms'; ?>" style="color:#f89f28">Tuned Rooms</a> |
+				<a href="<?php echo $tokens[3] . '/vale-inovacao'; ?>" style="color:#f89f28">Vale Inovação</a> |
+				<a href="<?php echo $tokens[3] . '/vicoustic-lab'; ?>" style="color:#f89f28">Vicoustic Lab</a>
 			</i>
 		</div>
 	</div>
-	
+
 <?php/* echo JText::_('MOD_FOOTER_LINE2'); */?>
 </div>

@@ -213,8 +213,8 @@ function screenshotPreview(){
             jQuery("#product_preview").remove();
         }
     ).mousemove(function(e){
-        jQuery("#product_preview").css("top",(e.pageY - xOffset) + "px").css("left",(e.pageX + yOffset) + "px");
-    });
+            jQuery("#product_preview").css("top",(e.pageY - xOffset) + "px").css("left",(e.pageX + yOffset) + "px");
+        });
 }
 
 function initGalleria() {

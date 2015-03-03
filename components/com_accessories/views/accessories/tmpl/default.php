@@ -21,7 +21,7 @@
 			<a class="products_list_entry" href="<?php echo JRoute::_('index.php?option=com_accessories&view=accessory&id=' . (int)$item->id); ?>">
 
 				<div class="products_list_img">
-					<?php echo AccessoriesHelper::renderProductsImage($item); ?>
+					<?php echo PanelsHelper::renderProductsImage($item); ?>
 				</div>
 
 				<h2 class="products_list_family"><?php echo $item->family; ?></h2>

@@ -22,12 +22,12 @@
 
 		<div class="product_main_img">
 			<?php
-				echo AccessoriesHelper::renderProductGalleryImage($this->item);
-				echo AccessoriesHelper::renderProductGallerySubImage($this->item->photo_detail1);
-				echo AccessoriesHelper::renderProductGallerySubImage($this->item->photo_detail2);
-				echo AccessoriesHelper::renderProductGallerySubImage($this->item->photo_detail3);
-				echo AccessoriesHelper::renderProductGallerySubImage($this->item->photo_detail4);
-				echo AccessoriesHelper::renderProductGallerySubImage($this->item->photo_detail5);
+				echo PanelsHelper::renderProductGalleryImage($this->item);
+				echo PanelsHelper::renderProductGallerySubImage($this->item->photo_detail1);
+				echo PanelsHelper::renderProductGallerySubImage($this->item->photo_detail2);
+				echo PanelsHelper::renderProductGallerySubImage($this->item->photo_detail3);
+				echo PanelsHelper::renderProductGallerySubImage($this->item->photo_detail4);
+				echo PanelsHelper::renderProductGallerySubImage($this->item->photo_detail5);
 			?>
 		</div>
 
@@ -38,13 +38,13 @@
 				<li class="product_links_title"><?php echo JText::_('DOCUMENTS'); ?></li>
 
 				<?php
-					echo AccessoriesHelper::renderProductFileLink($this->item->catalog_page, JText::_('CATALOG_PAGE'));
-					echo AccessoriesHelper::renderProductFileLink('/images/pdfs/accessories/technical_files/' . AccessoriesHelper::seoUrl($this->item->name) . '.pdf', JText::_('TECHNICAL_FILE'));
-					echo AccessoriesHelper::renderProductFileLink($this->item->installation_manual, JText::_('INSTALLATION_MANUAL'));
-					echo AccessoriesHelper::renderProductFileLink($this->item->sketchup, JText::_('SKETCHUP'));
-					echo AccessoriesHelper::renderProductFileLink($this->item->warranty, JText::_('WARRANTY'));
-					echo AccessoriesHelper::renderProductFileLink($this->item->drawings, JText::_('DRAWINGS'));
-					echo AccessoriesHelper::renderProductFileLink($this->item->safety_data, JText::_('SAFETY_DATE'));
+					echo PanelsHelper::renderProductFileLink($this->item->catalog_page, JText::_('CATALOG_PAGE'));
+					echo PanelsHelper::renderProductFileLink('/images/pdfs/accessories/technical_files/' . PanelsHelper::seoUrl($this->item->name) . '.pdf', JText::_('TECHNICAL_FILE'));
+					echo PanelsHelper::renderProductFileLink($this->item->installation_manual, JText::_('INSTALLATION_MANUAL'));
+					echo PanelsHelper::renderProductFileLink($this->item->sketchup, JText::_('SKETCHUP'));
+					echo PanelsHelper::renderProductFileLink($this->item->warranty, JText::_('WARRANTY'));
+					echo PanelsHelper::renderProductFileLink($this->item->drawings, JText::_('DRAWINGS'));
+					echo PanelsHelper::renderProductFileLink($this->item->safety_data, JText::_('SAFETY_DATE'));
 				?>
 			</ul>
 		</div>
@@ -63,10 +63,10 @@
 
 			<ul class="product_technical_details">
 				<?php
-					echo AccessoriesHelper::renderTechnicalProperty($this->item->ref, JText::_('REF'));
-					echo AccessoriesHelper::renderTechnicalProperty($this->item->ean13, JText::_('EAN13'));
-					echo AccessoriesHelper::renderTechnicalProperty($this->item->hs_code, JText::_('HS_CODE'));
-					echo AccessoriesHelper::renderTechnicalProperty($this->item->recycle_coefficient, JText::_('RECYCLE_COEFFICIENT'), '%');
+					echo PanelsHelper::renderTechnicalProperty($this->item->ref, JText::_('REF'));
+					echo PanelsHelper::renderTechnicalProperty($this->item->ean13, JText::_('EAN13'));
+					echo PanelsHelper::renderTechnicalProperty($this->item->hs_code, JText::_('HS_CODE'));
+					echo PanelsHelper::renderTechnicalProperty($this->item->recycle_coefficient, JText::_('RECYCLE_COEFFICIENT'), '%');
 				?>
 			</ul>
 
@@ -74,14 +74,14 @@
 
 			<ul class="product_technical_details">
 				<?php
-					echo AccessoriesHelper::renderTechnicalProperty($this->item->units_per_box, JText::_('UNITS_PER_BOX'));
+					echo PanelsHelper::renderTechnicalProperty($this->item->units_per_box, JText::_('UNITS_PER_BOX'));
 
 					if($this->item->box_length > 0 && $this->item->box_width > 0) {
 						echo '<li><b>' . JText::_('BOX_DIMENSIONS') . ': </b>' . number_format((float)$this->item->box_length, 0, '.', '') . ' x ' . number_format((float)$this->item->box_width, 0, '.', '') . ' x ' . number_format((float)$this->item->box_height, 0, '.', '') . ' mm</li>';
 					}
 
-					echo AccessoriesHelper::renderTechnicalProperty($this->item->box_weight, JText::_('BOX_WEIGHT'), JText::_('KG'));
-					echo AccessoriesHelper::renderTechnicalProperty($this->item->box_volume, JText::_('BOX_VOLUME'), 'm<span style="vertical-align:super; font-size:0.8em">3</span>');
+					echo PanelsHelper::renderTechnicalProperty($this->item->box_weight, JText::_('BOX_WEIGHT'), JText::_('KG'));
+					echo PanelsHelper::renderTechnicalProperty($this->item->box_volume, JText::_('BOX_VOLUME'), 'm<span style="vertical-align:super; font-size:0.8em">3</span>');
 				?>
 			</ul>
 		</div>
@@ -89,15 +89,15 @@
 		<div class="product_portfolio_images">
 			<?php
 				foreach ($this->items as $i=>$item) {
-					echo AccessoriesHelper::renderProductPortfolioImage($this->item->portfolio_photo_id1, $item->portfolio_photo_id1, $item->portfolio_photo1_thumbnail, $item->portfolio_photo1_label);
-					echo AccessoriesHelper::renderProductPortfolioImage($this->item->portfolio_photo_id2, $item->portfolio_photo_id2, $item->portfolio_photo2_thumbnail, $item->portfolio_photo2_label);
+					echo PanelsHelper::renderProductPortfolioImage($this->item->portfolio_photo_id1, $item->portfolio_photo_id1, $item->portfolio_photo1_thumbnail, $item->portfolio_photo1_label);
+					echo PanelsHelper::renderProductPortfolioImage($this->item->portfolio_photo_id2, $item->portfolio_photo_id2, $item->portfolio_photo2_thumbnail, $item->portfolio_photo2_label);
 
 					//MUDAR - tem muitos ciclos e queries e comparaçoes so para devolver uma row de uma tabela
 				}
 			?>
 		</div>
 
-		<?php if(AccessoriesHelper::hasSimilarProducts($this->items, $this->item)) { ?>
+		<?php if(PanelsHelper::hasSimilarProducts($this->items, $this->item)) { ?>
 			<table class="product_similar_table">
 				<thead>
 				<tr>
@@ -111,7 +111,7 @@
 				<?php foreach ($this->items as $i => $item) {
 					if($item->family == $this->item->family) { ?>
 						<tr>
-							<td><?php echo AccessoriesHelper::renderSimilarProductImage($item, JRoute::_('index.php?option=com_accessories&view=accessory&id=' . (int)$item->id)); ?></td>
+							<td><?php echo PanelsHelper::renderSimilarProductImage($item, JRoute::_('index.php?option=com_accessories&view=accessory&id=' . (int)$item->id)); ?></td>
 							<td><?php echo $item->ref; ?></td>
 							<td><?php echo $item->ean13; ?></td>
 						</tr>
@@ -211,7 +211,7 @@
 	}
 
 	$pdf->Ln(9);
-	$pdf->Output(JPATH_BASE . '/images/pdfs/accessories/technical_files/' . AccessoriesHelper::seoUrl($this->item->name) . '.pdf');
+	$pdf->Output(JPATH_BASE . '/images/pdfs/accessories/technical_files/' . PanelsHelper::seoUrl($this->item->name) . '.pdf');
 }
 
 else {

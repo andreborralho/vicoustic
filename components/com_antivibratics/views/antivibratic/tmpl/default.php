@@ -23,12 +23,12 @@
 
 			<div class="product_main_img">
 				<?php
-					echo AntivibraticsHelper::renderProductGalleryImage($this->item);
-					echo AntivibraticsHelper::renderProductGallerySubImage($this->item->photo_detail1);
-					echo AntivibraticsHelper::renderProductGallerySubImage($this->item->photo_detail2);
-					echo AntivibraticsHelper::renderProductGallerySubImage($this->item->photo_detail3);
-					echo AntivibraticsHelper::renderProductGallerySubImage($this->item->photo_detail4);
-					echo AntivibraticsHelper::renderProductGallerySubImage($this->item->photo_detail5);
+					echo PanelsHelper::renderProductGalleryImage($this->item);
+					echo PanelsHelper::renderProductGallerySubImage($this->item->photo_detail1);
+					echo PanelsHelper::renderProductGallerySubImage($this->item->photo_detail2);
+					echo PanelsHelper::renderProductGallerySubImage($this->item->photo_detail3);
+					echo PanelsHelper::renderProductGallerySubImage($this->item->photo_detail4);
+					echo PanelsHelper::renderProductGallerySubImage($this->item->photo_detail5);
 				?>
 			</div>
 
@@ -39,12 +39,12 @@
 					<li class="product_links_title"><?php echo JText::_('DOCUMENTS'); ?></li>
 
 					<?php
-						echo AntivibraticsHelper::renderProductFileLink($this->item->catalog_page, JText::_('CATALOG_PAGE'));
-						echo AntivibraticsHelper::renderProductFileLink('/images/pdfs/antivibratics/technical_files/' . AntivibraticsHelper::seoUrl($this->item->name) . '.pdf', JText::_('TECHNICAL_FILE'));
-						echo AntivibraticsHelper::renderProductFileLink($this->item->installation_manual, JText::_('INSTALLATION_MANUAL'));
-						echo AntivibraticsHelper::renderProductFileLink($this->item->warranty, JText::_('WARRANTY'));
-						echo AntivibraticsHelper::renderProductFileLink($this->item->drawings, JText::_('DRAWINGS'));
-						echo AntivibraticsHelper::renderProductFileLink($this->item->safety_data, JText::_('SAFETY_DATE'));
+						echo PanelsHelper::renderProductFileLink($this->item->catalog_page, JText::_('CATALOG_PAGE'));
+						echo PanelsHelper::renderProductFileLink('/images/pdfs/antivibratics/technical_files/' . PanelsHelper::seoUrl($this->item->name) . '.pdf', JText::_('TECHNICAL_FILE'));
+						echo PanelsHelper::renderProductFileLink($this->item->installation_manual, JText::_('INSTALLATION_MANUAL'));
+						echo PanelsHelper::renderProductFileLink($this->item->warranty, JText::_('WARRANTY'));
+						echo PanelsHelper::renderProductFileLink($this->item->drawings, JText::_('DRAWINGS'));
+						echo PanelsHelper::renderProductFileLink($this->item->safety_data, JText::_('SAFETY_DATE'));
 					?>
 				</ul>
 			</div>
@@ -63,10 +63,10 @@
 
 				<ul class="product_technical_details">
 					<?php
-						echo AntivibraticsHelper::renderTechnicalProperty($this->item->ref, JText::_('REF'));
-						echo AntivibraticsHelper::renderTechnicalProperty($this->item->ean13, JText::_('EAN13'));
-						echo AntivibraticsHelper::renderTechnicalProperty($this->item->hs_code, JText::_('HS_CODE'));
-						echo AntivibraticsHelper::renderTechnicalProperty($this->item->recycle_coefficient, JText::_('RECYCLE_COEFFICIENT'), '%');
+						echo PanelsHelper::renderTechnicalProperty($this->item->ref, JText::_('REF'));
+						echo PanelsHelper::renderTechnicalProperty($this->item->ean13, JText::_('EAN13'));
+						echo PanelsHelper::renderTechnicalProperty($this->item->hs_code, JText::_('HS_CODE'));
+						echo PanelsHelper::renderTechnicalProperty($this->item->recycle_coefficient, JText::_('RECYCLE_COEFFICIENT'), '%');
 					?>
 				</ul>
 
@@ -74,17 +74,17 @@
 
 				<ul class="product_technical_details">
 					<?php
-						echo AntivibraticsHelper::renderTechnicalProperty($this->item->mounting_width, JText::_('MOUNTING_WIDTH'));
-						echo AntivibraticsHelper::renderTechnicalProperty($this->item->rupture_point, JText::_('RUPTURE_POINT'), JText::_('KG'));
-						echo AntivibraticsHelper::renderTechnicalProperty(AntivibraticsHelper::renderInterval($this->item->load_weight_min, $this->item->load_weight_max, JText::_('KG')), JText::_('LOAD_WEIGHT'));
+						echo PanelsHelper::renderTechnicalProperty($this->item->mounting_width, JText::_('MOUNTING_WIDTH'));
+						echo PanelsHelper::renderTechnicalProperty($this->item->rupture_point, JText::_('RUPTURE_POINT'), JText::_('KG'));
+						echo PanelsHelper::renderTechnicalProperty(PanelsHelper::renderInterval($this->item->load_weight_min, $this->item->load_weight_max, JText::_('KG')), JText::_('LOAD_WEIGHT'));
 					?>
 					<li></li>
 					<?php
-						echo AntivibraticsHelper::renderTechnicalProperty($this->item->fire_class_en, JText::_('FIRE_CLASS_EN'));
-						echo AntivibraticsHelper::renderTechnicalProperty($this->item->fire_class_din, JText::_('FIRE_CLASS_DIN'));
-						echo AntivibraticsHelper::renderTechnicalProperty($this->item->fire_class_nf_p, JText::_('FIRE_CLASS_NF_P'));
-						echo AntivibraticsHelper::renderTechnicalProperty($this->item->fire_class_uni, JText::_('FIRE_CLASS_UNI'));
-						echo AntivibraticsHelper::renderTechnicalProperty($this->item->fire_class_bs, JText::_('FIRE_CLASS_BS'));
+						echo PanelsHelper::renderTechnicalProperty($this->item->fire_class_en, JText::_('FIRE_CLASS_EN'));
+						echo PanelsHelper::renderTechnicalProperty($this->item->fire_class_din, JText::_('FIRE_CLASS_DIN'));
+						echo PanelsHelper::renderTechnicalProperty($this->item->fire_class_nf_p, JText::_('FIRE_CLASS_NF_P'));
+						echo PanelsHelper::renderTechnicalProperty($this->item->fire_class_uni, JText::_('FIRE_CLASS_UNI'));
+						echo PanelsHelper::renderTechnicalProperty($this->item->fire_class_bs, JText::_('FIRE_CLASS_BS'));
 					?>
 				</ul>
 
@@ -93,17 +93,17 @@
 				<ul class="product_technical_details">
 					<?php
 						if ($this->item->installation_wall == 1 || $this->item->installation_ceiling == 1 || $this->item->installation_floor == 1 || $this->item->installation_division_wall == 1) {
-							echo AntivibraticsHelper::renderTechnicalProperty(AntivibraticsHelper::renderInstallationPlaceProperty($this->item->installation_wall, $this->item->installation_ceiling, $this->item->installation_floor, $this->item->installation_division_wall), JText::_('INSTALLATION_PLACE'));
+							echo PanelsHelper::renderTechnicalProperty(PanelsHelper::renderInstallationPlaceProperty($this->item->installation_wall, $this->item->installation_ceiling, $this->item->installation_floor, $this->item->installation_division_wall), JText::_('INSTALLATION_PLACE'));
 						}
 
-						echo AntivibraticsHelper::renderTechnicalPropertyYesNo($this->item->steel, JText::_('STEEL'));
-						echo AntivibraticsHelper::renderTechnicalProperty(ucwords($this->item->rubber_color), JText::_('RUBBER_COLOR'));
-						echo AntivibraticsHelper::renderTechnicalPropertyYes($this->item->angle_adaptation, JText::_('ANGLE_ADAPTATION'));
-						echo AntivibraticsHelper::renderTechnicalPropertyYes($this->item->hooking_system, JText::_('HOOKING_SYSTEM'));
-						echo AntivibraticsHelper::renderTechnicalProperty($this->item->security_devices, JText::_('SECURITY_DEVICES'));
-						echo AntivibraticsHelper::renderTechnicalPropertyYesNo($this->item->fire_security_devices, JText::_('FIRE_SECURITY_DEVICES'));
-						echo AntivibraticsHelper::renderTechnicalProperty(ucwords($this->item->plate_thickness), JText::_('PLATE_THICKNESS'), JText::_('MM'));
-						echo AntivibraticsHelper::renderTechnicalProperty(ucwords($this->item->plate_length), JText::_('PLATE_LENGTH'), JText::_('MM'));
+						echo PanelsHelper::renderTechnicalPropertyYesNo($this->item->steel, JText::_('STEEL'));
+						echo PanelsHelper::renderTechnicalProperty(ucwords($this->item->rubber_color), JText::_('RUBBER_COLOR'));
+						echo PanelsHelper::renderTechnicalPropertyYes($this->item->angle_adaptation, JText::_('ANGLE_ADAPTATION'));
+						echo PanelsHelper::renderTechnicalPropertyYes($this->item->hooking_system, JText::_('HOOKING_SYSTEM'));
+						echo PanelsHelper::renderTechnicalProperty($this->item->security_devices, JText::_('SECURITY_DEVICES'));
+						echo PanelsHelper::renderTechnicalPropertyYesNo($this->item->fire_security_devices, JText::_('FIRE_SECURITY_DEVICES'));
+						echo PanelsHelper::renderTechnicalProperty(ucwords($this->item->plate_thickness), JText::_('PLATE_THICKNESS'), JText::_('MM'));
+						echo PanelsHelper::renderTechnicalProperty(ucwords($this->item->plate_length), JText::_('PLATE_LENGTH'), JText::_('MM'));
 					?>
 				</ul>
 
@@ -111,11 +111,11 @@
 
 				<ul class="product_technical_details">
 					<?php
-						echo AntivibraticsHelper::renderTechnicalProperty($this->item->units_per_box, JText::_('UNITS_PER_BOX'));
-						echo AntivibraticsHelper::renderDimensionsProperty($this->item->box_length, $this->item->box_width, $this->item->box_height, JText::_('BOX_DIMENSIONS'), JText::_('MM'));
-						echo AntivibraticsHelper::renderTechnicalProperty($this->item->box_weight, JText::_('BOX_WEIGHT'), JText::_('KG'));
-						echo AntivibraticsHelper::renderTechnicalProperty($this->item->box_volume, JText::_('BOX_VOLUME'), 'm<span style="vertical-align:super; font-size:0.8em">3</span>');
-						echo AntivibraticsHelper::renderDimensionsProperty($this->item->mastercarton_box_length, $this->item->mastercarton_box_width, $this->item->mastercarton_box_height, JText::_('MASTERCARTON_BOX_DIMENSIONS'), JText::_('MM'))
+						echo PanelsHelper::renderTechnicalProperty($this->item->units_per_box, JText::_('UNITS_PER_BOX'));
+						echo PanelsHelper::renderDimensionsProperty($this->item->box_length, $this->item->box_width, $this->item->box_height, JText::_('BOX_DIMENSIONS'), JText::_('MM'));
+						echo PanelsHelper::renderTechnicalProperty($this->item->box_weight, JText::_('BOX_WEIGHT'), JText::_('KG'));
+						echo PanelsHelper::renderTechnicalProperty($this->item->box_volume, JText::_('BOX_VOLUME'), 'm<span style="vertical-align:super; font-size:0.8em">3</span>');
+						echo PanelsHelper::renderDimensionsProperty($this->item->mastercarton_box_length, $this->item->mastercarton_box_width, $this->item->mastercarton_box_height, JText::_('MASTERCARTON_BOX_DIMENSIONS'), JText::_('MM'))
 					?>
 				</ul>
 			</div>
@@ -124,13 +124,13 @@
 				<?php
 					//TODO: tem muitos ciclos e queries e comparaçoes so para devolver uma row de uma tabela
 					foreach ($this->items as $i=>$item) {
-						echo AntivibraticsHelper::renderProductPortfolioImage($this->item->portfolio_photo_id1, $item->portfolio_photo_id1, $item->portfolio_photo1_thumbnail, $item->portfolio_photo1_label);
-						echo AntivibraticsHelper::renderProductPortfolioImage($this->item->portfolio_photo_id2, $item->portfolio_photo_id2, $item->portfolio_photo2_thumbnail, $item->portfolio_photo2_label);
+						echo PanelsHelper::renderProductPortfolioImage($this->item->portfolio_photo_id1, $item->portfolio_photo_id1, $item->portfolio_photo1_thumbnail, $item->portfolio_photo1_label);
+						echo PanelsHelper::renderProductPortfolioImage($this->item->portfolio_photo_id2, $item->portfolio_photo_id2, $item->portfolio_photo2_thumbnail, $item->portfolio_photo2_label);
 					}
 				?>
 			</div>
 
-			<?php if (AntivibraticsHelper::hasSimilarProducts($this->items, $this->item)) { ?>
+			<?php if (PanelsHelper::hasSimilarProducts($this->items, $this->item)) { ?>
 				<table class="product_similar_table">
 					<thead>
 					<tr>
@@ -146,11 +146,11 @@
 					<?php foreach ($this->items as $i => $item) {
 						if ($item->family == $this->item->family) { ?>
 							<tr>
-								<td><?php echo AntivibraticsHelper::renderSimilarProductImage($item, JRoute::_('index.php?option=com_antivibratics&view=antivibratic&id=' . (int) $item->id)); ?></td>
+								<td><?php echo PanelsHelper::renderSimilarProductImage($item, JRoute::_('index.php?option=com_antivibratics&view=antivibratic&id=' . (int) $item->id)); ?></td>
 								<td><?php echo $item->ref; ?></td>
 								<td><?php echo $item->ean13; ?></td>
 								<td><?php echo $item->mounting_width; ?></td>
-								<td><?php echo AntivibraticsHelper::renderInterval($this->item->load_weight_min, $this->item->load_weight_max, JText::_('KG')); ?></td>
+								<td><?php echo PanelsHelper::renderInterval($this->item->load_weight_min, $this->item->load_weight_max, JText::_('KG')); ?></td>
 							</tr>
 						<?php
 						}
@@ -390,7 +390,7 @@
 			$pdf->Cell(90, 5, JText::_('MASTERCARTON_BOX_DIMENSIONS') . ": " . $this->item->mastercarton_box_length . " x " . $this->item->mastercarton_box_width . " x " . $this->item->mastercarton_box_height . " mm", 'L');
 		}
 		$pdf->Ln(9);
-		$pdf->Output(JPATH_BASE . '/images/pdfs/antivibratics/technical_files/' . AntivibraticsHelper::seoUrl($this->item->name) . '.pdf');
+		$pdf->Output(JPATH_BASE . '/images/pdfs/antivibratics/technical_files/' . PanelsHelper::seoUrl($this->item->name) . '.pdf');
 	}
 
 	else {

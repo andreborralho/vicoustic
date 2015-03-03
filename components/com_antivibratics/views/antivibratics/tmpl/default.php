@@ -21,7 +21,7 @@
 			<a class="products_list_entry" href="<?php echo JRoute::_('index.php?option=com_antivibratics&view=antivibratic&id=' . (int)$item->id); ?>">
 
 				<div class="products_list_img">
-					<?php echo AntivibraticsHelper::renderProductsImage($item); ?>
+					<?php echo PanelsHelper::renderProductsImage($item); ?>
 				</div>
 
 				<h2 class="products_list_family"><?php echo $item->family; ?></h2>
@@ -32,7 +32,7 @@
 
 					<img title="Load Weight" alt="Load Weight" src="images/icons/icon_load_weight.png">
 					<div class="products_list_icon antivibratics_list_load_weight">
-						<?php echo AntivibraticsHelper::renderInterval($item->load_weight_min, $item->load_weight_max, JText::_('KG')); ?>
+						<?php echo PanelsHelper::renderInterval($item->load_weight_min, $item->load_weight_max, JText::_('KG')); ?>
 					</div>
 
 					<img title="Mounting Width" alt="Mounting Width" src="images/icons/icon_nrc.png">
