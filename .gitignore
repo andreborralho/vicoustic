@@ -11,7 +11,7 @@
 /.bundle
 
 # Ignore WebStorm ( JetBrains ) config
-/.idea
+.idea/
 
 /cache
 
@@ -19,5 +19,6 @@
 /log/*.log
 /tmp
 
-# Frigging macs
 .DS_store
+
+images/pdfs
