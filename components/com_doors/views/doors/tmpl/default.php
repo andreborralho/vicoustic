@@ -1,15 +1,15 @@
 <?php
-/**
- * @version     1.0.0
- * @package     com_doors
- * @copyright   Copyright (C) 2012. All rights reserved.
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
- * @author      Andre <andrefilipe_one@hotmail.com> - http://
- */
+	/**
+	 * @version     1.0.0
+	 * @package     com_doors
+	 * @copyright   Copyright (C) 2012. All rights reserved.
+	 * @license     GNU General Public License version 2 or later; see LICENSE.txt
+	 * @author      Andre <andrefilipe_one@hotmail.com> - http://
+	 */
 
 
 // no direct access
-defined('_JEXEC') or die;
+	defined('_JEXEC') or die;
 ?>
 
 	<h1 class="page_title"><?php echo JText::_('ACOUSTIC_DOORS'); ?></h1>
@@ -30,36 +30,19 @@ defined('_JEXEC') or die;
 				<div class="products_list_description"><?php echo $item->description1; ?></div>
 
 				<div class="products_list_icons">
-					<img title="Acoustic Reduction (rw)" alt="Rw" src="images/icons/icon_rw.png">
-					<div class="products_list_icon doors_list_aw">
-						<?php echo $item->rw . ' ' . JText::_('DB'); ?>
-					</div>
-
-					<img title="Fire Resistance" alt="Fire Resistance" src="images/icons/icon_fire.png">
-					<div class="products_list_icon doors_list_fire_res">
-						<?php echo $item->fire_resistance . ' ' . JText::_('MINUTES'); ?>
-					</div>
-
-					<?php if($item->number_of_doors == 1) { ?>
-						<img title="Single Door" alt="Single Door" src="images/icons/icon_single_door.png">
-
-						<div class="products_list_icon doors_list_number_of_doors">
-							<?php echo JText::_('SINGLE_DOOR'); ?>
-						</div>
-						<?php
-							}
-							else {
-						?>
-						<img title="Double Door" alt="Double Door" src="images/icons/icon_double_door.png">
 					<?php
-							echo JText::_('DOUBLE_DOOR');
-						}
-						?>
+						echo PanelsHelper::renderProductsIcons('images/icons/icon_rw.png', 'Acoustic Reduction (rw)', PanelsHelper::renderIconsProperty($item->rw, JText::_('DB')), 'doors_list_aw');
+						echo PanelsHelper::renderProductsIcons('images/icons/icon_fire.png', 'Fire Resistance', PanelsHelper::renderIconsProperty($item->fire_resistance, JText::_('MINUTES')), 'doors_list_fire_res');
 
-					<img title="Dimensions" alt="Dimensions" src="images/icons/icon_dimensions.png">
-					<div class="products_list_icon doors_list_dimensions">
-						<?php echo PanelsHelper::render2Dimensions($item->width, $item->height, JText::_('MM')); ?>
-					</div>
+						if($item->number_of_doors == 1) {
+							echo PanelsHelper::renderProductsIcons('images/icons/icon_single_door.png', 'Single Door', JText::_('SINGLE_DOOR'), 'doors_list_number_of_doors');
+						}
+						else {
+							echo PanelsHelper::renderProductsIcons('images/icons/icon_double_door.png', 'Double Door', JText::_('DOUBLE_DOOR'), 'doors_list_number_of_doors');
+						}
+
+						echo PanelsHelper::renderProductsIcons('images/icons/icon_dimensions.png', 'Dimensions', PanelsHelper::render2Dimensions($item->width, $item->height, JText::_('MM')), 'doors_list_dimensions');
+					?>
 				</div>
 			</a>
 

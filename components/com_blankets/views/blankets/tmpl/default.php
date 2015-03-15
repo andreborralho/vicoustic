@@ -30,26 +30,10 @@
 				<div class="products_list_description"><?php echo $item->description1; ?></div>
 
 				<div class="products_list_icons">
-					<img title="Acoustic Reduction (rw)" alt="Acoustic Reduction (rw)" src="images/icons/icon_rw.png">
-					<div class="products_list_icon blankets_list_rw">
-						<?php
-							if ($item->rw == 0) {
-								echo "N/A";
-							}
-							else {
-								echo $item->rw . ' ' . JText::_('MM');
-							}
-						?>
-					</div>
-
-					<img title="Dimensions" alt="Dimensions" src="images/icons/icon_dimensions.png">
-					<div class="products_list_icon blankets_list_dimensions">
-						<?php
-							echo number_format((float)$item->length, 0, '.', '') . ' x ' .
-								number_format((float)$item->width, 0, '.', '') . ' x ' .
-								number_format((float)$item->thickness, 0, '.', '') . JText::_('MM');
-						?>
-					</div>
+					<?php
+						echo PanelsHelper::renderProductsIcons('images/icons/icon_rw.png', 'Acoustic Reduction (rw)', PanelsHelper::renderIconsProperty($item->rw, JText::_('DB')), 'blankets_list_rw');
+						echo PanelsHelper::renderProductsIcons('images/icons/icon_dimensions.png', 'Dimensions', PanelsHelper::render3Dimensions($item->length, $item->width, $item->thickness, JText::_('MM')), 'blankets_list_dimensions');
+					?>
 				</div>
 			</a>
 

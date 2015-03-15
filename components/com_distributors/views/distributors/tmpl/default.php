@@ -62,7 +62,7 @@
 			  <li class="distributor-address">
 				<?php echo $item->address; ?>
 				<div class="distributor-city">
-				  <?php echo $item->zippostalcode . $item->city; ?>
+				  <?php echo $item->zippostalcode . ' ' . $item->city; ?>
 				</div>
 			  </li>
 			  <li>

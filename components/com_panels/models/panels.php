@@ -36,6 +36,9 @@
 		}
 
 		protected function getListQuery() {
+			$tokens = explode('/', JURI::current());
+			$last_url = $tokens[sizeof($tokens)-1];
+
 			// Create a new query object.
 			$db = $this->getDbo();
 			$query = $db->getQuery(true);
@@ -52,6 +55,27 @@
 
 			// Filter by published state
 			$query->where('(a.state_featured = 1)');
+
+			switch ($last_url) {
+				case 'walls-panels':
+					$query->where('(a.installation_wall = 1)');
+					break;
+				case 'ceilings-panels':
+					$query->where('(a.installation_ceiling = 1)');
+					break;
+				case 'vertical-acoustic':
+					$query->where('(a.installation_vas = 1)');
+					break;
+				case 'absorption':
+					$query->where('(a.functionality = "absorption" OR a.functionality = "hybrid")');
+					break;
+				case 'diffusion':
+					$query->where('(a.functionality = "diffusion" OR a.functionality = "hybrid")');
+					break;
+				case 'basstrap':
+					$query->where('(a.functionality = "basstrap" OR a.functionality = "hybrid")');
+					break;
+			}
 
 			return $query;
 		}

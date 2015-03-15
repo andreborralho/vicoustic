@@ -22,7 +22,7 @@ $document->addScript('//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
 $document->addScript('components/com_panels/assets/scripts/jquery.jqplot.min.js');
 $document->addScript('scripts/galleria-1.2.9.min.js');
 
-//$document->addScript('scripts/components.js');	
+$document->addScript('scripts/components.js');
 
 $url = JURI::current();
 $tokens = explode('/', $url);
