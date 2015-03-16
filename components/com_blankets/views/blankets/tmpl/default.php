@@ -32,7 +32,7 @@
 				<div class="products_list_icons">
 					<?php
 						echo PanelsHelper::renderProductsIcons('images/icons/icon_rw.png', 'Acoustic Reduction (rw)', PanelsHelper::renderIconsProperty($item->rw, JText::_('DB')), 'blankets_list_rw');
-						echo PanelsHelper::renderProductsIcons('images/icons/icon_dimensions.png', 'Dimensions', PanelsHelper::render3Dimensions($item->length, $item->width, $item->thickness, JText::_('MM')), 'blankets_list_dimensions');
+						echo PanelsHelper::renderProductsIcons('images/icons/icon_dimensions.png', JText::_('DIMENSIONS'), PanelsHelper::render3Dimensions($item->length, $item->width, $item->thickness, JText::_('MM')), 'blankets_list_dimensions');
 					?>
 				</div>
 			</a>

@@ -30,11 +30,10 @@
 
 				<div class="products_list_icons">
 					<?php
-						echo PanelsHelper::renderProductsIcons('images/icons/icon_load_weight.png', 'Load Weight', PanelsHelper::renderInterval($item->load_weight_min, $item->load_weight_max, JText::_('KG')), 'antivibratics_list_load_weight');
-						echo PanelsHelper::renderProductsIcons('images/icons/icon_mounting_width.png', 'Mounting Width', PanelsHelper::renderIconsProperty($item->mounting_width), 'antivibratics_list_mounting_width');
-					?>
+						echo PanelsHelper::renderProductsIcons('images/icons/icon_load_weight.png', JText::_('LOAD_WEIGHT'), PanelsHelper::renderInterval($item->load_weight_min, $item->load_weight_max, JText::_('KG')), 'antivibratics_list_load_weight');
+						echo PanelsHelper::renderProductsIcons('images/icons/icon_mounting_width.png', JText::_('MOUNTING_WIDTH'), PanelsHelper::renderIconsProperty($item->mounting_width), 'antivibratics_list_mounting_width');
 
-					<?php if($item->installation_wall == 1) { ?>
+					if($item->installation_wall == 1) { ?>
 						<img title="Installation: Wall" alt="Installation: Wall" src="images/icons/icon_wall.png">
 						<div class="products_list_icon antivibratics_list_installation">
 							<?php echo JText::_('WALL'); ?>

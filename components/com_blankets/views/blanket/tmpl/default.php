@@ -135,10 +135,10 @@
 				<table class="product_similar_table">
 					<thead>
 					<tr>
-						<th class='left product_similar_title'><?php echo JText::_('SIMILAR_BLANKETS'); ?></th>
-						<th class='left'><?php echo JText::_('REF'); ?></th>
-						<th class='left'><?php echo JText::_('EAN13'); ?></th>
-						<th class='left'><?php echo JText::_('DIMENSIONS'); ?></th>
+						<th class='product_similar_title'><?php echo JText::_('SIMILAR_BLANKETS'); ?></th>
+						<th><?php echo JText::_('REF'); ?></th>
+						<th><?php echo JText::_('EAN13'); ?></th>
+						<th><?php echo JText::_('DIMENSIONS'); ?></th>
 					</tr>
 					</thead>
 

@@ -109,7 +109,7 @@
 						portfolio_photos1.thumbnail AS portfolio_photo1_thumbnail, 
 						portfolio_photos1.label AS portfolio_photo1_label');
 
-			$query->join('LEFT', '#__portfolio_photos AS portfolio_photos1 ON portfolio_photo_id1 = portfolio_photos1.id');
+			$query->join('LEFT', '#__portfolio_photos AS portfolio_photos1 ON a.portfolio_photo_id1 = portfolio_photos1.id');
 
 
 			$query->select('portfolio_photos2.id AS portfolio_photo2_id,
@@ -117,7 +117,7 @@
 						portfolio_photos2.thumbnail AS portfolio_photo2_thumbnail, 
 		 				portfolio_photos2.label AS portfolio_photo2_label');
 
-			$query->join('LEFT', '#__portfolio_photos AS portfolio_photos2 ON portfolio_photo_id2 = portfolio_photos2.id');
+			$query->join('LEFT', '#__portfolio_photos AS portfolio_photos2 ON a.portfolio_photo_id2 = portfolio_photos2.id');
 
 
 			$query->select('portfolio_photos3.id AS portfolio_photo3_id,
@@ -125,7 +125,7 @@
 						portfolio_photos3.thumbnail AS portfolio_photo3_thumbnail, 
 		 				portfolio_photos3.label AS portfolio_photo3_label');
 
-			$query->join('LEFT', '#__portfolio_photos AS portfolio_photos3 ON portfolio_photo_id3 = portfolio_photos3.id');
+			$query->join('LEFT', '#__portfolio_photos AS portfolio_photos3 ON a.portfolio_photo_id3 = portfolio_photos3.id');
 
 
 			// Filter by published state

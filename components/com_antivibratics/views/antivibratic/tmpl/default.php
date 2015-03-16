@@ -92,9 +92,12 @@
 
 				<ul class="product_technical_details">
 					<?php
-						if ($this->item->installation_wall == 1 || $this->item->installation_ceiling == 1 || $this->item->installation_floor == 1 || $this->item->installation_division_wall == 1) {
-							echo PanelsHelper::renderTechnicalProperty(PanelsHelper::renderInstallationPlaceProperty($this->item->installation_wall, $this->item->installation_ceiling, $this->item->installation_floor, $this->item->installation_division_wall), JText::_('INSTALLATION_PLACE'));
-						}
+						$properties = array();
+						$properties[JText::_('WALL')] = $this->item->installation_wall;
+						$properties[JText::_('CEILING')] = $this->item->installation_ceiling;
+						$properties[JText::_('FLOOR')] = $this->item->installation_floor;
+						$properties[JText::_('DIVISION_WALL')] = $this->item->installation_division_wall;
+						echo PanelsHelper::renderTechnicalProperty(PanelsHelper::renderMultipleWords($properties), JText::_('INSTALLATION_PLACE'));
 
 						echo PanelsHelper::renderTechnicalPropertyYesNo($this->item->steel, JText::_('STEEL'));
 						echo PanelsHelper::renderTechnicalProperty(ucwords($this->item->rubber_color), JText::_('RUBBER_COLOR'));
@@ -134,11 +137,11 @@
 				<table class="product_similar_table">
 					<thead>
 					<tr>
-						<th class='left product_similar_title'><?php echo JText::_('SIMILAR_ANTIVIBRATICS'); ?></th>
-						<th class='left'><?php echo JText::_('REF'); ?></th>
-						<th class='left'><?php echo JText::_('EAN13'); ?></th>
-						<th class='left'><?php echo JText::_('MOUNTING_WIDTH'); ?></th>
-						<th class='left'><?php echo JText::_('LOAD_WEIGHT'); ?></th>
+						<th class='product_similar_title'><?php echo JText::_('SIMILAR_ANTIVIBRATICS'); ?></th>
+						<th><?php echo JText::_('REF'); ?></th>
+						<th><?php echo JText::_('EAN13'); ?></th>
+						<th><?php echo JText::_('MOUNTING_WIDTH'); ?></th>
+						<th><?php echo JText::_('LOAD_WEIGHT'); ?></th>
 					</tr>
 					</thead>
 

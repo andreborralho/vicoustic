@@ -160,28 +160,28 @@
 						}
 					?>
 				</div>
+
+				<table class="door_options_table">
+					<thead>
+					<tr>
+						<th class='door_options_title'>
+							<div class="door_options_title_label"><?php echo JText::_('OPTIONS'); ?></div>
+						</th>
+						<th><?php echo JText::_('REF'); ?></th>
+						<th><?php echo JText::_('MSRP'); ?></th>
+					</tr>
+					</thead>
+
+					<tbody>
+					<?php echo PanelsHelper::renderDoorOptionCell($this->item->keylock, JText::_('KEYLOCK'), $this->item->keylock_ref, $this->item->keylock_msrp, JText::_('EURO')); ?>
+					<?php echo PanelsHelper::renderDoorOptionCell($this->item->antipanic_bar, JText::_('ANTIPANIC_BAR'), $this->item->antipanic_bar_ref, $this->item->antipanic_bar_msrp, JText::_('EURO')); ?>
+					<?php echo PanelsHelper::renderDoorOptionCell($this->item->keylock_antipanicbar, JText::_('KEYLOCK_ANTIPANICBAR'), $this->item->keylock_antipanicbar_ref, $this->item->keylock_antipanicbar_msrp, JText::_('EURO')); ?>
+					<?php echo PanelsHelper::renderDoorOptionCell($this->item->circular_double_window, JText::_('CIRCULAR_DOUBLE_WINDOW_30'), $this->item->circular_double_window_ref, $this->item->circular_double_window_msrp, JText::_('EURO')); ?>
+					<?php echo PanelsHelper::renderDoorOptionCell($this->item->without_floor_frame, JText::_('WITHOUT_FLOOR_FRAME'), $this->item->without_floor_frame_ref, $this->item->without_floor_frame_msrp, JText::_('EURO')); ?>
+					<?php echo PanelsHelper::renderDoorOptionCell($this->item->autoclose_system, JText::_('AUTOCLOSE_SYSTEM'), $this->item->autoclose_system_ref, $this->item->autoclose_system_msrp, JText::_('EURO')); ?>
+					</tbody>
+				</table>
 			</div>
-
-			<table class="door_options_table">
-				<thead>
-				<tr>
-					<th class='left door_options_title'>
-						<div class="door_options_title_label"><?php echo JText::_('OPTIONS'); ?></div>
-					</th>
-					<th class='left'><?php echo JText::_('REF'); ?></th>
-					<th class='left'><?php echo JText::_('MSRP'); ?></th>
-				</tr>
-				</thead>
-
-				<tbody>
-				<?php echo PanelsHelper::renderDoorOptionCell($this->item->keylock, JText::_('KEYLOCK'), $this->item->keylock_ref, $this->item->keylock_msrp, JText::_('EURO')); ?>
-				<?php echo PanelsHelper::renderDoorOptionCell($this->item->antipanic_bar, JText::_('ANTIPANIC_BAR'), $this->item->antipanic_bar_ref, $this->item->antipanic_bar_msrp, JText::_('EURO')); ?>
-				<?php echo PanelsHelper::renderDoorOptionCell($this->item->keylock_antipanicbar, JText::_('KEYLOCK_ANTIPANICBAR'), $this->item->keylock_antipanicbar_ref, $this->item->keylock_antipanicbar_msrp, JText::_('EURO')); ?>
-				<?php echo PanelsHelper::renderDoorOptionCell($this->item->circular_double_window, JText::_('CIRCULAR_DOUBLE_WINDOW_30'), $this->item->circular_double_window_ref, $this->item->circular_double_window_msrp, JText::_('EURO')); ?>
-				<?php echo PanelsHelper::renderDoorOptionCell($this->item->without_floor_frame, JText::_('WITHOUT_FLOOR_FRAME'), $this->item->without_floor_frame_ref, $this->item->without_floor_frame_msrp, JText::_('EURO')); ?>
-				<?php echo PanelsHelper::renderDoorOptionCell($this->item->autoclose_system, JText::_('AUTOCLOSE_SYSTEM'), $this->item->autoclose_system_ref, $this->item->autoclose_system_msrp, JText::_('EURO')); ?>
-				</tbody>
-			</table>
 		</div>
 
 		<div class="product_portfolio_images">
@@ -201,13 +201,13 @@
 					<th width="19%" class='left product_similar_title'>
 						<div class="product_similar_title_label"><?php echo JText::_('SIMILAR_DOORS'); ?></div>
 					</th>
-					<th width="4%" class='left'><?php echo JText::_('REF'); ?></th>
-					<th width="8%" class='left'><?php echo JText::_('EAN13'); ?></th>
-					<th width="4%" class='center'><?php echo JText::_('NUMBER_OF_DOORS'); ?></th>
-					<th width="14%" class='left'><?php echo JText::_('DIMENSIONS'); ?></th>
-					<th width="9%" class='left'><?php echo JText::_('GROSS_WEIGHT'); ?></th>
-					<th width="12%" class='left'><?php echo JText::_('FINISH'); ?></th>
-					<th width="5%" class='left'><?php echo JText::_('RW'); ?></th>
+					<th width="4%"><?php echo JText::_('REF'); ?></th>
+					<th width="8%"><?php echo JText::_('EAN13'); ?></th>
+					<th width="4%"><?php echo JText::_('NO_OF_DOORS'); ?></th>
+					<th width="14%"><?php echo JText::_('DIMENSIONS'); ?></th>
+					<th width="9%"><?php echo JText::_('GROSS_WEIGHT'); ?></th>
+					<th width="12%"><?php echo JText::_('FINISH'); ?></th>
+					<th width="5%"><?php echo JText::_('RW'); ?></th>
 				</tr>
 				</thead>
 

@@ -32,16 +32,16 @@
 				<div class="products_list_icons">
 					<?php
 						echo PanelsHelper::renderProductsIcons('images/icons/icon_rw.png', 'Acoustic Reduction (rw)', PanelsHelper::renderIconsProperty($item->rw, JText::_('DB')), 'doors_list_aw');
-						echo PanelsHelper::renderProductsIcons('images/icons/icon_fire.png', 'Fire Resistance', PanelsHelper::renderIconsProperty($item->fire_resistance, JText::_('MINUTES')), 'doors_list_fire_res');
+						echo PanelsHelper::renderProductsIcons('images/icons/icon_fire.png', JText::_('FIRE_RESISTANCE'), PanelsHelper::renderIconsProperty($item->fire_resistance, JText::_('MINUTES')), 'doors_list_fire_res');
 
 						if($item->number_of_doors == 1) {
-							echo PanelsHelper::renderProductsIcons('images/icons/icon_single_door.png', 'Single Door', JText::_('SINGLE_DOOR'), 'doors_list_number_of_doors');
+							echo PanelsHelper::renderProductsIcons('images/icons/icon_single_door.png', JText::_('SINGLE_DOOR'), JText::_('SINGLE_DOOR'), 'doors_list_number_of_doors');
 						}
 						else {
-							echo PanelsHelper::renderProductsIcons('images/icons/icon_double_door.png', 'Double Door', JText::_('DOUBLE_DOOR'), 'doors_list_number_of_doors');
+							echo PanelsHelper::renderProductsIcons('images/icons/icon_double_door.png', JText::_('DOUBLE_DOOR'), JText::_('DOUBLE_DOOR'), 'doors_list_number_of_doors');
 						}
 
-						echo PanelsHelper::renderProductsIcons('images/icons/icon_dimensions.png', 'Dimensions', PanelsHelper::render2Dimensions($item->width, $item->height, JText::_('MM')), 'doors_list_dimensions');
+						echo PanelsHelper::renderProductsIcons('images/icons/icon_dimensions.png', JText::_('DIMENSIONS'), PanelsHelper::render2Dimensions($item->width, $item->height, JText::_('MM')), 'doors_list_dimensions');
 					?>
 				</div>
 			</a>

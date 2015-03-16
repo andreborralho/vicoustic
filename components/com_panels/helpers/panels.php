@@ -174,36 +174,17 @@
 			return false;
 		}
 
-		public static function renderInstallationPlaceProperty($wall, $ceiling, $floor, $division_wall) {
-			$html_output = ' ';
+		public static function renderMultipleWords($properties) {
 			$comma_span = '<span >,</span > ';
+			$words = array();
 
-			if($wall == 1) {
-				$html_output .= JText::_('WALL');
-				if($ceiling == 1 || $floor == 1 || $division_wall == 1) {
-					$html_output .= $comma_span;
+			foreach($properties as $label => $property) {
+				if($property == 1) {
+					array_push($words, $label);
 				}
 			}
 
-			if($ceiling == 1) {
-				$html_output .= JText::_('CEILING');
-				if($floor == 1 || $division_wall == 1) {
-					$html_output .= $comma_span;
-				}
-			}
-
-			if($floor == 1) {
-				$html_output .= JText::_('FLOOR');
-				if($division_wall == 1) {
-					$html_output .= $comma_span;
-				}
-			}
-
-			if($division_wall == 1) {
-				$html_output .= JText::_('DIVISION_WALL');
-			}
-
-			return $html_output;
+			return implode ($comma_span, $words);
 		}
 
 		public static function renderDoorIcon($includes, $has_property, $image_icon, $label) {
@@ -221,7 +202,6 @@
 			}
 			return false;
 		}
-
 
 	}
 

@@ -7,7 +7,6 @@
 	 * @author      André Borralho <andrefilipe_one@hotmail.com> - http://
 	 */
 
-
 // no direct access
 	defined('_JEXEC') or die;
 
@@ -17,7 +16,7 @@
 
 	<h1 class="page_title"><?php echo JText::_('PANELS') . ' - ' . ucwords(str_replace('-panels', '', $last_url)); ?></h1>
 
-<?php if($this->items) : ?>
+<?php if($this->items) { ?>
 
 	<ul class="items_list products_items_list">
 
@@ -36,7 +35,7 @@
 					<?php
 						echo PanelsHelper::renderProductsIcons('images/icons/icon_aw.png', 'Acoustic Absorption (aw)', PanelsHelper::renderIconsProperty($item->aw), 'panels_list_aw');
 						echo PanelsHelper::renderProductsIcons('images/icons/icon_nrc.png', 'Acoustic Absorption (NRC)', PanelsHelper::renderIconsProperty($item->nrc, JText::_('DB')), 'panels_list_nrc');
-						echo PanelsHelper::renderProductsIcons('images/icons/icon_eurclass.png', 'Fire Class', PanelsHelper::renderIconsProperty($item->fire_class_en), 'panels_list_fire_class');
+						echo PanelsHelper::renderProductsIcons('images/icons/icon_eurclass.png', JText::_('FIRE_CLASS'), PanelsHelper::renderIconsProperty($item->fire_class_en), 'panels_list_fire_class');
 
 						$image_srcs = ['images/icons/icon_low.png', 'images/icons/icon_medium.png', 'images/icons/icon_high.png', 'images/icons/icon_flat.png'];
 						$image_labels = ['Low Frequencies', 'Medium Frequencies', 'High Frequencies', 'Flat Frequencies'];
@@ -54,6 +53,8 @@
 		<?php } ?>
 	</ul>
 
-<?php else: ?>
-	There are no items in the list
-<?php endif; ?>
+<?php
+}
+else {
+	echo JText::_('NO_PANELS');
+}

@@ -101,9 +101,9 @@
 			<table class="product_similar_table">
 				<thead>
 				<tr>
-					<th class='left product_similar_title'><?php echo JText::_('SIMILAR_ACCESSORIES'); ?></th>
-					<th class='left'><?php echo JText::_('REF'); ?></th>
-					<th class='left'><?php echo JText::_('EAN13'); ?></th>
+					<th class='product_similar_title'><?php echo JText::_('SIMILAR_ACCESSORIES'); ?></th>
+					<th><?php echo JText::_('REF'); ?></th>
+					<th><?php echo JText::_('EAN13'); ?></th>
 				</tr>
 				</thead>
 
