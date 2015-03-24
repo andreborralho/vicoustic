@@ -25,7 +25,7 @@
 		protected $params;
 
 		public function display($tpl = null) {
-			$app                = JFactory::getApplication();
+			$app            = JFactory::getApplication();
 			$this->state		= $this->get('State');
 			$this->items		= $this->get('Items');
 			$this->pagination	= $this->get('Pagination');
@@ -46,8 +46,7 @@
 			$menus	= $app->getMenu();
 			$title	= null;
 
-			// Because the application sets a default page title,
-			// we need to get it from the menu item itself
+			// Because the application sets a default page title, we need to get it from the menu item itself
 			$menu = $menus->getActive();
 			if($menu) {
 				$this->params->def('page_heading', $this->params->get('page_title', $menu->title));

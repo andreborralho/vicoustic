@@ -9,11 +9,9 @@
 
 	// no direct access
 	defined('_JEXEC') or die;
-?>
 
-
-<?php
-	if( $this->item ) {
+	if( $this->items[0] ) {
+		$this->item = $this->items[0];
 		$GLOBALS['antivibratic_name'] = $this->item->name;
 		?>
 
@@ -125,15 +123,12 @@
 
 			<div class="product_portfolio_images">
 				<?php
-					//TODO: tem muitos ciclos e queries e comparaçoes so para devolver uma row de uma tabela
-					foreach ($this->items as $i=>$item) {
-						echo PanelsHelper::renderProductPortfolioImage($this->item->portfolio_photo_id1, $item->portfolio_photo_id1, $item->portfolio_photo1_thumbnail, $item->portfolio_photo1_label);
-						echo PanelsHelper::renderProductPortfolioImage($this->item->portfolio_photo_id2, $item->portfolio_photo_id2, $item->portfolio_photo2_thumbnail, $item->portfolio_photo2_label);
-					}
+					echo PanelsHelper::renderProductPortfolioImage($this->item->portfolio_photo_id1, $this->item->portfolio_photo1_thumbnail, $this->item->portfolio_photo1_label);
+					echo PanelsHelper::renderProductPortfolioImage($this->item->portfolio_photo_id2, $this->item->portfolio_photo2_thumbnail, $this->item->portfolio_photo2_label);
 				?>
 			</div>
 
-			<?php if (PanelsHelper::hasSimilarProducts($this->items, $this->item)) { ?>
+			<?php if (isset($this->similar) && sizeof($this->similar) > 1) { ?>
 				<table class="product_similar_table">
 					<thead>
 					<tr>
@@ -146,9 +141,8 @@
 					</thead>
 
 					<tbody>
-					<?php foreach ($this->items as $i => $item) {
-						if ($item->family == $this->item->family) { ?>
-							<tr>
+					<?php foreach ($this->similar as $i => $item) { ?>
+						<tr>
 								<td><?php echo PanelsHelper::renderSimilarProductImage($item, JRoute::_('index.php?option=com_antivibratics&view=antivibratic&id=' . (int) $item->id)); ?></td>
 								<td><?php echo $item->ref; ?></td>
 								<td><?php echo $item->ean13; ?></td>
@@ -157,7 +151,6 @@
 							</tr>
 						<?php
 						}
-					}
 					?>
 					</tbody>
 				</table>

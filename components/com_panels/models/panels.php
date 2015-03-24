@@ -31,7 +31,6 @@
 			$limitstart = JFactory::getApplication()->input->getInt('limitstart', 0);
 			$this->setState('list.start', $limitstart);
 
-			// List state information.
 			parent::populateState($ordering, $direction);
 		}
 

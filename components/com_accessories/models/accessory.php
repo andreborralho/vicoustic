@@ -76,32 +76,33 @@
 			$query->from('`#__accessories` AS a');
 
 			// Join over the portfolio field 'portfolio'
-			$query->select('portfolio_photos1.id AS portfolio_photo1_id,
-						portfolio_photos1.photo AS portfolio_photo1_photo,
-						portfolio_photos1.thumbnail AS portfolio_photo1_thumbnail,
+			$query->select('portfolio_photos1.thumbnail AS portfolio_photo1_thumbnail,
 						portfolio_photos1.label AS portfolio_photo1_label');
-
 			$query->join('LEFT', '#__portfolio_photos AS portfolio_photos1 ON portfolio_photo_id1 = portfolio_photos1.id');
 
-
-			$query->select('portfolio_photos2.id AS portfolio_photo2_id,
-						portfolio_photos2.photo AS portfolio_photo2_photo,
-						portfolio_photos2.thumbnail AS portfolio_photo2_thumbnail,
+			$query->select('portfolio_photos2.thumbnail AS portfolio_photo2_thumbnail,
 		 				portfolio_photos2.label AS portfolio_photo2_label');
-
 			$query->join('LEFT', '#__portfolio_photos AS portfolio_photos2 ON portfolio_photo_id2 = portfolio_photos2.id');
 
-
-			// Filter by published state
-			$published = $this->getState('filter.state');
-
-			if (is_numeric($published)) {
-				$query->where('a.state = '.(int) $published);
-			} else {
-				$query->where('a.state = 1');
-			}
+			$product_id = JFactory::getApplication()->input->get('id');
+			$query->where("a.id = $product_id");
+			$query->where('a.state = 1');
 
 			return $query;
 		}
 
+		public function getSimilarProducts($family) {
+			$db = $this->getDbo();
+			$query = $db->getQuery(true);
+
+			$query->select($this->getState('list.select', 'a.*'));
+
+			$query->from('`#__accessories` AS a');
+
+			$query->where('a.family = "' . $family . '"');
+			$query->where('a.state = 1');
+
+			$db->setQuery($query);
+			return $db->loadObjectList();
+		}
 	}

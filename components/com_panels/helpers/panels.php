@@ -44,13 +44,24 @@
 			return JText::_('NA');
 		}
 
-		public static function renderProductGalleryImage($product) {
+		public static function renderProductGalleryImage($product, $panel_ref = '') {
 			$html_output = '<img alt="' . $product->name . '" ';
+			$image300_by_ref = getimagesize('images/panels/photos_300px/'. $panel_ref .'_220.png');
+			$image1024_by_ref = getimagesize('images/panels/photos_1024px/'. $panel_ref .'_HD.png');
+
 			if(!empty($product->photo_300px) && !empty($product->photo_1024px)) {
 				$html_output .= 'src="/' . $product->photo_300px . '" data-big="' . JURI::root() . $product->photo_1024px . '">';
 			}
 			elseif(!empty($product->photo_300px)) {
 				$html_output .= 'src="/' . $product->photo_300px . '">';
+			}
+			elseif(is_array($image300_by_ref)) {
+				$html_output .= 'src="/images/panels/photos_300px/' . $panel_ref . '_220.png" ';
+
+				if (is_array($image1024_by_ref)) {
+					$html_output .= 'data-big="' . JURI::root() . '/images/panels/photos_1024px/' . $panel_ref . '_HD.png"';
+				}
+				$html_output .= '>';
 			}
 			else {
 				$html_output .= 'src="/images/not_available_medium.png" style="padding-top:20px">';
@@ -98,9 +109,23 @@
 			return false;
 		}
 
-		public static function renderProductPortfolioImage($product_photo_id, $portfolio_photo_id, $portfolio_thumbnail, $portfolio_label) {
+		public static function renderProductPortfolioImage2($product_photo_id, $portfolio_photo_id, $portfolio_thumbnail, $portfolio_label) {
 			if(!empty($portfolio_photo_id) && $portfolio_photo_id == $product_photo_id) {
 				return '<div class="product_portfolio_image"><img alt="" src="/' . $portfolio_thumbnail . '"><div>' . $portfolio_label . '</div></div>';
+			}
+			return false;
+		}
+
+		public static function renderProductPortfolioImage($portfolio_photo_id, $portfolio_thumbnail, $portfolio_label) {
+			if(!empty($portfolio_photo_id) && !empty($portfolio_thumbnail)) {
+				$html_output = '<div class="product_portfolio_image"><img alt="" src="/' . $portfolio_thumbnail . '">';
+
+				if(!empty($portfolio_label)) {
+					$html_output .= '<div>' . $portfolio_label . '</div>';
+				}
+				$html_output .= '</div>';
+
+				return $html_output;
 			}
 			return false;
 		}
@@ -126,10 +151,8 @@
 		}
 
 		public static function seoUrl($string) {
-			//Lower case everything
-			$string = strtolower($string);
 			//Make alphanumeric (removes all other characters)
-			$string = preg_replace("/[^a-z0-9_\s-]/", "", $string);
+			$string = preg_replace("/[^a-zA-Z0-9_\s-]/", "", $string);
 			//Clean up multiple dashes or whitespaces
 			$string = preg_replace("/[\s-]+/", " ", $string);
 			//Convert whitespaces and underscore to dash
@@ -198,7 +221,7 @@
 
 		public static function renderDoorOptionCell($option, $label, $ref, $msrp, $unit) {
 			if ($option == 0) {
-				return '<tr><td>' . $label . '</td><td>' . $ref . '</td><td>' . $msrp . ' ' . $unit . '</td></tr>';
+				return '<tr><td>' . $label . '</td><td>' . $ref . '</td><td>' . ($msrp == 0 ? JText::_('NA') : ($msrp . ' ' . $unit)) . '</td></tr>';
 			}
 			return false;
 		}

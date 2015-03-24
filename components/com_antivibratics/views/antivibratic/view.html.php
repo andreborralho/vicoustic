@@ -16,8 +16,9 @@
 
 	JFactory::getLanguage()->load('com_vicoustic', JPATH_SITE, 'en-GB');
 	$document = JFactory::getDocument();
-	$document->addScript('//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js');
-	$document->addScript('scripts/galleria-1.2.9.min.js');
+	$document->addScript('//code.jquery.com/jquery-2.1.3.min.js');
+	$document->addScript('//cdnjs.cloudflare.com/ajax/libs/galleria/1.4.2/galleria.min.js');
+	$document->addScript('//cdnjs.cloudflare.com/ajax/libs/galleria/1.4.2/themes/classic/galleria.classic.min.js');
 	$document->addScript('scripts/components.js');
 
 	class AntivibraticsViewAntivibratic extends JView {
@@ -33,6 +34,7 @@
 			$this->state = $this->get('State');
 			$this->item = $this->get('Data');
 			$this->items = $this->get('Items');
+			$this->similar = $this->getModel()->getSimilarProducts($this->items[0]->family);
 			$this->params = $app->getParams('com_antivibratics');
 
 			// Check for errors.

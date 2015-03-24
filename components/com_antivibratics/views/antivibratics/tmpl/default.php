@@ -33,16 +33,16 @@
 						echo PanelsHelper::renderProductsIcons('images/icons/icon_load_weight.png', JText::_('LOAD_WEIGHT'), PanelsHelper::renderInterval($item->load_weight_min, $item->load_weight_max, JText::_('KG')), 'antivibratics_list_load_weight');
 						echo PanelsHelper::renderProductsIcons('images/icons/icon_mounting_width.png', JText::_('MOUNTING_WIDTH'), PanelsHelper::renderIconsProperty($item->mounting_width), 'antivibratics_list_mounting_width');
 
-					if($item->installation_wall == 1) { ?>
-						<img title="Installation: Wall" alt="Installation: Wall" src="images/icons/icon_wall.png">
-						<div class="products_list_icon antivibratics_list_installation">
-							<?php echo JText::_('WALL'); ?>
+						if($item->installation_wall == 1) { ?>
+							<img title="Installation: Wall" alt="Installation: Wall" src="images/icons/icon_wall.png">
+							<div class="products_list_icon antivibratics_list_installation">
+								<?php echo JText::_('WALL'); ?>
 
-							<?php if($item->installation_ceiling == 1 || $item->installation_floor == 1 || $item->installation_division_wall == 1) { ?>
-								<span>,</span>
-							<?php } ?>
-						</div>
-					<?php } ?>
+								<?php if($item->installation_ceiling == 1 || $item->installation_floor == 1 || $item->installation_division_wall == 1) { ?>
+									<span>,</span>
+								<?php } ?>
+							</div>
+						<?php } ?>
 
 					<?php if($item->installation_ceiling == 1) { ?>
 						<img title="Installation: Ceiling" alt="Installation: Ceiling" src="images/icons/icon_ceiling.png">
