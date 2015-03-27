@@ -18,7 +18,7 @@ defined('_JEXEC') or die;
 
     <?php 
 
-        $db =& JFactory::getDBO();
+        $db = JFactory::getDBO();
         $query = 'SELECT * FROM `#__acoustic_solution_rooms` WHERE state=1 AND building_construction=1';
         $db->setQuery( $query, 0 , $this->rooms_list);
         $rooms_list = $db->loadObjectList();

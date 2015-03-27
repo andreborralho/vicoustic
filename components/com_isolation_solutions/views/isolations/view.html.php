@@ -13,9 +13,6 @@
   jimport('joomla.application.component.view');
   require_once JPATH_COMPONENT . '/helpers/isolation_solutions.php';
   JFactory::getLanguage()->load('com_vicoustic', JPATH_SITE, 'en-GB');
-  $document = JFactory::getDocument();
-  $document->addScript('//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js');
-  $document->addScript('scripts/components.js');
 
   /**
    * View class for a list of Isolation_solutions.

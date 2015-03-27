@@ -21,7 +21,7 @@ if ($params->get('displayorder', 'normal') == 'shuffle')
 
 $document = JFactory::getDocument();
 if ($params->get('loadjquery', '1')) {
-	$document->addScript(JURI::base(true) . '/modules/mod_slideshowck/assets/jquery.min.js');
+	//$document->addScript(JURI::base(true) . '/modules/mod_slideshowck/assets/jquery.min.js');
 }
 
 if ($params->get('loadjqueryeasing', '1')) {
@@ -32,7 +32,7 @@ if ($params->get('loadjquerymobile', '1')) {
 	$document->addScript(JURI::base(true) . '/modules/mod_slideshowck/assets/jquery.mobile.customized.min.js');
 }
 
-$document->addScript(JURI::base(true) . '/modules/mod_slideshowck/assets/camera.min.js');
+//$document->addScript(JURI::base(true) . '/modules/mod_slideshowck/assets/camera.min.js');
 
 $theme = $params->get('theme', 'default');
 $document->addStyleSheet(JURI::base(true) . '/modules/mod_slideshowck/themes/' . $theme . '/css/camera.css');
@@ -75,7 +75,7 @@ switch ($params->get('navigation', '2')) {
 }
 
 // load the slideshow script
-$js = "<script type=\"text/javascript\"> <!--
+/*$js = "<script type=\"text/javascript\"> <!--
        jQuery(function(){
         jQuery('#camera_wrap_" . $module->id . "').camera({
                 height: '" . $params->get('height', '400') . "',
@@ -104,7 +104,7 @@ $js = "<script type=\"text/javascript\"> <!--
 }); //--> </script>";
 
 echo $js;
-
+*/
 // load some css
 $css = "#camera_wrap_" . $module->id . " .camera_pag_ul li img {width:" . $params->get('thumbnailwidth', '100') . "px;height:" . $params->get('thumbnailheight', '75') . "px;}";
 

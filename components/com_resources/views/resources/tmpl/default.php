@@ -10,10 +10,6 @@
 
 // no direct access
 defined('_JEXEC') or die;
-
-$document = JFactory::getDocument();
-$document->addScript('//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js');
-$document->addScript('scripts/components.js');
 ?>
 
 <h1 class="page_title">Resources</h1>

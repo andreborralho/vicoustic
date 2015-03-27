@@ -14,7 +14,7 @@ defined('_JEXEC') or die;
 $url = JURI::current();
 $tokens = explode('/', $url);
 
-$db =& JFactory::getDBO();
+$db = JFactory::getDBO();
 $query = "SELECT * FROM #__doors";    
 $db->setQuery( $query, 0 , $this->items );
 $items = $db->loadObjectList();
@@ -83,7 +83,7 @@ $items = $db->loadObjectList();
     </div>
 
 <?php
-    $db =& JFactory::getDBO();
+    $db = JFactory::getDBO();
     $query = "SELECT * FROM #__antivibratics";
     $db->setQuery( $query, 0 , $this->items );
     $items = $db->loadObjectList();
@@ -171,7 +171,7 @@ $items = $db->loadObjectList();
     </div>
     
     <?php 
-        $db =& JFactory::getDBO();
+        $db = JFactory::getDBO();
         $query = "SELECT * FROM #__blankets";
         $db->setQuery( $query, 0 , $this->items );
         $items = $db->loadObjectList();

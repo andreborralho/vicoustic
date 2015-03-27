@@ -19,6 +19,9 @@
 /log/*.log
 /tmp
 
-.DS_store
+configuration.php
 
 images/pdfs
+images/graphs
+
+.DS_Store

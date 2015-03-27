@@ -5,7 +5,7 @@
 	jimport('joomla.filesystem.file');	
 	
 	$document = JFactory::getDocument();
-	$document->addScript('//ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js');
+	//$document->addScript('//ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js');
 	
 	$duration = ($s5_duration == '' ? '500' : $s5_duration);
 	$hideDelay = ($s5_hide_delay == '' ? '500' : $s5_hide_delay);

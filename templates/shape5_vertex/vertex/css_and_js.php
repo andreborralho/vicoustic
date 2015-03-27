@@ -42,7 +42,7 @@
 
 
 <?php if ($s5_multibox  == "yes" || $s5_scrolltotop  == "yes"  || $s5_show_menu  == "yes" || $s5_responsive == "yes") { 
-s5_mootools_call();
+//s5_mootools_call();
 } ?>
 
 <?php if ($s5_multibox  == "yes") { ?>

@@ -28,7 +28,7 @@ xml:lang="<?php echo $lang->getTag(); ?>" lang="<?php echo $lang->getTag(); ?>"
 //Calls mootools javascript
 function s5_mootools_call() {
 	$document = JFactory::getDocument();
-	$document->addScript('//ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js');
+	//$document->addScript('//ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js');
 }
 
 //Calls the component and article call

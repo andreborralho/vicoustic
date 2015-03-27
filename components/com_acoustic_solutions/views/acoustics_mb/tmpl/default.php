@@ -19,9 +19,10 @@ $tokens = explode('/', $url);
 
 <form action="<?php echo JRoute::_('index.php?option=com_acoustic_solutions'); ?>" method="get" name="acoustic_simulator_filter" id="acoustic_simulator_filter"> 
 
-    <?php 
+    <?php
 
-        $db =& JFactory::getDBO();
+				$db = JFactory::getDbo();
+				$rooms_list = '';
         $rooms_query = 'SELECT * FROM `#__acoustic_solution_rooms` WHERE state=1 AND (music_broadcast=1 OR hifi_home_cinema=1)';
         $db->setQuery( $rooms_query, 0 , $rooms_list);
         $rooms_list = $db->loadObjectList();
@@ -61,7 +62,7 @@ $tokens = explode('/', $url);
 
             <div id="acoustic_simulator_area_input" class="acoustic_simulator_form_content">
                 Area: 
-                <?php if($_GET['acoustic_simulator_area'] > 0): ?>
+                <?php if(isset($_GET['acoustic_simulator_area']) && $_GET['acoustic_simulator_area'] > 0): ?>
                     <input type="text" name="acoustic_simulator_area" value="<?php echo $_GET['acoustic_simulator_area']; ?>"> m<sup>2</sup>
                 <?php else: ?>
                     <input type="text" name="acoustic_simulator_area"> m<sup>2</sup>

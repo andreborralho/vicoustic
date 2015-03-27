@@ -10,12 +10,6 @@
 	// no direct access
 	defined('_JEXEC') or die;
 
-	$document = JFactory::getDocument();
-	$document->addScript('//code.jquery.com/jquery-2.1.3.min.js');
-	$document->addScript('//cdnjs.cloudflare.com/ajax/libs/galleria/1.4.2/galleria.min.js');
-	$document->addScript('//cdnjs.cloudflare.com/ajax/libs/galleria/1.4.2/themes/classic/galleria.classic.min.js');
-	$document->addScript('scripts/components.js');
-
 	$url = JURI::current();
 	$tokens = explode('/', $url);
 
@@ -215,7 +209,7 @@
 			foreach ($this->items as $i=>$item) :
 				if ($item->line_name == "Premium Line" && $item->id == $this->item->id):
 
-					$db =& JFactory::getDBO();
+					$db = JFactory::getDBO();
 
 					$query = 'SELECT a.* , panels1.id AS panel1_id, panels1.name AS panel1_name, panels2.id AS panel2_id, panels2.name AS panel2_name
                                 FROM `#__acoustic_solutions_options` AS a 
@@ -223,7 +217,7 @@
                                 LEFT JOIN `#__panels` AS panels2 ON a.panel_id2 = panels2.id 
                                 WHERE a.state=1 AND a.solution_id='.$this->item->id;
 
-					$db->setQuery( $query, 0 , $this->options_list);
+					$db->setQuery($query);
 					$options_list = $db->loadObjectList();
 					?>
 

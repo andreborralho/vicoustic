@@ -21,7 +21,7 @@ $menu = $m->getMenu();
 // Note. It is important to remove spaces between elements.
 ?>
 
-<ul class="menu<?php echo $class_sfx;?>"<?php
+<ul class="menu<?php echo (isset($class_sfx) ? $class_sfx : '');?>"<?php
 	$tag = '';
 	if ($params->get('tag_id')!=NULL) {
 		$tag = $params->get('tag_id').'';

@@ -15,11 +15,6 @@
 	require_once JPATH_BASE . '/libraries/fpdf/fpdf.php';
 
 	JFactory::getLanguage()->load('com_vicoustic', JPATH_SITE, 'en-GB');
-	$document = JFactory::getDocument();
-	$document->addScript('//code.jquery.com/jquery-2.1.3.min.js');
-	$document->addScript('//cdnjs.cloudflare.com/ajax/libs/galleria/1.4.2/galleria.min.js');
-	$document->addScript('//cdnjs.cloudflare.com/ajax/libs/galleria/1.4.2/themes/classic/galleria.classic.min.js');
-	$document->addScript('scripts/components.js');
 
 	class BlanketsViewBlanket extends JView {
 
