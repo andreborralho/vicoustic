@@ -77,6 +77,6 @@ class plgSystemJCKtypography extends JPlugin
 		$stylesheet[$url]['media'] = null;
 		$stylesheet[$url]['attribs'] = array();
 		$data['styleSheets'] = $stylesheet + $data['styleSheets'];
-		$doc->setHeadData($data);
+		//$doc->setHeadData($data);
      }
 }
