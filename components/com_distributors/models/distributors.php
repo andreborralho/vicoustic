@@ -26,11 +26,7 @@
 	  $app = JFactory::getApplication();
 
 	  // List state information
-	  $limit = $app->getUserStateFromRequest('global.list.limit', 'limit', $app->getCfg('list_limit'));
-	  $this->setState('list.limit', $limit);
-
-	  $limitstart = JFactory::getApplication()->input->getInt('limitstart', 0);
-	  $this->setState('list.start', $limitstart);
+	  $this->setState('list.limit', 0);
 
 	  // Load the filter state.
 	  $search = $app->getUserStateFromRequest($this->context.'.filter.search', 'filter_search');
