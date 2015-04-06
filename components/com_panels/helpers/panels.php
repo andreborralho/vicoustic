@@ -12,12 +12,17 @@
 	abstract class PanelsHelper {
 
 		public static function renderProductsImage($product) {
+			$image_by_ref = getimagesize('images/panels/photos_150px/'. $product->ref .'_150.png');
 			$html_output = '<img alt="' . $product->family . '" ';
-			if($product->photo_150px) {
+
+			if(is_array($image_by_ref)) {
+				$html_output .= 'src="/images/panels/photos_150px/' . $product->ref . '_150.png">';
+			}
+			elseif($product->photo_150px) {
 				$html_output .= 'src="' . $product->photo_150px . '">';
 			}
 			else {
-				$html_output .= 'class="products_list_not_available" src="images/not_available_medium.png">';
+				$html_output .= 'class="products_list_not_available" src="/images/not_available_medium.png">';
 			}
 			return $html_output;
 		}
