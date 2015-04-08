@@ -67,6 +67,16 @@
 					break;
 			}
 
+			if(strpos(JURI::current(),'music-broadcast') !== false) {
+				$query->where('a.music_broadcast = 1');
+			}
+			elseif(strpos(JURI::current(),'hifi-home-cinema') !== false){
+				$query->where('a.hifi_home_cinema = 1');
+			}
+			elseif(strpos(JURI::current(),'building-construction') !== false){
+				$query->where('a.building_construction = 1');
+			}
+
 			return $query;
 		}
 

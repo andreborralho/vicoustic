@@ -135,6 +135,7 @@
 						<th class='product_similar_title'><?php echo JText::_('SIMILAR_ANTIVIBRATICS'); ?></th>
 						<th><?php echo JText::_('REF'); ?></th>
 						<th><?php echo JText::_('EAN13'); ?></th>
+						<th><?php echo JText::_('SECURITY_DEVICES'); ?></th>
 						<th><?php echo JText::_('MOUNTING_WIDTH'); ?></th>
 						<th><?php echo JText::_('LOAD_WEIGHT'); ?></th>
 					</tr>
@@ -146,8 +147,9 @@
 								<td><?php echo PanelsHelper::renderSimilarProductImage($item, JRoute::_('index.php?option=com_antivibratics&view=antivibratic&id=' . (int) $item->id)); ?></td>
 								<td><?php echo $item->ref; ?></td>
 								<td><?php echo $item->ean13; ?></td>
+								<td><?php echo $item->security_devices; ?></td>
 								<td><?php echo $item->mounting_width; ?></td>
-								<td><?php echo PanelsHelper::renderInterval($this->item->load_weight_min, $this->item->load_weight_max, JText::_('KG')); ?></td>
+								<td><?php echo PanelsHelper::renderInterval($item->load_weight_min, $item->load_weight_max, JText::_('KG')); ?></td>
 							</tr>
 						<?php
 						}
